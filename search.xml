@@ -105,6 +105,7 @@
     <url>/2020/11/16/upload-libs-1-15/</url>
     <content><![CDATA[<h1 id="upload-libs-1-15"><a href="#upload-libs-1-15" class="headerlink" title="upload-libs(1-15)"></a>upload-libs(1-15)</h1><h2 id="一-环境搭建"><a href="#一-环境搭建" class="headerlink" title="一.环境搭建"></a>一.环境搭建</h2><ol>
 <li><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p><code>upload-labs</code>是一个使用<code>php</code>语言编写的，专门收集渗透测试和CTF中遇到的各种上传漏洞的靶场。旨在帮助大家对上传漏洞有一个全面的了解。目前一共20关，每一关都包含着不同上传方式。</p>
+<a id="more"></a>
 </li>
 <li><h3 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h3><p>1.每一关没有固定的通关方法，大家不要自限思维！</p>
 <p>2.本项目提供的<code>writeup</code>只是起一个参考作用，希望大家可以分享出自己的通关思路。</p>

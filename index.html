@@ -310,7 +310,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2020-11-16 16:05:33 / 修改时间：20:05:36" itemprop="dateCreated datePublished" datetime="2020-11-16T16:05:33+08:00">2020-11-16</time>
+      <time title="创建时间：2020-11-16 16:05:33 / 修改时间：20:30:58" itemprop="dateCreated datePublished" datetime="2020-11-16T16:05:33+08:00">2020-11-16</time>
     </span>
 
   
@@ -324,91 +324,15 @@
     
     <div class="post-body" itemprop="articleBody">
           <h1 id="upload-libs-1-15"><a href="#upload-libs-1-15" class="headerlink" title="upload-libs(1-15)"></a>upload-libs(1-15)</h1><h2 id="一-环境搭建"><a href="#一-环境搭建" class="headerlink" title="一.环境搭建"></a>一.环境搭建</h2><ol>
-<li><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p><code>upload-labs</code>是一个使用<code>php</code>语言编写的，专门收集渗透测试和CTF中遇到的各种上传漏洞的靶场。旨在帮助大家对上传漏洞有一个全面的了解。目前一共20关，每一关都包含着不同上传方式。</p>
-</li>
-<li><h3 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h3><p>1.每一关没有固定的通关方法，大家不要自限思维！</p>
-<p>2.本项目提供的<code>writeup</code>只是起一个参考作用，希望大家可以分享出自己的通关思路。</p>
-<p>3.实在没有思路时，可以点击<code>查看提示</code>。</p>
-<p>4.如果黑盒情况下，实在做不出，可以点击<code>查看源码</code>。</p>
-</li>
-<li><h3 id="后续"><a href="#后续" class="headerlink" title="后续"></a>后续</h3><p>如在渗透测试实战中遇到新的上传漏洞类型，会更新到<code>upload-labs</code>中。当然如果你也希望参加到这个工作当中，欢迎<code>pull requests</code>给我!</p>
-<p>项目地址：<code>https://github.com/c0ny1/upload-labs</code></p>
-</li>
-</ol>
-<p><strong>我是直接使用的压缩版（不用配环境）</strong></p>
-<h2 id="二-pass1-5"><a href="#二-pass1-5" class="headerlink" title="二.pass1-5"></a>二.pass1-5</h2><h3 id="pass-01"><a href="#pass-01" class="headerlink" title="pass-01"></a>pass-01</h3><p>源码分析</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">checkFile</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> file = <span class="built_in">document</span>.getElementsByName(<span class="string">&#x27;upload_file&#x27;</span>)[<span class="number">0</span>].value;</span><br><span class="line">    <span class="keyword">if</span> (file == <span class="literal">null</span> || file == <span class="string">&quot;&quot;</span>) &#123;</span><br><span class="line">        alert(<span class="string">&quot;请选择要上传的文件!&quot;</span>);</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//定义允许上传的文件类型</span></span><br><span class="line">    <span class="keyword">var</span> allow_ext = <span class="string">&quot;.jpg|.png|.gif&quot;</span>;</span><br><span class="line">    <span class="comment">//提取上传文件的类型</span></span><br><span class="line">    <span class="keyword">var</span> ext_name = file.substring(file.lastIndexOf(<span class="string">&quot;.&quot;</span>));</span><br><span class="line">    <span class="comment">//判断上传文件类型是否允许上传</span></span><br><span class="line">    <span class="keyword">if</span> (allow_ext.indexOf(ext_name + <span class="string">&quot;|&quot;</span>) == -<span class="number">1</span>) &#123;</span><br><span class="line">        <span class="keyword">var</span> errMsg = <span class="string">&quot;该文件不允许上传，请上传&quot;</span> + allow_ext + <span class="string">&quot;类型的文件,当前文件类型为：&quot;</span> + ext_name;</span><br><span class="line">        alert(errMsg);</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>源码中只是js前端校验。直接新建txt,写入一句话木马(<?php phpinfo(); ?>),改后缀为jpg、png、gif,然后bp抓包，改后缀，上传完成。</p>
-<p>访问图片地址，拿到php版本信息，说明php脚本成功执行。</p>
-<h3 id="pass02"><a href="#pass02" class="headerlink" title="pass02"></a>pass02</h3><p>MIME（Multipurpose Internet Mail Extensions）多用于互联网邮件扩展类型，是设定某种扩展名的文件用一种应用程序来打开的方式类型，当该扩展名文件被访问的时候，浏览器会自动使用指定应用程序来打开。多用于指定一些客户端自定义的文件名，以及一些媒体文件打开方式。</p>
-<p>核心作用：服务器判断你上传的是什么文件。其基本类型比如：</p>
-<ul>
-<li>{“.3gp”, “video/3gpp” }</li>
-<li>{“.asp”, “application/x-asap” }</li>
-<li>{“.avi”, “video/x-msvideo” }</li>
-<li>{“.bmp”, “image/bmp” }</li>
-<li>{“.cpp”, “text/plain” }</li>
-<li>{“.jpe”, “image/jpeg” }</li>
-<li>{“.mp4”, “video/mp4” }</li>
-<li>…</li>
-</ul>
-<p>查看提示可以知道，对MIME检查即改造Content-Type，</p>
-<p><img src="/2020/11/16/upload-libs-1-15/Myblogs\source_posts\upload-libs-1-15\Snipaste_2020-11-16_15-55-54.jpg"></p>
-<p><img src="/2020/11/16/upload-libs-1-15/Myblogs\source_posts\upload-libs-1-15\Snipaste_2020-11-16_17-06-41.jpg"></p>
-<p>将原来的Content-Type的内容改为image/jpeg</p>
-<p>上传成功</p>
-<h3 id="pass-03"><a href="#pass-03" class="headerlink" title="pass-03"></a>pass-03</h3><p>黑名单绕过</p>
-<p>这一关是另类的文件名的绕过，可以尝试phtml，php3，php4, php5, pht后缀名都可以绕过，但是前提是要在配置文件里面有这样的一句话</p>
-<blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">AddType application&#x2F;x-httpd-php .php .phtml .phps .php5 .pht</span><br></pre></td></tr></table></figure>
-</blockquote>
-<h3 id="pass-04"><a href="#pass-04" class="headerlink" title="pass-04"></a>pass-04</h3><p>使用.htaccess配置文件，</p>
-<p>htaccess文件解释</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">htaccess文件是Apache服务器中的一个配置文件，它负责相关目录下的网页配置。通过htaccess文件，可以帮我们实现：网页301重定向、自定义404错误页面、改变文件扩展名、允许&#x2F;阻止特定的用户或者目录的访问、禁止目录列表、配置默认文档等功能。</span><br></pre></td></tr></table></figure>
-
-<p>说人话就是:</p>
-<p>如果你上传一个jpg文件，利用htaccess文件可以将jpg当作php执行</p>
-<p>htaccess文件内容</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SetHandler application&#x2F;x-httpd-php  &#x2F;&#x2F;将任意文件当作php文件执行</span><br></pre></td></tr></table></figure>
-
-<p>或者写成这样</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">FilesMatch</span> &quot;<span class="attr">php</span>脚本的文件名&quot;&gt;</span></span><br><span class="line">  SetHandler application/x-httpd-php</span><br><span class="line"><span class="tag">&lt;/<span class="name">FilesMatch</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p><strong>htaccess文件上传方法：</strong></p>
-<p>上传1.htaccess,bp抓包，删掉文件名，完成。</p>
-<p>接下来就可以上传图片马了</p>
-<h3 id="pass-05"><a href="#pass-05" class="headerlink" title="pass-05"></a>pass-05</h3><p><img src="/2020/11/16/upload-libs-1-15/Myblogs\source_posts\upload-libs-1-15\Snipaste_2020-11-16_17-45-44.jpg"></p>
-<p>双写文件后缀，例如上传1.php,可以写成1.pphphp， <em>Apache</em> 漏洞会只看它认识的后缀。</p>
-<h3 id="pass-06"><a href="#pass-06" class="headerlink" title="pass-06"></a>pass-06</h3><p><strong><em>黑名单机制，可以利用windows特性，windows系统在生成文件时会自动去掉不符合规则符号后面的内容。windows下还可以通过上传test.php:1.jpg文件名来绕过后缀检查（6t,7t,8t均是）</em></strong></p>
-<p>文件加空格，不要再win下加，win会删掉空格，直接bp抓包，改包，上传。</p>
-<h3 id="pass-07"><a href="#pass-07" class="headerlink" title="pass-07"></a>pass-07</h3><p>文件后缀加“.”绕过。</p>
-<h3 id="pass-08"><a href="#pass-08" class="headerlink" title="pass-08"></a>pass-08</h3><p>bp抓包 后缀名中加”::$DATA”绕过</p>
-<h3 id="pass-09"><a href="#pass-09" class="headerlink" title="pass-09"></a>pass-09</h3><p>构造文件后缀名.点+空格+点绕过</p>
-<h3 id="pass-10"><a href="#pass-10" class="headerlink" title="pass-10"></a>pass-10</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">$is_upload = <span class="literal">false</span>;</span><br><span class="line">$msg = <span class="literal">null</span>;</span><br><span class="line"><span class="keyword">if</span> (<span class="keyword">isset</span>($_POST[<span class="string">&#x27;submit&#x27;</span>])) &#123;</span><br><span class="line">    <span class="keyword">if</span> (file_exists(UPLOAD_PATH)) &#123;</span><br><span class="line">        $deny_ext = <span class="keyword">array</span>(<span class="string">&quot;php&quot;</span>,<span class="string">&quot;php5&quot;</span>,<span class="string">&quot;php4&quot;</span>,<span class="string">&quot;php3&quot;</span>,<span class="string">&quot;php2&quot;</span>,<span class="string">&quot;html&quot;</span>,<span class="string">&quot;htm&quot;</span>,<span class="string">&quot;phtml&quot;</span>,<span class="string">&quot;pht&quot;</span>,<span class="string">&quot;jsp&quot;</span>,<span class="string">&quot;jspa&quot;</span>,<span class="string">&quot;jspx&quot;</span>,<span class="string">&quot;jsw&quot;</span>,<span class="string">&quot;jsv&quot;</span>,<span class="string">&quot;jspf&quot;</span>,<span class="string">&quot;jtml&quot;</span>,<span class="string">&quot;asp&quot;</span>,<span class="string">&quot;aspx&quot;</span>,<span class="string">&quot;asa&quot;</span>,<span class="string">&quot;asax&quot;</span>,<span class="string">&quot;ascx&quot;</span>,<span class="string">&quot;ashx&quot;</span>,<span class="string">&quot;asmx&quot;</span>,<span class="string">&quot;cer&quot;</span>,<span class="string">&quot;swf&quot;</span>,<span class="string">&quot;htaccess&quot;</span>);</span><br><span class="line"></span><br><span class="line">        $file_name = trim($_FILES[<span class="string">&#x27;upload_file&#x27;</span>][<span class="string">&#x27;name&#x27;</span>]);</span><br><span class="line">        $file_name = str_ireplace($deny_ext,<span class="string">&quot;&quot;</span>, $file_name);</span><br><span class="line">        $temp_file = $_FILES[<span class="string">&#x27;upload_file&#x27;</span>][<span class="string">&#x27;tmp_name&#x27;</span>];</span><br><span class="line">        $img_path = UPLOAD_PATH.<span class="string">&#x27;/&#x27;</span>.$file_name;        </span><br><span class="line">        <span class="keyword">if</span> (move_uploaded_file($temp_file, $img_path)) &#123;</span><br><span class="line">            $is_upload = <span class="literal">true</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            $msg = <span class="string">&#x27;上传出错！&#x27;</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        $msg = UPLOAD_PATH . <span class="string">&#x27;文件夹不存在,请手工创建！&#x27;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>只过滤了一次php，双写php绕过</p>
-<h3 id="pass-11"><a href="#pass-11" class="headerlink" title="pass-11"></a>pass-11</h3><p>%00和0x00截断</p>
-<p>直接在URL中添加%00：<br>POST /Pass-11/index.php?save_path=…/upload/1.php%00 HTTP/1.1</p>
-<p>如果path在非enctype=multipart/form-data的表单中或URL or Cookie中的时候，就可以直接写%00不需要进行URLdecode操作，让服务端对%00进行URL解码即可。</p>
-<h3 id="pass-12"><a href="#pass-12" class="headerlink" title="pass-12"></a>pass-12</h3><p>要在burp的二进制模式(Hex选项卡)添加0x00，因为post不会像get对%00进行自动解码。</p>
-<p>00截断的原理可以参考<a target="_blank" rel="noopener" href="http://www.admintony.com/%E5%85%B3%E4%BA%8E%E4%B8%8A%E4%BC%A0%E4%B8%AD%E7%9A%8400%E6%88%AA%E6%96%AD%E5%88%86%E6%9E%90.html">http://www.admintony.com/%E5%85%B3%E4%BA%8E%E4%B8%8A%E4%BC%A0%E4%B8%AD%E7%9A%8400%E6%88%AA%E6%96%AD%E5%88%86%E6%9E%90.html</a></p>
-<h3 id="pass-13"><a href="#pass-13" class="headerlink" title="pass-13"></a>pass-13</h3><p>post型截断</p>
-<p>这一关和Pass-12的区别是，00截断是用在POST中，且是在二进制中进行修改。因为POST不会像GET那样对%00进行自动解码。</p>
-<h3 id="pass-14"><a href="#pass-14" class="headerlink" title="pass-14"></a>pass-14</h3><p>cmd制作方法</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">copy 1.jpg&#x2F;a + 1.txt&#x2F;b 2.jpg &#x2F;&#x2F;1.jpg:原图片;1.txt:php代码;2.jpg:生成的含有木马的图片</span><br></pre></td></tr></table></figure>
-
-<p>或使用工具</p>
-<p>010Editor.exe，edjpgcom.exe</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">本页面存在文件包含漏洞，用于测试图片马是否能正常运行！</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">header(<span class="string">&quot;Content-Type:text/html;charset=utf-8&quot;</span>);</span><br><span class="line">$file = $_GET[<span class="string">&#x27;file&#x27;</span>];</span><br><span class="line"><span class="keyword">if</span>(<span class="keyword">isset</span>($file))&#123;</span><br><span class="line">    <span class="keyword">include</span> $file;</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">    show_source(<span class="keyword">__file__</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>浏览器地址栏输入</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http:&#x2F;&#x2F;localhost&#x2F;include.php  &#x2F;&#x2F;原链接</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http:&#x2F;&#x2F;localhost&#x2F;include.php?file&#x3D;.&#x2F;upload&#x2F;XXX.jpg   &#x2F;&#x2F;upload&#x2F;XXX.jpg为图片地址</span><br></pre></td></tr></table></figure>
-
-<h3 id="pass-15"><a href="#pass-15" class="headerlink" title="pass-15"></a>pass-15</h3><p>和14题一样.</p>
-
+<li><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p><code>upload-labs</code>是一个使用<code>php</code>语言编写的，专门收集渗透测试和CTF中遇到的各种上传漏洞的靶场。旨在帮助大家对上传漏洞有一个全面的了解。目前一共20关，每一关都包含着不同上传方式。</p></li></ol>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/11/16/upload-libs-1-15/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
