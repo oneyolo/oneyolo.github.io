@@ -96,8 +96,12 @@
 <p>Python：<br>from lxml import etree<br>xmlData = etree.parse(xmlSource,etree.XMLParser(resolve_entities=False))</p>
 <p>方案二、过滤用户提交的XML数据<br>关键词：&lt;!DOCTYPE和&lt;!ENTITY，或者，SYSTEM和PUBLIC。</p>
 ]]></content>
+      <categories>
+        <category>web</category>
+      </categories>
       <tags>
-        <tag>web</tag>
+        <tag>XXE</tag>
+        <tag>xml</tag>
       </tags>
   </entry>
   <entry>
@@ -122,7 +126,7 @@
 
 <p>源码中只是js前端校验。直接新建txt,写入一句话木马(<?php phpinfo(); ?>),改后缀为jpg、png、gif,然后bp抓包，改后缀，上传完成。</p>
 <p>访问图片地址，拿到php版本信息，说明php脚本成功执行。</p>
-<h3 id="pass02"><a href="#pass02" class="headerlink" title="pass02"></a>pass02</h3><p>MIME（Multipurpose Internet Mail Extensions）多用于互联网邮件扩展类型，是设定某种扩展名的文件用一种应用程序来打开的方式类型，当该扩展名文件被访问的时候，浏览器会自动使用指定应用程序来打开。多用于指定一些客户端自定义的文件名，以及一些媒体文件打开方式。</p>
+<h3 id="pass-02"><a href="#pass-02" class="headerlink" title="pass-02"></a>pass-02</h3><p>MIME（Multipurpose Internet Mail Extensions）多用于互联网邮件扩展类型，是设定某种扩展名的文件用一种应用程序来打开的方式类型，当该扩展名文件被访问的时候，浏览器会自动使用指定应用程序来打开。多用于指定一些客户端自定义的文件名，以及一些媒体文件打开方式。</p>
 <p>核心作用：服务器判断你上传的是什么文件。其基本类型比如：</p>
 <ul>
 <li>{“.3gp”, “video/3gpp” }</li>
@@ -188,8 +192,14 @@
 
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">http:&#x2F;&#x2F;localhost&#x2F;include.php?file&#x3D;.&#x2F;upload&#x2F;XXX.jpg   &#x2F;&#x2F;upload&#x2F;XXX.jpg为图片地址</span><br></pre></td></tr></table></figure>
 
-<h3 id="pass-15"><a href="#pass-15" class="headerlink" title="pass-15"></a>pass-15</h3><p>和14题一样.</p>
+<h3 id="pass-15"><a href="#pass-15" class="headerlink" title="pass-15"></a>pass-15</h3><p>和14题一样.只是函数不一样。</p>
 ]]></content>
+      <categories>
+        <category>web</category>
+      </categories>
+      <tags>
+        <tag>文件上传</tag>
+      </tags>
   </entry>
   <entry>
     <title>文件上传漏洞</title>
@@ -456,8 +466,11 @@
 <p><a href="https://xz.aliyun.com/t/337#toc-1">https://xz.aliyun.com/t/337#toc-1</a></p>
 <p><a href="https://www.jianshu.com/p/aa08d99a98aa">https://www.jianshu.com/p/aa08d99a98aa</a></p>
 ]]></content>
+      <categories>
+        <category>web</category>
+      </categories>
       <tags>
-        <tag>web</tag>
+        <tag>文件上传</tag>
       </tags>
   </entry>
 </search>
