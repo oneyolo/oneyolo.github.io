@@ -505,14 +505,15 @@
       </tags>
   </entry>
   <entry>
-    <title></title>
+    <title>30余种加密编码类型的密文特征分析</title>
     <url>/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/</url>
-    <content><![CDATA[<h1 id="30余种加密编码类型的密文特征分析"><a href="#30余种加密编码类型的密文特征分析" class="headerlink" title="30余种加密编码类型的密文特征分析"></a>30余种加密编码类型的密文特征分析</h1><p>6 天前阅读 370</p>
+    <content><![CDATA[<h1 id="30余种加密编码类型的密文特征分析"><a href="#30余种加密编码类型的密文特征分析" class="headerlink" title="30余种加密编码类型的密文特征分析"></a>30余种加密编码类型的密文特征分析</h1><a id="more"></a>
+
 <blockquote>
 <p>声明：本文只收集了30余种加密编码类型，关于他们的介绍来源于网络，重点讲的是他们的密文特征，还有很多类型没有讲到，后续等我研究明白了再发，转载请注明来源，感谢支持</p>
 </blockquote>
 <h1 id="MD5、sha1、HMAC算法、NTLM等相似加密类型"><a href="#MD5、sha1、HMAC算法、NTLM等相似加密类型" class="headerlink" title="MD5、sha1、HMAC算法、NTLM等相似加密类型"></a>MD5、sha1、HMAC算法、NTLM等相似加密类型</h1><h2 id="1、MD5——示例21232F297A57A5A743894A0E4A801FC3"><a href="#1、MD5——示例21232F297A57A5A743894A0E4A801FC3" class="headerlink" title="1、MD5——示例21232F297A57A5A743894A0E4A801FC3"></a>1、MD5——示例<code>21232F297A57A5A743894A0E4A801FC3</code></h2><p><strong>一般MD5值是32位由数字“0-9”和字母“a-f”所组成的字符串</strong>，如图。如果出现这个范围以外的字符说明这可能是个错误的md5值，就没必要再拿去解密了。16位值是取的是8~24位。</p>
-<p><img src="https://ask.qcloudimg.com/http-save/7985623/rlmx7pp3z1.png?imageView2/2/w/1620" alt="img"></p>
+<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\MD5.png"></p>
 <p><strong>md5的三个特征：</strong></p>
 <ol>
 <li><strong>确定性</strong>：一个原始数据的MD5值是唯一的，同一个原始数据不可能会计算出多个不同的MD5值。</li>
@@ -520,12 +521,12 @@
 <li><strong>不可逆</strong>：也就是说如果告诉你一个MD5值，你是无法通过它还原出它的原始数据的，这不是你的技术不够牛，这是由它的算法所决定的。因为根据第4点，一个给定的MD5值是可能对应多个原始数据的，并且理论上讲是可以对应无限多个原始数据，所有无法确定到底是由哪个原始数据产生的。</li>
 </ol>
 <h2 id="2、sha1——示例d033e22ae348aeb5660fc2140aec35850c4da997"><a href="#2、sha1——示例d033e22ae348aeb5660fc2140aec35850c4da997" class="headerlink" title="2、sha1——示例d033e22ae348aeb5660fc2140aec35850c4da997"></a>2、sha1——示例<code>d033e22ae348aeb5660fc2140aec35850c4da997</code></h2><p>这种加密的密文特征跟MD5差不多，只不过位数是40</p>
-<p><img src="https://ask.qcloudimg.com/http-save/7985623/rkes3ottx8.png?imageView2/2/w/1620" alt="img"></p>
+<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\sha1.png"></p>
 <h2 id="3、HMAC算法——示例5b696ae7da9442ead7adc24d03cedb65"><a href="#3、HMAC算法——示例5b696ae7da9442ead7adc24d03cedb65" class="headerlink" title="3、HMAC算法——示例5b696ae7da9442ead7adc24d03cedb65"></a>3、HMAC算法——示例<code>5b696ae7da9442ead7adc24d03cedb65</code></h2><p>HMAC (Hash-based Message Authentication Code) 常用于接口签名验证，这种算法就是在前两种加密的基础上引入了秘钥，而秘钥又只有传输双方才知道，所以基本上是破解不了的</p>
-<p><img src="https://ask.qcloudimg.com/http-save/7985623/tn4fov0zpu.png?imageView2/2/w/1620" alt="img"></p>
-<h2 id="3、NTLM——示例209c6174da490caeb422f3fa5a7ae634"><a href="#3、NTLM——示例209c6174da490caeb422f3fa5a7ae634" class="headerlink" title="3、NTLM——示例209c6174da490caeb422f3fa5a7ae634"></a>3、NTLM——示例<code>209c6174da490caeb422f3fa5a7ae634</code></h2><p>这种加密是Windows的哈希密码，是 Windows NT 早期版本的标准安全协议。与它相同的还有Domain Cached Credentials（域哈希）。</p>
-<p><img src="https://ask.qcloudimg.com/http-save/7985623/82h52rwmyo.png?imageView2/2/w/1620" alt="img"></p>
-<p><img src="https://ask.qcloudimg.com/http-save/7985623/eozxrghedo.png?imageView2/2/w/1620" alt="img"></p>
+<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\HMAC.png"></p>
+<h2 id="TLM——示例209c6174da490caeb422f3fa5a7ae634"><a href="#TLM——示例209c6174da490caeb422f3fa5a7ae634" class="headerlink" title="TLM——示例209c6174da490caeb422f3fa5a7ae634"></a>TLM——示例<code>209c6174da490caeb422f3fa5a7ae634</code></h2><p>这种加密是Windows的哈希密码，是 Windows NT 早期版本的标准安全协议。与它相同的还有Domain Cached Credentials（域哈希）。</p>
+<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\NTLM.png"></p>
+<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\NTLM-1.png"></p>
 <h2 id="相似加密类型"><a href="#相似加密类型" class="headerlink" title="相似加密类型"></a>相似加密类型</h2><table>
 <thead>
 <tr>
@@ -824,7 +825,7 @@
 </ul>
 <h1 id="Base64、Base58、Base32、Base16、Base85、Base100等相似加密类型"><a href="#Base64、Base58、Base32、Base16、Base85、Base100等相似加密类型" class="headerlink" title="Base64、Base58、Base32、Base16、Base85、Base100等相似加密类型"></a>Base64、Base58、Base32、Base16、Base85、Base100等相似加密类型</h1><h2 id="1、Base64——示例YWRtaW4tcm9vdA"><a href="#1、Base64——示例YWRtaW4tcm9vdA" class="headerlink" title="1、Base64——示例YWRtaW4tcm9vdA=="></a>1、Base64——示例<code>YWRtaW4tcm9vdA==</code></h2><p><strong>一般情况下密文尾部都会有两个等号，明文很少的时候则没有</strong></p>
 <p>Base64编码要求把3个8位字节（3<em>8=24）转化为4个6位的字节（4</em>6=24），之后在6位的前面补两个0，形成8位一个字节的形式。 如果剩下的字符不足3个字节，则用0填充，输出字符使用‘=’，因此编码后输出的文本末尾可能会出现1或2个‘=’，如图。</p>
-<p><img src="https://ask.qcloudimg.com/http-save/7985623/dfsoh0nt4g.png?imageView2/2/w/1620" alt="img"></p>
+<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\base64.png" alt="img"></p>
 <p>为了保证所输出的编码位可读字符，Base64制定了一个编码表，以便进行统一转换。编码表的大小为2^6=64，这也是Base64名称的由来。</p>
 <p><strong>Base64编码表</strong></p>
 <table>
@@ -1012,7 +1013,7 @@
 <p>Base58可以理解为一种58进制。</p>
 <p>Base58包含了阿拉伯数字、小写英文字母，大写英文字母。</p>
 <p>但是去掉了一些容易混淆的数字和字母：0（数字0）、O（o的大写字母）、l（ L的小写字母）、I（i的大写字母）</p>
-<p><img src="https://ask.qcloudimg.com/http-save/7985623/nkkq80lxlx.png?imageView2/2/w/1620" alt="img"></p>
+<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\base58.png" alt="img"></p>
 <h2 id="3、Base32——示例GEZDGNBVGY3TQOJQGE"><a href="#3、Base32——示例GEZDGNBVGY3TQOJQGE" class="headerlink" title="3、Base32——示例GEZDGNBVGY3TQOJQGE======"></a>3、Base32——示例<code>GEZDGNBVGY3TQOJQGE======</code></h2><p><strong>他的特点是明文超过十个后面就会有很多等号</strong></p>
 <p>Base32使用了ASCII编码中可打印的32个字符(大写字母AZ和数字27)对任意字节数据进行编码.Base32将串起来的二进制数据按照5个二进制位分为一组，由于传输数据的单位是字节(即8个二进制位).所以分割之前的二进制位数是40的倍数(40是5和8的最小公倍数).如果不足40位，则在编码后数据补充”=”，一个”=”相当于一个组(5个二进制位)，编码后的数据是原先的8/5倍. <strong>Base32编码表</strong></p>
 <table>
@@ -1120,7 +1121,7 @@
 </tr>
 </tbody></table>
 <p>Base32将任意字符串按照字节进行切分，并将每个字节对应的二进制值（不足8比特高位补0）串联起来，按照5比特一组进行切分，并将每组二进制值转换成十进制来对应32个可打印字符中的一个。</p>
-<p><img src="https://ask.qcloudimg.com/http-save/7985623/q98uqmv8sx.png?imageView2/2/w/1620" alt="img"></p>
+<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\base32.png" alt="img"></p>
 <p>由于数据的二进制传输是按照8比特一组进行（即一个字节），因此Base32按5比特切分的二进制数据必须是40比特的倍数（5和8的最小公倍数）。例如输入单字节字符“%”，它对应的二进制值是“100101”，前面补两个0变成“00100101”（二进制值不足8比特的都要在高位加0直到8比特），从左侧开始按照5比特切分成两组：“00100”和“101”，后一组不足5比特，则在末尾填充0直到5比特，变成“00100”和“10100”，这两组二进制数分别转换成十进制数，通过上述表格即可找到其对应的可打印字符“E”和“U”，但是这里只用到两组共10比特，还差30比特达到40比特，按照5比特一组还需6组，则在末尾填充6个“=”。填充“=”符号的作用是方便一些程序的标准化运行，大多数情况下不添加也无关紧要，而且，在URL中使用时必须去掉“=”符号。</p>
 <p><strong>与Base64相比，Base32具有许多优点：</strong></p>
 <ul>
@@ -1202,10 +1203,10 @@
 <p>Base16编码是一个标准的十六进制字符串（注意是字符串而不是数值），更易被人类和计算机使用，因为它并不包含任何控制字符，以及Base64和Base32中的“=”符号。</p>
 <p><img src="https://ask.qcloudimg.com/http-save/7985623/77js1pkrg5.png?imageView2/2/w/1620" alt="img"></p>
 <h2 id="5、Base85——示例-X4hDWe0rkE-G-OdP4CT-N"><a href="#5、Base85——示例-X4hDWe0rkE-G-OdP4CT-N" class="headerlink" title="5、Base85——示例@:X4hDWe0rkE(G[OdP4CT]N#"></a>5、Base85——示例<code>@:X4hDWe0rkE(G[OdP4CT]N#</code></h2><p><strong>特点是奇怪的字符比较多，但是很难出现等号</strong></p>
-<p><img src="https://ask.qcloudimg.com/http-save/7985623/3k815jbggh.png?imageView2/2/w/1620" alt="img"></p>
+<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\base85.png" alt="img"></p>
 <h2 id="6、Base100——示例👘👛👤👠👥"><a href="#6、Base100——示例👘👛👤👠👥" class="headerlink" title="6、Base100——示例👘👛👤👠👥"></a>6、Base100——示例<code>👘👛👤👠👥</code></h2><p><strong>特点就是一堆Emoji表情</strong></p>
 <p>Base100编码/解码工具（又名：Emoji表情符号编码/解码），可将文本内容编码为Emoji表情符号；同时也可以将编码后的Emoji表情符号内容解码为文本。</p>
-<p><img src="https://ask.qcloudimg.com/http-save/7985623/6zmvf133e5.png?imageView2/2/w/1620" alt="img"></p>
+<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\base100.png" alt="img"></p>
 <h3 id="常用解密网站：-1"><a href="#常用解密网站：-1" class="headerlink" title="常用解密网站："></a><strong>常用解密网站：</strong></h3><p>Base64：</p>
 <ul>
 <li><a href="https://tool.oschina.net/encrypt?type=3">tool.oschina.net</a></li>
@@ -1214,14 +1215,14 @@
 </ul>
 <p>Base58：<a href="http://www.metools.info/code/c74.html">www.metools.info</a> Base32、16：<a href="https://www.qqxiuzi.cn/bianma/base.php">www.qqxiuzi.cn</a> Base100：<a href="http://www.atoolbox.net/Tool.php?Id=936">www.atoolbox.net</a></p>
 <h1 id="AES、DES、RC4、Rabbit、Triple-DES（3DES）"><a href="#AES、DES、RC4、Rabbit、Triple-DES（3DES）" class="headerlink" title="AES、DES、RC4、Rabbit、Triple DES（3DES）"></a>AES、DES、RC4、Rabbit、Triple DES（3DES）</h1><p>这些都是非对称性加密算法，就是引入了密钥，密文特征与Base64类似，放个图，就不多说了</p>
-<p><img src="https://ask.qcloudimg.com/http-save/7985623/pctr773rgc.png?imageView2/2/w/1620" alt="img"></p>
+<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\AES.png" alt="img"></p>
 <h1 id="Unicode、HTML实体编码、16进制Unicode"><a href="#Unicode、HTML实体编码、16进制Unicode" class="headerlink" title="Unicode、HTML实体编码、16进制Unicode"></a>Unicode、HTML实体编码、16进制Unicode</h1><h2 id="1、Unicode——汉字示例这、字母示例t、数字符号示例5"><a href="#1、Unicode——汉字示例这、字母示例t、数字符号示例5" class="headerlink" title="1、Unicode——汉字示例这、字母示例t、数字符号示例5"></a>1、Unicode——汉字示例<code>这</code>、字母示例<code>t</code>、数字符号示例<code>5</code></h2><p><strong>可以说Unicode与HTML实体编码是一个东西</strong></p>
 <p>Unicode（统一码、万国码、单一码）是一种在计算机上使用的字符编码。Unicode 是为了解决传统的字符编码方案的局限而产生的，它为每种语言中的每个字符设定了统一并且唯一的二进制编码，以满足跨语言、跨平台进行文本转换、处理的要求。1990年开始研发，1994年正式公布。</p>
-<p><img src="https://ask.qcloudimg.com/http-save/7985623/f8grl31yk0.png?imageView2/2/w/1620" alt="img"></p>
+<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\unicode.png" alt="img"></p>
 <h2 id="2、HTML实体编码——示例与Unicode相同"><a href="#2、HTML实体编码——示例与Unicode相同" class="headerlink" title="2、HTML实体编码——示例与Unicode相同"></a>2、HTML实体编码——示例与Unicode相同</h2><p>字符实体是用一个编号写入HTML代码中来代替一个字符，在使用浏览器访问网页时会将这个编号解析还原为字符以供阅读。</p>
 <p>这么做的目的主要有两个： １、解决HTML代码编写中的一些问题。例如需要在网页上显示小于号（&lt;）和大于号（&gt;），由于它们是HTML的预留标签，可能会被误解析。这时就需要将小于号和大于号写成字符实体： 小于号这样写：&lt; 或 &lt; 大于号这样写：&gt; 或 &gt; 前面的写法称为实体名称，后面的写法则是实体编号。<a href="https://www.qqxiuzi.cn/wz/zixun/1681.htm">ISO-8859-1字符集</a>（西欧语言）中两百多个字符设定了实体名称，而对于其它所有字符都可以用实体编号来代替。 ２、网页编码采用了特定语言的编码，却需要显示来自其它语言的字符。例如，网页编码采用了西欧语言ISO-8859-1，却要在网页中显示中文，这时必须将中文字符以实体形式写入HTML代码中。</p>
-<p><img src="https://ask.qcloudimg.com/http-save/7985623/jfwp46skw3.png?imageView2/2/w/1620" alt="img"></p>
-<h2 id="2、16进制Unicode——示例-u8fd9-u662f-u4e00"><a href="#2、16进制Unicode——示例-u8fd9-u662f-u4e00" class="headerlink" title="2、16进制Unicode——示例\u8fd9\u662f\u4e00"></a>2、16进制Unicode——示例<code>\u8fd9\u662f\u4e00</code></h2><p><img src="https://ask.qcloudimg.com/http-save/7985623/c9ozt8bjbv.png?imageView2/2/w/1620" alt="img"></p>
+<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\HTML.png" alt="img"></p>
+<h2 id="2、16进制Unicode——示例-u8fd9-u662f-u4e00"><a href="#2、16进制Unicode——示例-u8fd9-u662f-u4e00" class="headerlink" title="2、16进制Unicode——示例\u8fd9\u662f\u4e00"></a>2、16进制Unicode——示例<code>\u8fd9\u662f\u4e00</code></h2><p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\unicode16.png" alt="img"></p>
 <h3 id="常用解密网站：-2"><a href="#常用解密网站：-2" class="headerlink" title="常用解密网站："></a><strong>常用解密网站：</strong></h3><ul>
 <li>Unicode：<a href="https://www.sojson.com/unicode.html">www.sojson.com</a></li>
 <li>16进制Unicode：<a href="http://www.msxindl.com/tools/unicode16.asp">www.msxindl.com</a></li>
@@ -1230,28 +1231,28 @@
 <h1 id="Escape编码-加密、Unescape解码-解密、-u编码、-u解码"><a href="#Escape编码-加密、Unescape解码-解密、-u编码、-u解码" class="headerlink" title="Escape编码/加密、Unescape解码/解密、%u编码、%u解码"></a>Escape编码/加密、Unescape解码/解密、%u编码、%u解码</h1><p><strong>特征：以<code>%u</code>开头</strong></p>
 <p><strong>Escape/Unescape加密解码/编码解码</strong>,又叫%u编码，从以往经验看编码字符串出现有”u”，它是unicode编码，那么Escape编码采用是那一种unicode实现形式呢。其实是UTF-16BE模式。这样一来问题非常简单了。 <strong>Escape编码/加密</strong>,就是字符对应UTF-16 16进制表示方式前面加%u。<strong>Unescape解码/解密</strong>，就是去掉”%u”后，将16进制字符还原后，由utf-16转码到自己目标字符。如：字符“中”，UTF-16BE是：“6d93”，因此Escape是“%u6d93”，反之也一样！因为目前%字符，常用作URL编码，所以%u这样编码已经逐渐被废弃了！</p>
 <p>基本类型只对汉字进行编码，复杂类型是所有字符均可</p>
-<p><img src="https://ask.qcloudimg.com/http-save/7985623/6pflbk39ml.png?imageView2/2/w/1620" alt="img"></p>
+<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\escape.png" alt="img"></p>
 <h3 id="常用解密网站：-3"><a href="#常用解密网站：-3" class="headerlink" title="常用解密网站："></a><strong>常用解密网站：</strong></h3><p><a href="http://web.chacuo.net/charsetescape/">http://web.chacuo.net/charsetescape/</a></p>
 <h1 id="URL、Hex编码"><a href="#URL、Hex编码" class="headerlink" title="URL、Hex编码"></a>URL、Hex编码</h1><p><strong>这两种加密的密文是一样的，不同的是当你用url编码网站时是不会把http进行编码的，而Hex编码则全部转化了</strong></p>
 <p>encodeURIComponent() 函数 与 encodeURI() 函数的区别 请注意 encodeURIComponent() 函数 与 encodeURI() 函数的区别之处，前者假定它的参数是 URI 的一部分（比如协议、主机名、路径或查询字符串）。因此 encodeURIComponent() 函数将转义用于分隔 URI 各个部分的标点符号。</p>
-<p><img src="https://ask.qcloudimg.com/http-save/7985623/q6cwxdhlgh.png?imageView2/2/w/1620" alt="img"></p>
-<p><img src="https://ask.qcloudimg.com/http-save/7985623/opqwd6ihgs.png?imageView2/2/w/1620" alt="img"></p>
-<p><img src="https://ask.qcloudimg.com/http-save/7985623/8jimvwzyum.png?imageView2/2/w/1620" alt="img"></p>
+<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\urlencode.png" alt="img"></p>
+<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\urlencode1.png" alt="img"></p>
+<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\Hex.png" alt="img"></p>
 <h3 id="常用解密网站：-4"><a href="#常用解密网站：-4" class="headerlink" title="常用解密网站："></a><strong>常用解密网站：</strong></h3><p>Hex编码：<a href="https://www.107000.com/T-Hex">https://www.107000.com/T-Hex</a> URL 编码：<a href="https://www.sojson.com/encodeurl.html">https://www.sojson.com/encodeurl.html</a></p>
 <h1 id="凯撒密码、维吉尼亚密码、栅栏密码基础型、栅栏密码W型"><a href="#凯撒密码、维吉尼亚密码、栅栏密码基础型、栅栏密码W型" class="headerlink" title="凯撒密码、维吉尼亚密码、栅栏密码基础型、栅栏密码W型"></a>凯撒密码、维吉尼亚密码、栅栏密码基础型、栅栏密码W型</h1><p>这几类密码原理都是移位调换加密，破解难度低</p>
 <h2 id="1、凯撒密码——示例iodj-khoor-zrug-123"><a href="#1、凯撒密码——示例iodj-khoor-zrug-123" class="headerlink" title="1、凯撒密码——示例iodj{khoor_zrug_123}"></a>1、凯撒密码——示例<code>iodj&#123;khoor_zrug_123&#125;</code></h2><p><strong>只对字母进行加密，常用于CTF比赛中</strong></p>
 <p>凯撒密码最早由古罗马军事统帅盖乌斯·尤利乌斯·凯撒在军队中用来传递加密信息，故称凯撒密码。此为一种位移加密手段，只对26个（大小写）字母进行位移加密，规则相当简单，容易被破解。下面是明文字母表移回3位的对比： 明文字母表 X Y Z A B C D E F G H I J K L M N O P Q R S T U V W 密文字母表 A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 然后A变成D，B变成E，Z变成C。 字母最多可移动25位（按字母表）。通常为向后移动，如果您想向前移动1位，则相当于向后移动25位，位移选择为25位。</p>
-<p><img src="https://ask.qcloudimg.com/http-save/7985623/nnjwpb84d3.png?imageView2/2/w/1620" alt="img"></p>
+<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\kais.png" alt="img"></p>
 <h2 id="2、维吉尼亚密码——示例fmcg-iglmq-wptd-123"><a href="#2、维吉尼亚密码——示例fmcg-iglmq-wptd-123" class="headerlink" title="2、维吉尼亚密码——示例fmcg{iglmq_wptd_123}"></a>2、维吉尼亚密码——示例<code>fmcg&#123;iglmq_wptd_123&#125;</code></h2><p><strong>可以说是凯撒密码的加强版，引入了密钥</strong></p>
 <p>维吉尼亚密码，它将凯撒密码的所有26种排列放到一个表中，形成26行26列的加密字母表。此外，维吉尼亚密码必须有一个由字母组成的密钥，至少有一个字母，最多与明文字母有相同数量的字母。 在凯撒密码中，每个字母都会进行一定偏移值转换，例如，当偏移值是3时，则B被转换为E，C转换成F…。在维吉尼亚密码加密中，则是由具有不同偏移的凯撒密码构成的。 要生成密码，需要使用表格方法，此表(如图所示)包含26行字母表，每一行从上一行到左行被一位偏移。加密时使用哪一行字母表是基于密钥的，在加密过程中密钥会不断变化。 例如，假设明文为： BTTACKATDAFG 选择一个关键字并重复它以获得密钥，例如，当关键字是LIMN时，键是： LIMNLIMNLIMN 在明文中的第一个字母B，对应于密钥中的第一个字母L，使用加密字母表中的L行字母进行加密，得到第一个字母的密文M。同样，第二个明文字母是T，它用表中的I行加密，得到第二个密文B。通过类比，我们可以得到： 明文：BTTACKATDAFG 键：LIMNLIMNLIMN 密文：MBFNNSMGOIRT 解密的过程是加密的逆过程。例如，密钥的第一个字母对应的L行字母表，发现密文的第一个字母M位于B列，因此明文的第一个字母是B。密钥的第二个字母对应于I行字母表，而密文的第二个字母B位于该行的T列中，因此明文的第二个字母是T。等等，你可以得到明文。</p>
-<p><img src="https://ask.qcloudimg.com/http-save/7985623/ww52ops4nd.png?imageView2/2/w/1620" alt="img"></p>
-<p><img src="https://ask.qcloudimg.com/http-save/7985623/52v3vqubb4.png?imageView2/2/w/1620" alt="img"></p>
+<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\zl.png" alt="img"></p>
+<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\zl1.png" alt="img"></p>
 <h2 id="3、栅栏密码基础型"><a href="#3、栅栏密码基础型" class="headerlink" title="3、栅栏密码基础型"></a>3、栅栏密码基础型</h2><p><strong>栅栏密码是按一定规则将明文内容互相调换了位置</strong></p>
 <p>栅栏密码(Rail fence Cipher)基础型加密方式，是一种简单的移动字符位置的加密方法，首先把加密的明文分成N个一组，然后把每组的第1、第2、第M个字符连起来，形成无规律的密文字符串。</p>
 <p>例如字符串“123456789abc”，首先将字符串分成3组，如下排列： 1234 5678 9abc 依次取每一组字符，组成加密后密文：“15926a37b48c”。</p>
-<p><img src="https://ask.qcloudimg.com/http-save/7985623/iv38g2mdzb.png?imageView2/2/w/1620" alt="img"></p>
+<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\zl2.png" alt="img"></p>
 <h2 id="4、栅栏密码W型"><a href="#4、栅栏密码W型" class="headerlink" title="4、栅栏密码W型"></a>4、栅栏密码W型</h2><p>栅栏密码W型加密算法： 栅栏密码(Rail fence Cipher)，扩展变种W型，采用先把明文类似”W”形状进行排列，然后再按栏目顺序1-N，取每一栏的所有字符值，组成加密后密文。 比如字符串“123456789”，采用栏目数为3的时，明文将采用如下排列： 1—5—9 -2-4-6-8- –3—-7– 取每一栏所有字符串，组成加密后密文：“159246837”。 W型栅栏密码加密方式，比传统型栅栏密码加密方法，算法略有增强，但目前已只能用于学习算法验证。</p>
-<p><img src="https://ask.qcloudimg.com/http-save/7985623/jp84df3dxb.png?imageView2/2/w/1620" alt="img"></p>
+<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\zl3.png" alt="img"></p>
 <h3 id="常用解密网站：-5"><a href="#常用解密网站：-5" class="headerlink" title="常用解密网站："></a><strong>常用解密网站：</strong></h3><ul>
 <li>凯撒密码：<a href="https://www.qqxiuzi.cn/bianma/kaisamima.php">www.qqxiuzi.cn</a></li>
 <li>维吉尼亚密码：<a href="http://www.metools.info/code/c71.html">www.metools.info</a></li>
@@ -1261,29 +1262,29 @@
 <h3 id="常用解密网站：-6"><a href="#常用解密网站：-6" class="headerlink" title="常用解密网站："></a><strong>常用解密网站：</strong></h3><h1 id="文本隐藏加密、零宽隐写"><a href="#文本隐藏加密、零宽隐写" class="headerlink" title="文本隐藏加密、零宽隐写"></a>文本隐藏加密、零宽隐写</h1><h2 id="1、文本隐藏加密"><a href="#1、文本隐藏加密" class="headerlink" title="1、文本隐藏加密"></a>1、文本隐藏加密</h2><p><strong>特征：加密过的密文会比原文的字节数多，当你按删除键的时候会发现某一处要按好多下才能把前面的字删掉</strong></p>
 <p>原理**：它的原理是在密文中加入了不可见字符组成的编码，例如上述看似九个字符的一句话，通过<a href="https://www.qqxiuzi.cn/zh/zishu-zijieshu/">字数查询</a>可知它实际上有87个字符，多出的字符是由<a href="https://www.qqxiuzi.cn/zh/space.html">零宽空格</a>实现的编码，因为零宽空格不占据空间，所以看不出它的存在。</p>
 <p><strong>使用</strong>：在进行文本隐藏加密时，将需要隐藏的文字写在括号中，就像这样“你好（有才华），我好喜欢你（画的画）！”，然后加密即可隐藏括号内的文字。同时可以设定一个密码，这样只有知道密码的人才能解密隐藏的文字。密码可以是数字、字母和下划线，最多九位。</p>
-<p><img src="https://ask.qcloudimg.com/http-save/7985623/kjctsw4ep1.png?imageView2/2/w/1620" alt="img"></p>
+<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\wb1.png" alt="img"></p>
 <p>这是加密后的字节数</p>
-<p><img src="https://ask.qcloudimg.com/http-save/7985623/hk2h4yllxa.png?imageView2/2/w/1620" alt="img"></p>
+<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\wb2.png" alt="img"></p>
 <p>这是本来的字节数</p>
-<p><img src="https://ask.qcloudimg.com/http-save/7985623/lt2g2f9fq1.png?imageView2/2/w/1620" alt="img"></p>
+<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\wb3.png" alt="img"></p>
 <h2 id="2、零宽隐写"><a href="#2、零宽隐写" class="headerlink" title="2、零宽隐写"></a>2、零宽隐写</h2><p><strong>特征：解密后明文与密文会分开显示，密文一般隐藏在第一个字后面，不信你试试，保证你十下之内删不完</strong></p>
 <p>与上面文本隐藏加密的原理一样，但过程不一样</p>
-<p><img src="https://ask.qcloudimg.com/http-save/7985623/703hflv1kb.png?imageView2/2/w/1620" alt="img"></p>
+<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\wb4.png" alt="img"></p>
 <p>这里加密过的密文在文本隐藏加密中解不出来</p>
-<p><img src="https://ask.qcloudimg.com/http-save/7985623/orijz99u62.png?imageView2/2/w/1620" alt="img"></p>
+<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\wb5.png" alt="img"></p>
 <h3 id="常用解密网站：-7"><a href="#常用解密网站：-7" class="headerlink" title="常用解密网站："></a><strong>常用解密网站：</strong></h3><p>文本隐藏加密：<a href="https://www.qqxiuzi.cn/bianma/yincangjiami.php">www.qqxiuzi.cn</a> 零宽隐写：<a href="https://yuanfux.github.io/zero-width-web/">yuanfux.github.io</a></p>
 <h1 id="特殊暗号类加密"><a href="#特殊暗号类加密" class="headerlink" title="特殊暗号类加密"></a>特殊暗号类加密</h1><p>这类加密都是特征性比较强的，易辨别</p>
 <h2 id="1、猪圈密码"><a href="#1、猪圈密码" class="headerlink" title="1、猪圈密码"></a>1、猪圈密码</h2><p><strong>特点：只能对字母加解密并且符号无法复制，粘贴后会直接显示明文</strong></p>
 <p>猪圈密码（亦称朱高密码、共济会暗号、共济会密码或共济会员密码），是一种以格子为基础的简单替代式密码，曾经是美国内战时盟军使用的密码，目前仅在密码教学、各种竞赛中使用。</p>
-<p><img src="https://ask.qcloudimg.com/http-save/7985623/8yjkb2ju27.png?imageView2/2/w/1620" alt="img"></p>
+<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\zj.png" alt="img"></p>
 <h3 id="常用解密网站：-8"><a href="#常用解密网站：-8" class="headerlink" title="常用解密网站："></a><strong>常用解密网站：</strong></h3><p><a href="http://www.metools.info/code/c90.html">http://www.metools.info/code/c90.html</a></p>
 <h2 id="2、与佛论禅"><a href="#2、与佛论禅" class="headerlink" title="2、与佛论禅"></a>2、与佛论禅</h2><p><strong>特点：就是你看不懂的佛语</strong></p>
-<p><img src="https://ask.qcloudimg.com/http-save/7985623/jc67w541u2.png?imageView2/2/w/1620" alt="img"></p>
+<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\yufo.png" alt="img"></p>
 <h3 id="常用解密网站：-9"><a href="#常用解密网站：-9" class="headerlink" title="常用解密网站："></a><strong>常用解密网站：</strong></h3><p><a href="http://www.keyfc.net/bbs/tools/tudoucode.aspx">http://www.keyfc.net/bbs/tools/tudoucode.aspx</a></p>
 <h2 id="3、百家姓暗号"><a href="#3、百家姓暗号" class="headerlink" title="3、百家姓暗号"></a>3、百家姓暗号</h2><p><strong>特征：不要多说当你看到一串百家姓的时候多半就是这个暗号了</strong></p>
-<p><img src="https://ask.qcloudimg.com/http-save/7985623/k4dmb3qp6x.png?imageView2/2/w/1620" alt="img"></p>
+<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\bj1.png" alt="img"></p>
 <p>当他解密的的时候前面会多一串固定字符</p>
-<p><img src="https://ask.qcloudimg.com/http-save/7985623/0to6xa7ras.png?imageView2/2/w/1620" alt="img"></p>
+<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\bj2.png" alt="img"></p>
 <h3 id="常用解密网站：-10"><a href="#常用解密网站：-10" class="headerlink" title="常用解密网站："></a><strong>常用解密网站：</strong></h3><ul>
 <li><a href="https://www.ahz0.com/bjx.html">https://www.ahz0.com/bjx.html</a></li>
 <li><a href="https://www.w168.net/anhao.html">https://www.w168.net/anhao.html</a></li>
@@ -1291,7 +1292,7 @@
 <li><a href="https://www.ddosi.com/ah.html">https://www.ddosi.com/ah.html</a></li>
 </ul>
 <h2 id="4、卡尔达诺栅格码"><a href="#4、卡尔达诺栅格码" class="headerlink" title="4、卡尔达诺栅格码"></a>4、卡尔达诺栅格码</h2><p><strong>特征：把明文伪装成垃圾邮件，看着这么多内容，其实我只是加密了admin</strong></p>
-<p><img src="https://ask.qcloudimg.com/http-save/7985623/3bnuynjdxw.png?imageView2/2/w/1620" alt="img"></p>
+<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\ker.png" alt="img"></p>
 <h3 id="常用解密网站：-11"><a href="#常用解密网站：-11" class="headerlink" title="常用解密网站："></a><strong>常用解密网站：</strong></h3><p><a href="https://www.spammimic.com/">https://www.spammimic.com/</a></p>
 <h2 id="5、莫尔斯电码"><a href="#5、莫尔斯电码" class="headerlink" title="5、莫尔斯电码"></a>5、莫尔斯电码</h2><p><strong>特征：密文由不规律的<code>.</code>、<code>/</code>、<code>-</code>组成</strong></p>
 <ul>
@@ -1492,35 +1493,35 @@
 <td align="left"></td>
 </tr>
 </tbody></table>
-<p><img src="https://ask.qcloudimg.com/http-save/7985623/kdwtesv7xz.png?imageView2/2/w/1620" alt="img"></p>
+<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\ms.png" alt="img"></p>
 <h3 id="常用解密网站：-12"><a href="#常用解密网站：-12" class="headerlink" title="常用解密网站："></a><strong>常用解密网站：</strong></h3><p><a href="https://www.atool99.com/morse.php">https://www.atool99.com/morse.php</a></p>
 <h2 id="6、Quoted-Printable"><a href="#6、Quoted-Printable" class="headerlink" title="6、Quoted-Printable"></a>6、Quoted-Printable</h2><p><strong>这种编码常用与邮件处理，只能对汉字进行编码，特征是=加两个大写字母或数字组合</strong></p>
-<p><img src="https://ask.qcloudimg.com/http-save/7985623/a1lnshveiw.png?imageView2/2/w/1620" alt="img"></p>
+<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\qp.png" alt="img"></p>
 <h3 id="常用解密网站：-13"><a href="#常用解密网站：-13" class="headerlink" title="常用解密网站："></a><strong>常用解密网站：</strong></h3><ul>
 <li><a href="http://www.mxcz.net/tools/QuotedPrintable.aspx">http://www.mxcz.net/tools/QuotedPrintable.aspx</a></li>
 </ul>
 <h2 id="7、ROT13"><a href="#7、ROT13" class="headerlink" title="7、ROT13"></a>7、ROT13</h2><p><strong>特征：它与凯撒密码差不多都是字母替换，你看到一句特别奇怪的语句可能就是它编码的</strong></p>
 <p>ROT13（回转13位，Template:lang，有时中间加了个减号称作ROT-13）是一种简易的置换暗码。它是一种在网路论坛用作隐藏八卦（spoiler）、妙句、谜题解答以及某些脏话的工具，目的是逃过版主或管理员的匆匆一瞥。 ROT13被描述成「杂志字谜上下颠倒解答的Usenet对等体」（Usenet equivalent of a magazine printing the answer to a quiz upside down.）Template:cite web ROT13也是过去在古罗马开发的凯撒加密的一种变体。</p>
-<p><img src="https://ask.qcloudimg.com/http-save/7985623/o3bqz85avr.png?imageView2/2/w/1620" alt="img"></p>
-<p><img src="https://ask.qcloudimg.com/http-save/7985623/i5weudy03e.png?imageView2/2/w/1620" alt="img"></p>
+<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\rot1.png" alt="img"></p>
+<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\rot2.png" alt="img"></p>
 <h3 id="常用解密网站：-14"><a href="#常用解密网站：-14" class="headerlink" title="常用解密网站："></a><strong>常用解密网站：</strong></h3><p><a href="http://www.mxcz.net/tools/rot13.aspx">http://www.mxcz.net/tools/rot13.aspx</a></p>
 <h2 id="8、文本加密为汉字"><a href="#8、文本加密为汉字" class="headerlink" title="8、文本加密为汉字"></a>8、文本加密为汉字</h2><p><strong>特征：将明文加密成各种繁体字后面带俩等号</strong></p>
-<p><img src="https://ask.qcloudimg.com/http-save/7985623/ikxzu64pn9.png?imageView2/2/w/1620" alt="img"></p>
+<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\wbh1.png" alt="img"></p>
 <p>它不仅可以加密成汉字，还可以加密成以下几种类型</p>
-<p><img src="https://ask.qcloudimg.com/http-save/7985623/icwt2ptxyi.png?imageView2/2/w/1620" alt="img"></p>
+<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\wbz.png" alt="img"></p>
 <p>比如这样：</p>
-<p><img src="https://ask.qcloudimg.com/http-save/7985623/8ylgjywuqs.png?imageView2/2/w/1620" alt="img"></p>
+<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\wby.png" alt="img"></p>
 <p>这样：</p>
-<p><img src="https://ask.qcloudimg.com/http-save/7985623/1pykntn7uv.png?imageView2/2/w/1620" alt="img"></p>
+<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\wbs.png" alt="img"></p>
 <h3 id="常用解密网站：-15"><a href="#常用解密网站：-15" class="headerlink" title="常用解密网站："></a><strong>常用解密网站：</strong></h3><p><a href="https://www.qqxiuzi.cn/bianma/wenbenjiami.php">https://www.qqxiuzi.cn/bianma/wenbenjiami.php</a></p>
 <h1 id="js专用加密"><a href="#js专用加密" class="headerlink" title="js专用加密"></a>js专用加密</h1><h2 id="1、颜文字js加密"><a href="#1、颜文字js加密" class="headerlink" title="1、颜文字js加密"></a>1、颜文字js加密</h2><p><strong>特征：一堆颜文字构成的js代码，在F12中可直接解密执行</strong></p>
-<p><img src="https://ask.qcloudimg.com/http-save/7985623/mvjwe3i1w4.png?imageView2/2/w/1620" alt="img"></p>
+<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\js.png" alt="img"></p>
 <h3 id="常用解密网站：-16"><a href="#常用解密网站：-16" class="headerlink" title="常用解密网站："></a><strong>常用解密网站：</strong></h3><p><a href="https://utf-8.jp/public/aaencode.html">https://utf-8.jp/public/aaencode.html</a></p>
 <h2 id="2、jother编码"><a href="#2、jother编码" class="headerlink" title="2、jother编码"></a>2、jother编码</h2><p><strong>特征：只用<code>! + ( ) [ ] &#123; &#125;</code>这八个字符就能完成对任意字符串的编码。也可在F12中解密执行</strong></p>
-<p><img src="https://ask.qcloudimg.com/http-save/7985623/0vrj9ecezp.png?imageView2/2/w/1620" alt="img"></p>
+<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\jor.png" alt="img"></p>
 <h3 id="常用解密网站：-17"><a href="#常用解密网站：-17" class="headerlink" title="常用解密网站："></a><strong>常用解密网站：</strong></h3><p><a href="http://tmxk.org/jother/">http://tmxk.org/jother/</a></p>
 <h2 id="3、JSFuck编码"><a href="#3、JSFuck编码" class="headerlink" title="3、JSFuck编码"></a>3、JSFuck编码</h2><p><strong>特征：与jother很像，只是少了<code>&#123; &#125;</code></strong></p>
-<p><img src="https://ask.qcloudimg.com/http-save/7985623/8vgmb7jbx1.png?imageView2/2/w/1620" alt="img"></p>
+<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\jsf.png" alt="img"></p>
 <h3 id="常用解密网站：-18"><a href="#常用解密网站：-18" class="headerlink" title="常用解密网站："></a><strong>常用解密网站：</strong></h3><p><a href="http://www.jsfuck.com/">http://www.jsfuck.com/</a></p>
 ]]></content>
   </entry>
