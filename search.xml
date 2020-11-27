@@ -507,13 +507,13 @@
   <entry>
     <title>30余种加密编码类型的密文特征分析</title>
     <url>/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/</url>
-    <content><![CDATA[<h1 id="30余种加密编码类型的密文特征分析"><a href="#30余种加密编码类型的密文特征分析" class="headerlink" title="30余种加密编码类型的密文特征分析"></a>30余种加密编码类型的密文特征分析</h1><a id="more"></a>
-
-<blockquote>
+    <content><![CDATA[<h1 id="30余种加密编码类型的密文特征分析"><a href="#30余种加密编码类型的密文特征分析" class="headerlink" title="30余种加密编码类型的密文特征分析"></a>30余种加密编码类型的密文特征分析</h1><blockquote>
 <p>声明：本文只收集了30余种加密编码类型，关于他们的介绍来源于网络，重点讲的是他们的密文特征，还有很多类型没有讲到，后续等我研究明白了再发，转载请注明来源，感谢支持</p>
 </blockquote>
+<a id="more"></a>
+
 <h1 id="MD5、sha1、HMAC算法、NTLM等相似加密类型"><a href="#MD5、sha1、HMAC算法、NTLM等相似加密类型" class="headerlink" title="MD5、sha1、HMAC算法、NTLM等相似加密类型"></a>MD5、sha1、HMAC算法、NTLM等相似加密类型</h1><h2 id="1、MD5——示例21232F297A57A5A743894A0E4A801FC3"><a href="#1、MD5——示例21232F297A57A5A743894A0E4A801FC3" class="headerlink" title="1、MD5——示例21232F297A57A5A743894A0E4A801FC3"></a>1、MD5——示例<code>21232F297A57A5A743894A0E4A801FC3</code></h2><p><strong>一般MD5值是32位由数字“0-9”和字母“a-f”所组成的字符串</strong>，如图。如果出现这个范围以外的字符说明这可能是个错误的md5值，就没必要再拿去解密了。16位值是取的是8~24位。</p>
-<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\MD5.png"></p>
+<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/MD5.png"></p>
 <p><strong>md5的三个特征：</strong></p>
 <ol>
 <li><strong>确定性</strong>：一个原始数据的MD5值是唯一的，同一个原始数据不可能会计算出多个不同的MD5值。</li>
@@ -1524,5 +1524,42 @@
 <p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\jsf.png" alt="img"></p>
 <h3 id="常用解密网站：-18"><a href="#常用解密网站：-18" class="headerlink" title="常用解密网站："></a><strong>常用解密网站：</strong></h3><p><a href="http://www.jsfuck.com/">http://www.jsfuck.com/</a></p>
 ]]></content>
+      <categories>
+        <category>misc</category>
+      </categories>
+      <tags>
+        <tag>各种编码</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>php序列化与反序列化</title>
+    <url>/2020/11/16/php%E5%BA%8F%E5%88%97%E5%8C%96%E4%B8%8E%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96/</url>
+    <content><![CDATA[<h1 id="php序列化与反序列化"><a href="#php序列化与反序列化" class="headerlink" title="php序列化与反序列化"></a>php序列化与反序列化</h1><blockquote>
+<p>我们在开发的过程中常常遇到需要把对象或者数组进行序列号存储，反序列化输出的情况。特别是当需要把数组存储到<a href="https://www.w3cschool.cn/mysql/mysql-tutorial.html">mysql数据库</a>中时，我们时常需要将数组进行序列号操作。</p>
+</blockquote>
+<blockquote>
+<blockquote>
+<p><strong>序列化</strong>（串行化）：是将变量转换为可保存或传输的字符串的过程；</p>
+<p><strong>反序列化</strong>（反串行化）：就是在适当的时候把这个字符串再转化成原来的变量使用。</p>
+<p>这两个过程结合起来，可以轻松地存储和传输数据，使程序更具维护性。</p>
+<p>常见的php系列化和反系列化方式主要有：serialize，unserialize；json_encode，json_decode。</p>
+</blockquote>
+</blockquote>
+<h2 id="常见使用情况"><a href="#常见使用情况" class="headerlink" title="常见使用情况"></a>常见使用情况</h2><p>a.对象系列化使用情况：</p>
+<p>对象的创建的时候被存储到内存里，在解析的时候被销毁，如果机器重启，那么对象也将被销毁在新建。想要保存对象或者将对象传给另一台机器，就需要将对象串行化（序列化）；或者在需要存储数据到mysql等数据库中时需要系列化。</p>
+<p>将对象转化成字符串叫系列化(串行化)</p>
+<p>将字符串转化成对象叫反系列化(反串行化)</p>
+<p>b.数组系列化使用情况：</p>
+<p>在跨语言，跨设备传输数组时，存放数据库或nosql数据库时，由于两者之间的数据格式不同，所以要将数据统一转成json(<a href="http://lib.csdn.net/base/javascript">JavaScript</a> object )格式传输。</p>
+<h2 id="1-serialize和unserialize函数"><a href="#1-serialize和unserialize函数" class="headerlink" title="1. serialize和unserialize函数"></a>1. serialize和unserialize函数</h2><p>这两个是序列化和反序列化PHP中数据的常用函数</p>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">$a = <span class="keyword">array</span>(<span class="string">&#x27;a&#x27;</span> =&gt; <span class="string">&#x27;Apple&#x27;</span> ,<span class="string">&#x27;b&#x27;</span> =&gt; <span class="string">&#x27;banana&#x27;</span> , <span class="string">&#x27;c&#x27;</span> =&gt; <span class="string">&#x27;Coconut&#x27;</span>);</span><br><span class="line">  </span><br><span class="line"><span class="comment">//序列化数组</span></span><br><span class="line">$s = serialize($a);</span><br><span class="line"><span class="keyword">echo</span> $s;</span><br><span class="line"><span class="comment">//输出结果：a:3:&#123;s:1:&quot;a&quot;;s:5:&quot;Apple&quot;;s:1:&quot;b&quot;;s:6:&quot;banana&quot;;s:1:&quot;c&quot;;s:7:&quot;Coconut&quot;;&#125;</span></span><br><span class="line"><span class="keyword">echo</span> <span class="string">&#x27;&lt;br /&gt;&lt;br /&gt;&#x27;</span>;</span><br><span class="line"> </span><br><span class="line"><span class="comment">//反序列化</span></span><br><span class="line">$o = unserialize($s);</span><br><span class="line">print_r($o);</span><br><span class="line"><span class="comment">//输出结果 Array ( [a] =&gt; Apple [b] =&gt; banana [c] =&gt; Coconut )</span></span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>php</category>
+      </categories>
+      <tags>
+        <tag>序列化与反序列化</tag>
+      </tags>
   </entry>
 </search>

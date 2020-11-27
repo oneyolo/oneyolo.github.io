@@ -24,16 +24,21 @@
     var CONFIG = {"hostname":"oneyolo.github.io","root":"/","images":"/images","scheme":"Pisces","version":"8.0.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="yolo的博客">
-<meta property="og:url" content="http://oneyolo.github.io/categories/python/index.html">
+  <meta name="description" content="php序列化与反序列化 我们在开发的过程中常常遇到需要把对象或者数组进行序列号存储，反序列化输出的情况。特别是当需要把数组存储到mysql数据库中时，我们时常需要将数组进行序列号操作。    序列化（串行化）：是将变量转换为可保存或传输的字符串的过程； 反序列化（反串行化）：就是在适当的时候把这个字符串再转化成原来的变量使用。 这两个过程结合起来，可以轻松地存储和传输数据，使程序更具维护性。 常见">
+<meta property="og:type" content="article">
+<meta property="og:title" content="php序列化与反序列化">
+<meta property="og:url" content="http://oneyolo.github.io/2020/11/16/php%E5%BA%8F%E5%88%97%E5%8C%96%E4%B8%8E%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96/index.html">
 <meta property="og:site_name" content="yolo的博客">
+<meta property="og:description" content="php序列化与反序列化 我们在开发的过程中常常遇到需要把对象或者数组进行序列号存储，反序列化输出的情况。特别是当需要把数组存储到mysql数据库中时，我们时常需要将数组进行序列号操作。    序列化（串行化）：是将变量转换为可保存或传输的字符串的过程； 反序列化（反串行化）：就是在适当的时候把这个字符串再转化成原来的变量使用。 这两个过程结合起来，可以轻松地存储和传输数据，使程序更具维护性。 常见">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-11-16T08:05:33.000Z">
+<meta property="article:modified_time" content="2020-11-27T02:00:01.871Z">
 <meta property="article:author" content="yolo">
+<meta property="article:tag" content="序列化与反序列化">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://oneyolo.github.io/categories/python/">
+<link rel="canonical" href="http://oneyolo.github.io/2020/11/16/php%E5%BA%8F%E5%88%97%E5%8C%96%E4%B8%8E%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96/">
 
 
 <script class="page-configurations">
@@ -41,12 +46,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>分类: python | yolo的博客</title>
+  <title>php序列化与反序列化 | yolo的博客</title>
   
 
 
@@ -190,7 +195,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -203,6 +208,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <section class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#php%E5%BA%8F%E5%88%97%E5%8C%96%E4%B8%8E%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96"><span class="nav-number">1.</span> <span class="nav-text">php序列化与反序列化</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B8%B8%E8%A7%81%E4%BD%BF%E7%94%A8%E6%83%85%E5%86%B5"><span class="nav-number">1.1.</span> <span class="nav-text">常见使用情况</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-serialize%E5%92%8Cunserialize%E5%87%BD%E6%95%B0"><span class="nav-number">1.2.</span> <span class="nav-text">1. serialize和unserialize函数</span></a></li></ol></li></ol></div>
         </section>
         <!--/noindex-->
 
@@ -278,54 +284,124 @@
 </noscript>
 
 
-    <div class="main-inner category posts-collapse">
+    <div class="main-inner post posts-expand">
       
 
       
 
   
-  
-  
-  <div class="post-block">
-    <div class="post-content">
-      <div class="collection-title">
-        <h2 class="collection-header">python
-          <small>分类</small>
-        </h2>
-      </div>
 
-      
-    <div class="collection-year">
-      <span class="collection-header">2020</span>
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://oneyolo.github.io/2020/11/16/php%E5%BA%8F%E5%88%97%E5%8C%96%E4%B8%8E%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="yolo">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="yolo的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          php序列化与反序列化
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-11-16 16:05:33" itemprop="dateCreated datePublished" datetime="2020-11-16T16:05:33+08:00">2020-11-16</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-11-27 10:00:01" itemprop="dateModified" datetime="2020-11-27T10:00:01+08:00">2020-11-27</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/php/" itemprop="url" rel="index"><span itemprop="name">php</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h1 id="php序列化与反序列化"><a href="#php序列化与反序列化" class="headerlink" title="php序列化与反序列化"></a>php序列化与反序列化</h1><blockquote>
+<p>我们在开发的过程中常常遇到需要把对象或者数组进行序列号存储，反序列化输出的情况。特别是当需要把数组存储到<a target="_blank" rel="noopener" href="https://www.w3cschool.cn/mysql/mysql-tutorial.html">mysql数据库</a>中时，我们时常需要将数组进行序列号操作。</p>
+</blockquote>
+<blockquote>
+<blockquote>
+<p><strong>序列化</strong>（串行化）：是将变量转换为可保存或传输的字符串的过程；</p>
+<p><strong>反序列化</strong>（反串行化）：就是在适当的时候把这个字符串再转化成原来的变量使用。</p>
+<p>这两个过程结合起来，可以轻松地存储和传输数据，使程序更具维护性。</p>
+<p>常见的php系列化和反系列化方式主要有：serialize，unserialize；json_encode，json_decode。</p>
+</blockquote>
+</blockquote>
+<h2 id="常见使用情况"><a href="#常见使用情况" class="headerlink" title="常见使用情况"></a>常见使用情况</h2><p>a.对象系列化使用情况：</p>
+<p>对象的创建的时候被存储到内存里，在解析的时候被销毁，如果机器重启，那么对象也将被销毁在新建。想要保存对象或者将对象传给另一台机器，就需要将对象串行化（序列化）；或者在需要存储数据到mysql等数据库中时需要系列化。</p>
+<p>将对象转化成字符串叫系列化(串行化)</p>
+<p>将字符串转化成对象叫反系列化(反串行化)</p>
+<p>b.数组系列化使用情况：</p>
+<p>在跨语言，跨设备传输数组时，存放数据库或nosql数据库时，由于两者之间的数据格式不同，所以要将数据统一转成json(<a target="_blank" rel="noopener" href="http://lib.csdn.net/base/javascript">JavaScript</a> object )格式传输。</p>
+<h2 id="1-serialize和unserialize函数"><a href="#1-serialize和unserialize函数" class="headerlink" title="1. serialize和unserialize函数"></a>1. serialize和unserialize函数</h2><p>这两个是序列化和反序列化PHP中数据的常用函数</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">$a = <span class="keyword">array</span>(<span class="string">&#x27;a&#x27;</span> =&gt; <span class="string">&#x27;Apple&#x27;</span> ,<span class="string">&#x27;b&#x27;</span> =&gt; <span class="string">&#x27;banana&#x27;</span> , <span class="string">&#x27;c&#x27;</span> =&gt; <span class="string">&#x27;Coconut&#x27;</span>);</span><br><span class="line">  </span><br><span class="line"><span class="comment">//序列化数组</span></span><br><span class="line">$s = serialize($a);</span><br><span class="line"><span class="keyword">echo</span> $s;</span><br><span class="line"><span class="comment">//输出结果：a:3:&#123;s:1:&quot;a&quot;;s:5:&quot;Apple&quot;;s:1:&quot;b&quot;;s:6:&quot;banana&quot;;s:1:&quot;c&quot;;s:7:&quot;Coconut&quot;;&#125;</span></span><br><span class="line"><span class="keyword">echo</span> <span class="string">&#x27;&lt;br /&gt;&lt;br /&gt;&#x27;</span>;</span><br><span class="line"> </span><br><span class="line"><span class="comment">//反序列化</span></span><br><span class="line">$o = unserialize($s);</span><br><span class="line">print_r($o);</span><br><span class="line"><span class="comment">//输出结果 Array ( [a] =&gt; Apple [b] =&gt; banana [c] =&gt; Coconut )</span></span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2020-11-16T16:05:33+08:00"
-              content="2020-11-16">
-          11-16
-        </time>
-      </div>
+    
+    
+    
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/11/16/Python/" itemprop="url">
-            <span itemprop="name">Python基础</span>
-          </a>
-      </div>
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%BA%8F%E5%88%97%E5%8C%96%E4%B8%8E%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96/" rel="tag"># 序列化与反序列化</a>
+          </div>
 
-      
-    </header>
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2020/11/11/XXE/" rel="prev" title="XXE">
+                  <i class="fa fa-chevron-left"></i> XXE
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2020/11/16/upload-libs-1-15/" rel="next" title="upload-libs(1-15)">
+                  upload-libs(1-15) <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
   </article>
+</div>
 
-    </div>
-  </div>
-  
-  
-  
 
-  
+
 
 
 
